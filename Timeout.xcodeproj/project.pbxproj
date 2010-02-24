@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		280E754E0DD40C5E005A515E /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754B0DD40C5E005A515E /* MainView.xib */; };
+		280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754C0DD40C5E005A515E /* MainWindow.xib */; };
+		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
+		C910CBC911284DC6000B9D23 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C910CBC811284DC6000B9D23 /* CoreData.framework */; };
+		C9177FDE11286D39008FCD2F /* TimeoutAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9177FD911286D39008FCD2F /* TimeoutAppDelegate.m */; };
+		C98209BB1128FCA0005F4CA2 /* Timeout.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = C98209BA1128FCA0005F4CA2 /* Timeout.xcdatamodel */; };
+		C9820B9F112E3CD1005F4CA2 /* GoalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9820B9E112E3CD1005F4CA2 /* GoalView.xib */; };
+		C9820CEA1131009F005F4CA2 /* NSCalendarAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820CD21131009F005F4CA2 /* NSCalendarAdditions.m */; };
+		C9820CEC1131009F005F4CA2 /* GoalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820CD71131009F005F4CA2 /* GoalViewController.m */; };
+		C9820CED1131009F005F4CA2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820CD91131009F005F4CA2 /* MainViewController.m */; };
+		C9820CEE1131009F005F4CA2 /* TOLogController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */; };
+		C9820CEF1131009F005F4CA2 /* TOLogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820CDE1131009F005F4CA2 /* TOLogEntry.m */; };
+		C9820CF01131009F005F4CA2 /* TOWorkLog.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820CE01131009F005F4CA2 /* TOWorkLog.m */; };
+		C9820D431131B1D4005F4CA2 /* TOLogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */; };
+		C9820D461131B1F2005F4CA2 /* TOLogsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9820D451131B1F2005F4CA2 /* TOLogsViewController.xib */; };
+		C9820E03113213EE005F4CA2 /* TOLogDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820E01113213EE005F4CA2 /* TOLogDetailViewController.m */; };
+		C9820E08113214B8005F4CA2 /* TOLogDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9820E07113214B8005F4CA2 /* TOLogDetailViewController.xib */; };
+		C9820E741132243C005F4CA2 /* TOEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820E721132243C005F4CA2 /* TOEntryViewController.m */; };
+		C9820E7711322456005F4CA2 /* TOEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9820E7611322456005F4CA2 /* TOEntryViewController.xib */; };
+		C9820EFF113361DE005F4CA2 /* TimerScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = C9820EFE113361DE005F4CA2 /* TimerScreen.png */; };
+		C9820F1511338F14005F4CA2 /* StopButton.png in Resources */ = {isa = PBXBuildFile; fileRef = C9820F1411338F14005F4CA2 /* StopButton.png */; };
+		C9820F1711338F4B005F4CA2 /* StartButton.png in Resources */ = {isa = PBXBuildFile; fileRef = C9820F1611338F4B005F4CA2 /* StartButton.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* Timeout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timeout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		280E754B0DD40C5E005A515E /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		280E754C0DD40C5E005A515E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		288765580DF743DE002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Timeout_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timeout_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Timeout-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Timeout-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		C910CBC811284DC6000B9D23 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C9177FD811286D39008FCD2F /* TimeoutAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeoutAppDelegate.h; sourceTree = "<group>"; };
+		C9177FD911286D39008FCD2F /* TimeoutAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeoutAppDelegate.m; sourceTree = "<group>"; };
+		C98209BA1128FCA0005F4CA2 /* Timeout.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Timeout.xcdatamodel; sourceTree = "<group>"; };
+		C9820B9E112E3CD1005F4CA2 /* GoalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoalView.xib; sourceTree = "<group>"; };
+		C9820CD11131009F005F4CA2 /* NSCalendarAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCalendarAdditions.h; sourceTree = "<group>"; };
+		C9820CD21131009F005F4CA2 /* NSCalendarAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCalendarAdditions.m; sourceTree = "<group>"; };
+		C9820CD61131009F005F4CA2 /* GoalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalViewController.h; sourceTree = "<group>"; };
+		C9820CD71131009F005F4CA2 /* GoalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalViewController.m; sourceTree = "<group>"; };
+		C9820CD81131009F005F4CA2 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C9820CD91131009F005F4CA2 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C9820CDA1131009F005F4CA2 /* TOLogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOLogController.h; sourceTree = "<group>"; };
+		C9820CDB1131009F005F4CA2 /* TOLogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOLogController.m; sourceTree = "<group>"; };
+		C9820CDD1131009F005F4CA2 /* TOLogEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOLogEntry.h; sourceTree = "<group>"; };
+		C9820CDE1131009F005F4CA2 /* TOLogEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOLogEntry.m; sourceTree = "<group>"; };
+		C9820CDF1131009F005F4CA2 /* TOWorkLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOWorkLog.h; sourceTree = "<group>"; };
+		C9820CE01131009F005F4CA2 /* TOWorkLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOWorkLog.m; sourceTree = "<group>"; };
+		C9820D401131B1D4005F4CA2 /* TOLogsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOLogsViewController.h; sourceTree = "<group>"; };
+		C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOLogsViewController.m; sourceTree = "<group>"; };
+		C9820D451131B1F2005F4CA2 /* TOLogsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TOLogsViewController.xib; sourceTree = "<group>"; };
+		C9820E00113213EE005F4CA2 /* TOLogDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOLogDetailViewController.h; sourceTree = "<group>"; };
+		C9820E01113213EE005F4CA2 /* TOLogDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOLogDetailViewController.m; sourceTree = "<group>"; };
+		C9820E07113214B8005F4CA2 /* TOLogDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TOLogDetailViewController.xib; sourceTree = "<group>"; };
+		C9820E711132243C005F4CA2 /* TOEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOEntryViewController.h; sourceTree = "<group>"; };
+		C9820E721132243C005F4CA2 /* TOEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOEntryViewController.m; sourceTree = "<group>"; };
+		C9820E7611322456005F4CA2 /* TOEntryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TOEntryViewController.xib; sourceTree = "<group>"; };
+		C9820EFE113361DE005F4CA2 /* TimerScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimerScreen.png; sourceTree = "<group>"; };
+		C9820F1411338F14005F4CA2 /* StopButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StopButton.png; sourceTree = "<group>"; };
+		C9820F1611338F4B005F4CA2 /* StartButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartButton.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */,
+				C910CBC911284DC6000B9D23 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C9177FD811286D39008FCD2F /* TimeoutAppDelegate.h */,
+				C9177FD911286D39008FCD2F /* TimeoutAppDelegate.m */,
+			);
+			name = "Application Delegate";
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Timeout.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				C9820CD01131009F005F4CA2 /* Categories */,
+				C9820CD31131009F005F4CA2 /* Controllers */,
+				C9820CDC1131009F005F4CA2 /* Models */,
+				C9820CE31131009F005F4CA2 /* Views */,
+				080E96DDFE201D6D7F000001 /* Application Delegate */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				C910CBC811284DC6000B9D23 /* CoreData.framework */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Timeout_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C9820F1411338F14005F4CA2 /* StopButton.png */,
+				C9820F1611338F4B005F4CA2 /* StartButton.png */,
+				C9820EFE113361DE005F4CA2 /* TimerScreen.png */,
+				C9820E7611322456005F4CA2 /* TOEntryViewController.xib */,
+				C9820D451131B1F2005F4CA2 /* TOLogsViewController.xib */,
+				C9820E07113214B8005F4CA2 /* TOLogDetailViewController.xib */,
+				C9820B9E112E3CD1005F4CA2 /* GoalView.xib */,
+				280E754B0DD40C5E005A515E /* MainView.xib */,
+				280E754C0DD40C5E005A515E /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Timeout-Info.plist */,
+				C98209BA1128FCA0005F4CA2 /* Timeout.xcdatamodel */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765580DF743DE002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9820CD01131009F005F4CA2 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C9820CD11131009F005F4CA2 /* NSCalendarAdditions.h */,
+				C9820CD21131009F005F4CA2 /* NSCalendarAdditions.m */,
+			);
+			name = Categories;
+			path = Classes/Categories;
+			sourceTree = "<group>";
+		};
+		C9820CD31131009F005F4CA2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9820CD61131009F005F4CA2 /* GoalViewController.h */,
+				C9820CD71131009F005F4CA2 /* GoalViewController.m */,
+				C9820CD81131009F005F4CA2 /* MainViewController.h */,
+				C9820CD91131009F005F4CA2 /* MainViewController.m */,
+				C9820CDA1131009F005F4CA2 /* TOLogController.h */,
+				C9820CDB1131009F005F4CA2 /* TOLogController.m */,
+				C9820D401131B1D4005F4CA2 /* TOLogsViewController.h */,
+				C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */,
+				C9820E00113213EE005F4CA2 /* TOLogDetailViewController.h */,
+				C9820E01113213EE005F4CA2 /* TOLogDetailViewController.m */,
+				C9820E711132243C005F4CA2 /* TOEntryViewController.h */,
+				C9820E721132243C005F4CA2 /* TOEntryViewController.m */,
+			);
+			name = Controllers;
+			path = Classes/Controllers;
+			sourceTree = "<group>";
+		};
+		C9820CDC1131009F005F4CA2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9820CDD1131009F005F4CA2 /* TOLogEntry.h */,
+				C9820CDE1131009F005F4CA2 /* TOLogEntry.m */,
+				C9820CDF1131009F005F4CA2 /* TOWorkLog.h */,
+				C9820CE01131009F005F4CA2 /* TOWorkLog.m */,
+			);
+			name = Models;
+			path = Classes/Models;
+			sourceTree = "<group>";
+		};
+		C9820CE31131009F005F4CA2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			path = Classes/Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Timeout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Timeout" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Timeout;
+			productName = Timeout;
+			productReference = 1D6058910D05DD3D006BFB54 /* Timeout.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Timeout" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Timeout */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280E754E0DD40C5E005A515E /* MainView.xib in Resources */,
+				280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */,
+				C9820B9F112E3CD1005F4CA2 /* GoalView.xib in Resources */,
+				C9820D461131B1F2005F4CA2 /* TOLogsViewController.xib in Resources */,
+				C9820E08113214B8005F4CA2 /* TOLogDetailViewController.xib in Resources */,
+				C9820E7711322456005F4CA2 /* TOEntryViewController.xib in Resources */,
+				C9820EFF113361DE005F4CA2 /* TimerScreen.png in Resources */,
+				C9820F1511338F14005F4CA2 /* StopButton.png in Resources */,
+				C9820F1711338F4B005F4CA2 /* StartButton.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				C9177FDE11286D39008FCD2F /* TimeoutAppDelegate.m in Sources */,
+				C98209BB1128FCA0005F4CA2 /* Timeout.xcdatamodel in Sources */,
+				C9820CEA1131009F005F4CA2 /* NSCalendarAdditions.m in Sources */,
+				C9820CEC1131009F005F4CA2 /* GoalViewController.m in Sources */,
+				C9820CED1131009F005F4CA2 /* MainViewController.m in Sources */,
+				C9820CEE1131009F005F4CA2 /* TOLogController.m in Sources */,
+				C9820CEF1131009F005F4CA2 /* TOLogEntry.m in Sources */,
+				C9820CF01131009F005F4CA2 /* TOWorkLog.m in Sources */,
+				C9820D431131B1D4005F4CA2 /* TOLogsViewController.m in Sources */,
+				C9820E03113213EE005F4CA2 /* TOLogDetailViewController.m in Sources */,
+				C9820E741132243C005F4CA2 /* TOEntryViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Timeout_Prefix.pch;
+				INFOPLIST_FILE = "Timeout-Info.plist";
+				PRODUCT_NAME = Timeout;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Timeout_Prefix.pch;
+				INFOPLIST_FILE = "Timeout-Info.plist";
+				PRODUCT_NAME = Timeout;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Timeout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Timeout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
