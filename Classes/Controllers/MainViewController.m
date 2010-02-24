@@ -27,6 +27,7 @@
 @implementation MainViewController
 
 @synthesize logController, todayLog;
+@synthesize todayItem, departureLabel, elapsedLabel, leftLabel, startStopButton;
 
 - (id)initWithLogController:(TOLogController *)controller {
 	if (![super initWithNibName:@"MainView" bundle:nil])
@@ -75,16 +76,16 @@
 		imageName = @"StopButton.png";
 	}
 	
-	[startStopButton setTitle:title forState:UIControlStateNormal];
+	[self.startStopButton setTitle:title forState:UIControlStateNormal];
 	UIImage *image = [UIImage imageNamed:imageName];
-	[startStopButton setBackgroundImage:image forState:UIControlStateNormal];
+	[self.startStopButton setBackgroundImage:image forState:UIControlStateNormal];
 	
 }
 
 - (void)updateWithLogInfo {
-    todayItem.title = todayLog.title;
+    self.todayItem.title = self.todayLog.title;
     
-    TOLogEntry *entry = [logController runningEntryForLog:todayLog];
+    TOLogEntry *entry = [self.logController runningEntryForLog:todayLog];
 	[self setButtonState:![entry isRunning]];
 }
 
@@ -94,7 +95,7 @@
 
 - (void)goalViewControllerDidFinish:(GoalViewController *)controller {
     [self dismissModalViewControllerAnimated:YES];
-    [logController save];
+    [self.logController save];
 }
 
 
@@ -111,7 +112,7 @@
 }
 
 - (IBAction)changeGoal {
-    GoalViewController *controller = [[GoalViewController alloc] initWithLog:todayLog];
+    GoalViewController *controller = [[GoalViewController alloc] initWithLog:self.todayLog];
     controller.delegate = self;
     controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
 	
@@ -120,14 +121,14 @@
 }
 
 - (IBAction)startOrStopTimer {
-    TOLogEntry *entry = [logController runningEntryForLog:todayLog];
+    TOLogEntry *entry = [self.logController runningEntryForLog:todayLog];
     if ([entry isRunning]) {
         [entry stopTimer];
     } else {
         [entry startTimer];
     }
     
-    [logController save];
+    [self.logController save];
     [self setButtonState:![entry isRunning]];
 	[self timerUpdate:nil];
 }
@@ -156,26 +157,30 @@
     NSDate *date = [calendar dateFromComponents:components];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     
-    NSDate *departure = [todayLog estimatedDepartureFromDate:date];
-    NSDate *timeLeft = [calendar dateFromComponents:[todayLog timeLeft]];
-    NSDate *timeElapsed = [calendar dateFromComponents:[todayLog timeElapsed]];
+    NSDate *departure = [self.todayLog estimatedDepartureFromDate:date];
+    NSDate *timeLeft = [calendar dateFromComponents:[self.todayLog timeLeft]];
+    NSDate *timeElapsed = [calendar dateFromComponents:[self.todayLog timeElapsed]];
     
     formatter.dateFormat = @"H:mm:ss";
-	leftLabel.text = [formatter stringFromDate:timeLeft];
-	elapsedLabel.text = [formatter stringFromDate:timeElapsed];
+	self.leftLabel.text = [formatter stringFromDate:timeLeft];
+	self.elapsedLabel.text = [formatter stringFromDate:timeElapsed];
     
     formatter.timeStyle = NSDateFormatterShortStyle;
 	if (departure == nil) {
-		departureLabel.text = @"Done";
+		self.departureLabel.text = @"Done";
 	} else {
-		departureLabel.text = [formatter stringFromDate:departure];
+		self.departureLabel.text = [formatter stringFromDate:departure];
 	}
     
     [formatter release];
 }
 
 - (void)viewDidUnload {
-	self.todayLog = nil;
+	self.todayItem = nil;
+	self.departureLabel = nil;
+	self.elapsedLabel = nil;
+	self.leftLabel = nil;
+	self.startStopButton = nil;
 }
 
 

@@ -22,6 +22,9 @@
 @property (nonatomic, retain) TOLogController *logController;
 @property (nonatomic, retain) TOWorkLog *log;
 
+@property (nonatomic, retain) UIBarButtonItem *editButton;
+@property (nonatomic, retain) UIBarButtonItem *doneButton;
+
 - (id)initWithLog:(TOWorkLog *)log logController:(TOLogController *)controller;
 
 - (IBAction)edit;

@@ -33,6 +33,9 @@
 @property (nonatomic, retain) NSArray *logs;
 
 @property (nonatomic, retain) UITableView *tableView;
+@property (nonatomic, retain) UIBarButtonItem *doneButton;
+@property (nonatomic, retain) UIBarButtonItem *editButton;
+@property (nonatomic, retain) UIBarButtonItem *cancelButton;
 
 - (id)initWithLogController:(TOLogController *)controller;
 

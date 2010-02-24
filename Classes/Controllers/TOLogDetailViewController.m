@@ -17,6 +17,7 @@
 @implementation TOLogDetailViewController
 
 @synthesize logController, log;
+@synthesize editButton, doneButton;
 
 - (id)initWithLog:(TOWorkLog *)aLog logController:(TOLogController *)controller {
 	if (![super initWithNibName:@"TOLogDetailViewController" bundle:nil])
@@ -32,7 +33,7 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
-    self.navigationItem.rightBarButtonItem = editButton;
+    self.navigationItem.rightBarButtonItem = self.editButton;
 }
 
 
@@ -47,12 +48,12 @@
 
 - (IBAction)edit {
 	[self.tableView setEditing:YES animated:YES];
-	self.navigationItem.rightBarButtonItem = doneButton;
+	self.navigationItem.rightBarButtonItem = self.doneButton;
 }
 
 - (IBAction)done {
 	[self.tableView setEditing:NO animated:YES];
-	self.navigationItem.rightBarButtonItem = editButton;
+	self.navigationItem.rightBarButtonItem = self.editButton;
 }
 
 /*
@@ -84,8 +85,9 @@
 }
 
 - (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
+	self.editButton = nil;
+	self.doneButton = nil;
+	[super viewDidUnload];
 }
 
 
@@ -150,6 +152,8 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 
 
 - (void)dealloc {
+	self.log = nil;
+	self.logController = nil;
     [super dealloc];
 }
 

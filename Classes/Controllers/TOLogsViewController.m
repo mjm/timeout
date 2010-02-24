@@ -14,7 +14,8 @@
 
 @implementation TOLogsViewController
 
-@synthesize delegate, logController, logs, tableView;
+@synthesize delegate, logController, logs;
+@synthesize tableView, doneButton, editButton, cancelButton;
 
 - (id)initWithLogController:(TOLogController *)controller {
 	if (![super initWithNibName:@"TOLogsViewController" bundle:nil])
@@ -29,8 +30,8 @@
     [super viewDidLoad];
 	
 	self.logs = [self.logController logs];
-	self.navigationItem.leftBarButtonItem = doneButton;
-	self.navigationItem.rightBarButtonItem = editButton;
+	self.navigationItem.leftBarButtonItem = self.doneButton;
+	self.navigationItem.rightBarButtonItem = self.editButton;
 	
 	[self.tableView reloadData];
 }
@@ -41,6 +42,9 @@
 
 - (void)viewDidUnload {
 	self.tableView = nil;
+	self.doneButton = nil;
+	self.editButton = nil;
+	self.cancelButton = nil;
 }
 
 - (IBAction)done {
@@ -49,12 +53,12 @@
 
 - (IBAction)edit {
 	[self.tableView setEditing:YES animated:YES];
-	self.navigationItem.rightBarButtonItem = cancelButton;
+	self.navigationItem.rightBarButtonItem = self.cancelButton;
 }
 
 - (IBAction)cancel {
 	[self.tableView setEditing:NO animated:YES];
-	self.navigationItem.rightBarButtonItem = editButton;
+	self.navigationItem.rightBarButtonItem = self.editButton;
 }
 
 #pragma mark Table view delegate
@@ -62,7 +66,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	TOWorkLog *log = [self.logs objectAtIndex:indexPath.row];
 	
-	TOLogDetailViewController *controller = [[TOLogDetailViewController alloc] initWithLog:log logController:self.logController];
+	TOLogDetailViewController *controller = [[TOLogDetailViewController alloc] initWithLog:log
+																			 logController:self.logController];
 	[self.navigationController pushViewController:controller animated:YES];
 	[controller release];
 }
@@ -102,7 +107,7 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
  forRowAtIndexPath:(NSIndexPath *)indexPath {
 	
 	if (editingStyle == UITableViewCellEditingStyleDelete) {
-		[logController deleteLog:[self.logs objectAtIndex:indexPath.row]];
+		[self.logController deleteLog:[self.logs objectAtIndex:indexPath.row]];
 		self.logs = [self.logController logs];
 		[table deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
 	}

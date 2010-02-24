@@ -119,6 +119,8 @@
 		}
 	}
 	
+	[formatter release];
+	
     return cell;
 }
 

@@ -29,6 +29,12 @@
 @property (nonatomic, retain) TOLogController *logController;
 @property (nonatomic, retain) TOWorkLog *todayLog;
 
+@property (nonatomic, retain) UINavigationItem *todayItem;
+@property (nonatomic, retain) UILabel *departureLabel;
+@property (nonatomic, retain) UILabel *elapsedLabel;
+@property (nonatomic, retain) UILabel *leftLabel;
+@property (nonatomic, retain) UIButton *startStopButton;
+
 - (id)initWithLogController:(TOLogController *)controller;
 
 - (IBAction)showInfo;

@@ -20,6 +20,8 @@
 @property (nonatomic, assign) id <GoalViewControllerDelegate> delegate;
 @property (nonatomic, retain) TOWorkLog *log;
 
+@property (nonatomic, retain) UIDatePicker *datePicker;
+
 - (id)initWithLog:(TOWorkLog *)log;
 
 - (IBAction)done;

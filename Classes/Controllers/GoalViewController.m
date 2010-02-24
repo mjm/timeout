@@ -12,8 +12,8 @@
 
 @implementation GoalViewController
 
-@synthesize delegate;
-@synthesize log;
+@synthesize delegate, log;
+@synthesize datePicker;
 
 - (id)initWithLog:(TOWorkLog *)aLog {
 	if (![super initWithNibName:@"GoalView" bundle:nil])
@@ -24,7 +24,7 @@
 }
 
 - (IBAction)done {
-    self.log.goal = [NSNumber numberWithDouble:datePicker.countDownDuration];
+    self.log.goal = [NSNumber numberWithDouble:self.datePicker.countDownDuration];
 
     [self.delegate goalViewControllerDidFinish:self];
 }
@@ -32,24 +32,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    datePicker.countDownDuration = [self.log.goal doubleValue];
+    self.datePicker.countDownDuration = [self.log.goal doubleValue];
 }
 
 - (void)didReceiveMemoryWarning {
-	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-	
-	// Release any cached data, images, etc that aren't in use.
 }
 
 - (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
+	self.datePicker = nil;
 }
 
 
 - (void)dealloc {
 	self.log = nil;
+	self.delegate = nil; // shouldn't release
     [super dealloc];
 }
 

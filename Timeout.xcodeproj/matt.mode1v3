@@ -279,8 +279,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>37</integer>
-									<integer>29</integer>
+									<integer>16</integer>
+									<integer>4</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -322,7 +322,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TOLogDetailViewController.m</string>
+								<string>TOEntryViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,11 +330,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TOLogDetailViewController.m</string>
+										<string>TOEntryViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>C9DE4C441134DF1A00BBF839</string>
+										<string>C9DE4C5E1134E5BA00BBF839</string>
 										<key>history</key>
 										<array>
 											<string>C98209D4112A2ADE005F4CA2</string>
@@ -343,25 +343,25 @@
 											<string>C9820D1611310491005F4CA2</string>
 											<string>C9820D371131057F005F4CA2</string>
 											<string>C9820D571131B761005F4CA2</string>
-											<string>C9820D691131B96F005F4CA2</string>
-											<string>C9820D6A1131B96F005F4CA2</string>
 											<string>C9820E5A1132217C005F4CA2</string>
 											<string>C9820E5B1132217C005F4CA2</string>
-											<string>C9820EDC11323D4C005F4CA2</string>
-											<string>C9820EF211323E88005F4CA2</string>
 											<string>C9820F06113363B4005F4CA2</string>
 											<string>C9820F18113390B2005F4CA2</string>
 											<string>C9820F19113390B2005F4CA2</string>
 											<string>C9820F1A113390B2005F4CA2</string>
 											<string>C9DE4C231134D76A00BBF839</string>
-											<string>C9DE4C281134D76A00BBF839</string>
-											<string>C9DE4C2E1134D90600BBF839</string>
-											<string>C9DE4C3B1134DD5F00BBF839</string>
 											<string>C9DE4C3C1134DD5F00BBF839</string>
 											<string>C9DE4C3D1134DD5F00BBF839</string>
-											<string>C9DE4C3E1134DD5F00BBF839</string>
-											<string>C9DE4C3F1134DD5F00BBF839</string>
-											<string>C9DE4C401134DD5F00BBF839</string>
+											<string>C9DE4C461134E1EA00BBF839</string>
+											<string>C9DE4C541134E56D00BBF839</string>
+											<string>C9DE4C551134E56D00BBF839</string>
+											<string>C9DE4C561134E56D00BBF839</string>
+											<string>C9DE4C571134E56D00BBF839</string>
+											<string>C9DE4C581134E56D00BBF839</string>
+											<string>C9DE4C591134E56D00BBF839</string>
+											<string>C9DE4C5A1134E56D00BBF839</string>
+											<string>C9DE4C5B1134E56D00BBF839</string>
+											<string>C9DE4C5C1134E56D00BBF839</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -561,9 +561,9 @@
 	<array>
 		<string>C9DE4BFD1134BDF100BBF839</string>
 		<string>C9DE4BFE1134BDF100BBF839</string>
+		<string>C910CBD911284DF9000B9D23</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1C78EAAD065D492600B07095</string>
-		<string>C910CBD911284DF9000B9D23</string>
 		<string>/Users/matt/Code/Timeout/Timeout.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -590,7 +590,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TOLogsViewController.m</string>
+								<string>TOEntryViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -659,7 +659,7 @@
 			<key>WindowToolGUID</key>
 			<string>C910CBD911284DF9000B9D23</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
