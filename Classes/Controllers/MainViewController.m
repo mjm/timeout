@@ -26,7 +26,7 @@
 
 @implementation MainViewController
 
-@synthesize logController;
+@synthesize logController, todayLog;
 
 - (id)initWithLogController:(TOLogController *)controller {
 	if (![super initWithNibName:@"MainView" bundle:nil])
@@ -34,16 +34,6 @@
 	
 	self.logController = controller;
 	return self;
-}
-
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    todayLog = [[logController currentLog] retain];
-    
-    [self updateWithLogInfo];
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -54,6 +44,9 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    self.todayLog = [logController currentLog];
+    [self updateWithLogInfo];
+	
 	if (timer != nil) {
 		[timer invalidate];
 	}
@@ -182,8 +175,7 @@
 }
 
 - (void)viewDidUnload {
-	[todayLog release];
-	todayLog = nil;
+	self.todayLog = nil;
 }
 
 

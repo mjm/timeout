@@ -99,11 +99,9 @@
     if (count > 0) {
         return [entries objectAtIndex:0];
     } else {
-        TOLogEntry *entry = [NSEntityDescription
-            insertNewObjectForEntityForName:@"Entry"
-            inManagedObjectContext:self.managedObjectContext];
+        TOLogEntry *entry = [NSEntityDescription insertNewObjectForEntityForName:@"Entry"
+														  inManagedObjectContext:self.managedObjectContext];
         entry.log = log;
-        
         [self save];
         
         NSLog(@"Entry: %@", entry);
@@ -127,6 +125,17 @@
 	}
 	
 	return results;
+}
+
+- (void)deleteLog:(TOWorkLog *)log {
+	[self.managedObjectContext deleteObject:log];
+	[self save];
+}
+
+- (void)deleteEntry:(TOLogEntry *)entry fromLog:(TOWorkLog *)log {
+	[self.managedObjectContext deleteObject:entry];
+	[self.managedObjectContext refreshObject:log mergeChanges:YES];
+	[self save];
 }
 
 

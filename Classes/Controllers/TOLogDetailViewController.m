@@ -12,15 +12,17 @@
 #import "../Models/TOLogEntry.h"
 
 #import "TOEntryViewController.h"
+#import "TOLogController.h"
 
 @implementation TOLogDetailViewController
 
-@synthesize log;
+@synthesize logController, log;
 
-- (id)initWithLog:(TOWorkLog *)aLog {
+- (id)initWithLog:(TOWorkLog *)aLog logController:(TOLogController *)controller {
 	if (![super initWithNibName:@"TOLogDetailViewController" bundle:nil])
 		return nil;
 	
+	self.logController = controller;
 	self.log = aLog;
 	self.title = aLog.title;
 	return self;
@@ -30,10 +32,8 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem = editButton;
 }
-
 
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -43,6 +43,16 @@
 	[self.tableView reloadData];
 
 	[super viewWillAppear:animated];
+}
+
+- (IBAction)edit {
+	[self.tableView setEditing:YES animated:YES];
+	self.navigationItem.rightBarButtonItem = doneButton;
+}
+
+- (IBAction)done {
+	[self.tableView setEditing:NO animated:YES];
+	self.navigationItem.rightBarButtonItem = editButton;
 }
 
 /*
@@ -127,44 +137,16 @@
 }
 
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+- (void) tableView:(UITableView *)tableView
+commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+ forRowAtIndexPath:(NSIndexPath *)indexPath {
+	
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+		TOLogEntry *entry = [self.log.orderedEntries objectAtIndex:indexPath.row];
+		[self.logController deleteEntry:entry fromLog:self.log];
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
 }
-*/
-
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 
 - (void)dealloc {

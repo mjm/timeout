@@ -27,6 +27,7 @@
 }
 
 @property (nonatomic, retain) TOLogController *logController;
+@property (nonatomic, retain) TOWorkLog *todayLog;
 
 - (id)initWithLogController:(TOLogController *)controller;
 

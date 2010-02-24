@@ -24,6 +24,8 @@
 	
 	IBOutlet UITableView *tableView;
 	IBOutlet UIBarButtonItem *doneButton;
+	IBOutlet UIBarButtonItem *editButton;
+	IBOutlet UIBarButtonItem *cancelButton;
 }
 
 @property (nonatomic, assign) id <TOLogsViewControllerDelegate> delegate;
@@ -35,5 +37,7 @@
 - (id)initWithLogController:(TOLogController *)controller;
 
 - (IBAction)done;
+- (IBAction)edit;
+- (IBAction)cancel;
 
 @end

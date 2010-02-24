@@ -23,6 +23,8 @@
 - (TOWorkLog *)currentLog;
 - (TOLogEntry *)runningEntryForLog:(TOWorkLog *)log;
 - (NSArray *)logs;
+- (void)deleteLog:(TOWorkLog *)log;
+- (void)deleteEntry:(TOLogEntry *)entry fromLog:(TOWorkLog *)log;
 
 - (void)save;
 

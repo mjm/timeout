@@ -30,6 +30,7 @@
 	
 	self.logs = [self.logController logs];
 	self.navigationItem.leftBarButtonItem = doneButton;
+	self.navigationItem.rightBarButtonItem = editButton;
 	
 	[self.tableView reloadData];
 }
@@ -46,12 +47,22 @@
 	[self.delegate logsViewControllerDidFinish:self];
 }
 
+- (IBAction)edit {
+	[self.tableView setEditing:YES animated:YES];
+	self.navigationItem.rightBarButtonItem = cancelButton;
+}
+
+- (IBAction)cancel {
+	[self.tableView setEditing:NO animated:YES];
+	self.navigationItem.rightBarButtonItem = editButton;
+}
+
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	TOWorkLog *log = [self.logs objectAtIndex:indexPath.row];
 	
-	TOLogDetailViewController *controller = [[TOLogDetailViewController alloc] initWithLog:log];
+	TOLogDetailViewController *controller = [[TOLogDetailViewController alloc] initWithLog:log logController:self.logController];
 	[self.navigationController pushViewController:controller animated:YES];
 	[controller release];
 }
@@ -84,6 +95,17 @@
 	
 	[formatter release];
 	return cell;
+}
+
+- (void) tableView:(UITableView *)table
+commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+ forRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	if (editingStyle == UITableViewCellEditingStyleDelete) {
+		[logController deleteLog:[self.logs objectAtIndex:indexPath.row]];
+		self.logs = [self.logController logs];
+		[table deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+	}
 }
 
 
