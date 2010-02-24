@@ -155,6 +155,8 @@
 			C9DE4C5C1134E56D00BBF839 /* PBXTextBookmark */ = C9DE4C5C1134E56D00BBF839 /* PBXTextBookmark */;
 			C9DE4C5D1134E56D00BBF839 /* PBXTextBookmark */ = C9DE4C5D1134E56D00BBF839 /* PBXTextBookmark */;
 			C9DE4C5E1134E5BA00BBF839 /* PBXTextBookmark */ = C9DE4C5E1134E5BA00BBF839 /* PBXTextBookmark */;
+			C9DE4C611134E64500BBF839 /* PBXTextBookmark */ = C9DE4C611134E64500BBF839 /* PBXTextBookmark */;
+			C9DE4C621134E69000BBF839 /* PBXTextBookmark */ = C9DE4C621134E69000BBF839 /* PBXTextBookmark */;
 		};
 		sourceControlManager = C910CBBC11284C05000B9D23 /* Source Control */;
 		userBuildSettings = {
@@ -639,9 +641,9 @@
 	};
 	C9820E721132243C005F4CA2 /* TOEntryViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1067, 2324}}";
-			sepNavSelRange = "{2057, 0}";
-			sepNavVisRange = "{1580, 1524}";
+			sepNavIntBoundsRect = "{{0, 0}, {1067, 2352}}";
+			sepNavSelRange = "{2978, 0}";
+			sepNavVisRange = "{1883, 1634}";
 			sepNavWindowFrame = "{{130, 70}, {720, 878}}";
 		};
 	};
@@ -1040,7 +1042,7 @@
 		fRef = C9820E721132243C005F4CA2 /* TOEntryViewController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 117;
+		rLoc = 118;
 		rType = 1;
 	};
 	C9DE4C511134E3A700BBF839 /* PBXTextBookmark */ = {
@@ -1048,7 +1050,7 @@
 		fRef = C9820E721132243C005F4CA2 /* TOEntryViewController.m */;
 		name = "TOEntryViewController.m: 122";
 		rLen = 0;
-		rLoc = 3033;
+		rLoc = 3069;
 		rType = 0;
 		vrLen = 838;
 		vrLoc = 2217;
@@ -1162,5 +1164,25 @@
 		rType = 0;
 		vrLen = 1524;
 		vrLoc = 1580;
+	};
+	C9DE4C611134E64500BBF839 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820E721132243C005F4CA2 /* TOEntryViewController.m */;
+		name = "TOEntryViewController.m: 118";
+		rLen = 0;
+		rLoc = 2978;
+		rType = 0;
+		vrLen = 1629;
+		vrLoc = 1883;
+	};
+	C9DE4C621134E69000BBF839 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820E721132243C005F4CA2 /* TOEntryViewController.m */;
+		name = "TOEntryViewController.m: 118";
+		rLen = 0;
+		rLoc = 2978;
+		rType = 0;
+		vrLen = 1634;
+		vrLoc = 1883;
 	};
 }

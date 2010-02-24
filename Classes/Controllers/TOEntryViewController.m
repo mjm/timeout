@@ -115,6 +115,7 @@
 		if (self.entry.endTime) {
 			cell.detailTextLabel.text = [formatter stringFromDate:self.entry.endTime];
 		} else {
+			cell.detailTextLabel.text = nil;
 			cell.selectionStyle = UITableViewCellSelectionStyleNone;
 		}
 	}
