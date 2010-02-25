@@ -32,6 +32,7 @@
 		C9DE4C081134BE2B00BBF839 /* TOEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4C021134BE2B00BBF839 /* TOEntryViewController.xib */; };
 		C9DE4C091134BE2B00BBF839 /* TOLogDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4C031134BE2B00BBF839 /* TOLogDetailViewController.xib */; };
 		C9DE4C0A1134BE2B00BBF839 /* TOLogsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4C041134BE2B00BBF839 /* TOLogsViewController.xib */; };
+		C9DE4C6811363B7B00BBF839 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4C6711363B7B00BBF839 /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		C9DE4C021134BE2B00BBF839 /* TOEntryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TOEntryViewController.xib; path = XIBs/TOEntryViewController.xib; sourceTree = "<group>"; };
 		C9DE4C031134BE2B00BBF839 /* TOLogDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TOLogDetailViewController.xib; path = XIBs/TOLogDetailViewController.xib; sourceTree = "<group>"; };
 		C9DE4C041134BE2B00BBF839 /* TOLogsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TOLogsViewController.xib; path = XIBs/TOLogsViewController.xib; sourceTree = "<group>"; };
+		C9DE4C6711363B7B00BBF839 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Graphics/Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C9DE4C6711363B7B00BBF839 /* Icon.png */,
 				C9DE4BEF1134BDE100BBF839 /* StartButton.png */,
 				C9DE4BF01134BDE100BBF839 /* StopButton.png */,
 				C9DE4BF11134BDE100BBF839 /* TimerScreen.png */,
@@ -270,6 +273,7 @@
 				C9DE4C081134BE2B00BBF839 /* TOEntryViewController.xib in Resources */,
 				C9DE4C091134BE2B00BBF839 /* TOLogDetailViewController.xib in Resources */,
 				C9DE4C0A1134BE2B00BBF839 /* TOLogsViewController.xib in Resources */,
+				C9DE4C6811363B7B00BBF839 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
