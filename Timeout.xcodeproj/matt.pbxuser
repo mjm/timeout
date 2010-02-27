@@ -23,7 +23,7 @@
 		sourceTree = "<absolute>";
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Distribution;
+		activeBuildConfigurationName = Debug;
 		activeExecutable = C910CBB211284BE6000B9D23 /* Timeout */;
 		activeSDKPreference = iphonesimulator3.1.3;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Timeout */;
@@ -173,6 +173,13 @@
 			C9DE4CA71138A56800BBF839 /* PBXBookmark */ = C9DE4CA71138A56800BBF839 /* PBXBookmark */;
 			C9DE4CA81138A56800BBF839 /* PBXBookmark */ = C9DE4CA81138A56800BBF839 /* PBXBookmark */;
 			C9DE4CA91138A56800BBF839 /* XDModelBookmark */ = C9DE4CA91138A56800BBF839 /* XDModelBookmark */;
+			C9DE4CB51138CF3E00BBF839 /* PBXBookmark */ = C9DE4CB51138CF3E00BBF839 /* PBXBookmark */;
+			C9DE4CB61138CF3E00BBF839 /* PBXBookmark */ = C9DE4CB61138CF3E00BBF839 /* PBXBookmark */;
+			C9DE4CB71138CF3E00BBF839 /* PBXTextBookmark */ = C9DE4CB71138CF3E00BBF839 /* PBXTextBookmark */;
+			C9DE4CB81138CF3E00BBF839 /* PBXTextBookmark */ = C9DE4CB81138CF3E00BBF839 /* PBXTextBookmark */;
+			C9DE4CB91138CF3E00BBF839 /* PBXTextBookmark */ = C9DE4CB91138CF3E00BBF839 /* PBXTextBookmark */;
+			C9DE4CBA1138CF3E00BBF839 /* PBXTextBookmark */ = C9DE4CBA1138CF3E00BBF839 /* PBXTextBookmark */;
+			C9DE4CBB1138CF3E00BBF839 /* XDModelBookmark */ = C9DE4CBB1138CF3E00BBF839 /* XDModelBookmark */;
 		};
 		sourceControlManager = C910CBBC11284C05000B9D23 /* Source Control */;
 		userBuildSettings = {
@@ -544,16 +551,16 @@
 	};
 	C9820D401131B1D4005F4CA2 /* TOLogsViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1067, 761}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1067, 658}}";
 			sepNavSelRange = "{1112, 0}";
-			sepNavVisRange = "{0, 1236}";
+			sepNavVisRange = "{146, 1084}";
 		};
 	};
 	C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1067, 1750}}";
-			sepNavSelRange = "{1077, 0}";
-			sepNavVisRange = "{1749, 1590}";
+			sepNavIntBoundsRect = "{{0, 0}, {1067, 1834}}";
+			sepNavSelRange = "{1897, 0}";
+			sepNavVisRange = "{1081, 1059}";
 		};
 	};
 	C9820D571131B761005F4CA2 /* PBXTextBookmark */ = {
@@ -595,9 +602,9 @@
 	};
 	C9820E01113213EE005F4CA2 /* TOLogDetailViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1067, 2464}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1067, 2282}}";
 			sepNavSelRange = "{4230, 0}";
-			sepNavVisRange = "{0, 1234}";
+			sepNavVisRange = "{602, 774}";
 			sepNavWindowFrame = "{{84, 112}, {720, 878}}";
 		};
 	};
@@ -840,7 +847,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 90";
 		rLen = 0;
-		rLoc = 2555;
+		rLoc = 2608;
 		rType = 0;
 		vrLen = 1145;
 		vrLoc = 0;
@@ -970,7 +977,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 65";
 		rLen = 0;
-		rLoc = 1602;
+		rLoc = 1598;
 		rType = 0;
 		vrLen = 1460;
 		vrLoc = 614;
@@ -1050,7 +1057,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 65";
 		rLen = 0;
-		rLoc = 1746;
+		rLoc = 1742;
 		rType = 0;
 		vrLen = 780;
 		vrLoc = 1144;
@@ -1968,6 +1975,219 @@
 		fRef = C9DE4C6711363B7B00BBF839 /* Icon.png */;
 	};
 	C9DE4CA91138A56800BBF839 /* XDModelBookmark */ = {
+		isa = XDModelBookmark;
+		fRef = C98209BA1128FCA0005F4CA2 /* Timeout.xcdatamodel */;
+		fallbackIsa = PBXBookmark;
+		uiCtxt = {
+			UIContextForDetailArea = {
+				_indexOfSelectedPane = 0;
+				_indexOfSelectedView = 1;
+			};
+			UIContextForEntityArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnns = (
+					"ET Entity",
+					"ET Abstract",
+					"ET Class",
+				);
+				chosenTableColumnns_sortDirections = (
+					YES,
+				);
+				chosenTableColumnns_sortKeys = (
+					name,
+				);
+				chosenTableColumnns_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableWidths = (
+					47.000000,
+					22.000000,
+					83.080078,
+				);
+			};
+			UIContextForLayoutManager = {
+				detailSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {468, 218}}",
+						"{{473, 0}, {247, 218}}",
+					);
+				};
+				diagramSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {720, 220}}",
+						"{{0, 225}, {720, 517}}",
+					);
+				};
+				tableSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {177, 218}}",
+						"{{182, 0}, {286, 218}}",
+					);
+				};
+			};
+			UIContextForPropertyArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnnFRTs = (
+					"FT Fetch Request",
+					"FT Predicate",
+				);
+				chosenTableColumnnFRTs_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnFRTs_sortKeys = (
+					name,
+				);
+				chosenTableColumnnFRTs_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsAT = (
+					"AT Attribute",
+					"AT Type",
+				);
+				chosenTableColumnnsAT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsAT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsAT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsFPT = (
+					"FP FetchedProperty",
+					"FP Destination",
+					"FP Predicate",
+				);
+				chosenTableColumnnsFPT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsFPT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsFPT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsPT = (
+					"PT Property",
+					"PT Kind",
+					"PT SharedKeyOne",
+				);
+				chosenTableColumnnsPT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsPT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsPT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsRT = (
+					"RT Relationship",
+					"RT Destination",
+				);
+				chosenTableColumnnsRT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsRT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsRT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableWidthsAT = (
+					128.000000,
+					64.000000,
+				);
+				chosenTableWidthsFPT = (
+					128.000000,
+					64.000000,
+					144.764160,
+				);
+				chosenTableWidthsFRT = (
+					128.000000,
+					249.764160,
+				);
+				chosenTableWidthsPT = (
+					128.000000,
+					108.110840,
+					96.570801,
+				);
+				chosenTableWidthsRT = (
+					128.000000,
+					64.000000,
+				);
+			};
+			"xdesign model browser state key - shown/hidden" = 1;
+			"xdesign model diagram view visible rect key" = "{{-29, -35}, {705, 502}}";
+			"xdesign model selected entities key" = (
+				"<XDPMEntity: 0x202960a80>{name=Log, package=}",
+			);
+			"xdesign model selected properties key" = (
+				"<XDPMRelationship: 0x2027efdc0>{name=entries, type=(null)}",
+			);
+		};
+	};
+	C9DE4CB51138CF3E00BBF839 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = C9DE4BEF1134BDE100BBF839 /* StartButton.png */;
+	};
+	C9DE4CB61138CF3E00BBF839 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = C9DE4C6711363B7B00BBF839 /* Icon.png */;
+	};
+	C9DE4CB71138CF3E00BBF839 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820D401131B1D4005F4CA2 /* TOLogsViewController.h */;
+		name = "TOLogsViewController.h: 38";
+		rLen = 0;
+		rLoc = 1112;
+		rType = 0;
+		vrLen = 1084;
+		vrLoc = 146;
+	};
+	C9DE4CB81138CF3E00BBF839 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820E01113213EE005F4CA2 /* TOLogDetailViewController.m */;
+		name = "TOLogDetailViewController.m: 156";
+		rLen = 0;
+		rLoc = 4230;
+		rType = 0;
+		vrLen = 774;
+		vrLoc = 602;
+	};
+	C9DE4CB91138CF3E00BBF839 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
+		name = "TOLogsViewController.m: 47";
+		rLen = 0;
+		rLoc = 1077;
+		rType = 0;
+		vrLen = 869;
+		vrLoc = 211;
+	};
+	C9DE4CBA1138CF3E00BBF839 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
+		name = "TOLogsViewController.m: 74";
+		rLen = 0;
+		rLoc = 1897;
+		rType = 0;
+		vrLen = 1059;
+		vrLoc = 1081;
+	};
+	C9DE4CBB1138CF3E00BBF839 /* XDModelBookmark */ = {
 		isa = XDModelBookmark;
 		fRef = C98209BA1128FCA0005F4CA2 /* Timeout.xcdatamodel */;
 		fallbackIsa = PBXBookmark;

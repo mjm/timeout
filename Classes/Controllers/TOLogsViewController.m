@@ -63,13 +63,15 @@
 
 #pragma mark Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)table didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	TOWorkLog *log = [self.logs objectAtIndex:indexPath.row];
 	
 	TOLogDetailViewController *controller = [[TOLogDetailViewController alloc] initWithLog:log
 																			 logController:self.logController];
 	[self.navigationController pushViewController:controller animated:YES];
 	[controller release];
+	
+	[table deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 #pragma mark Table view data source
