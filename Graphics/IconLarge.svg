@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512"
+   height="512"
+   id="svg4469"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="IconLarge.svg"
+   inkscape:export-filename="/Users/matt/Code/Timeout/Graphics/IconLarge.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4471">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5019">
+      <stop
+         style="stop-color:#8e6b25;stop-opacity:1;"
+         offset="0"
+         id="stop5021" />
+      <stop
+         style="stop-color:#8e6b25;stop-opacity:0;"
+         offset="1"
+         id="stop5023" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4991">
+      <stop
+         style="stop-color:#e88a25;stop-opacity:1;"
+         offset="0"
+         id="stop4993" />
+      <stop
+         style="stop-color:#e3ae26;stop-opacity:0.67058825;"
+         offset="1"
+         id="stop4995" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective4477" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4991"
+       id="linearGradient4997"
+       x1="30.180965"
+       y1="0.090485878"
+       x2="30.180965"
+       y2="60.090488"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(8.5351844,0,0,8.5351849,-1.5445418,539.4787)" />
+    <filter
+       id="filter5001"
+       inkscape:label="Ridged border"
+       inkscape:menu="Bevels"
+       inkscape:menu-tooltip="Ridged border with inner bevel"
+       color-interpolation-filters="sRGB">
+      <feMorphology
+         id="feMorphology5003"
+         radius="3 3"
+         in="SourceAlpha"
+         result="result91"
+         operator="erode" />
+      <feComposite
+         id="feComposite5005"
+         in2="result91"
+         operator="out"
+         in="SourceGraphic" />
+      <feGaussianBlur
+         id="feGaussianBlur5007"
+         result="result0"
+         stdDeviation="1.2" />
+      <feDiffuseLighting
+         id="feDiffuseLighting5009"
+         diffuseConstant="1"
+         result="result92">
+        <feDistantLight
+           id="feDistantLight5011"
+           elevation="66"
+           azimuth="225" />
+      </feDiffuseLighting>
+      <feBlend
+         id="feBlend5013"
+         in2="SourceGraphic"
+         mode="multiply"
+         result="result93" />
+      <feComposite
+         id="feComposite5015"
+         in2="SourceAlpha"
+         operator="in" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5019"
+       id="linearGradient5025"
+       x1="26.961905"
+       y1="1.7417638"
+       x2="26.961905"
+       y2="53.086807"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5019"
+       id="linearGradient5803"
+       gradientUnits="userSpaceOnUse"
+       x1="26.961905"
+       y1="1.7417638"
+       x2="26.961905"
+       y2="53.086807" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="256.85591"
+     inkscape:cy="256"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     width="57px"
+     inkscape:window-width="1440"
+     inkscape:window-height="878"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:snap-to-guides="false">
+    <sodipodi:guide
+       orientation="0,1"
+       position="2.4428571,28.5"
+       id="guide5762" />
+    <sodipodi:guide
+       orientation="0.70710678,0.70710678"
+       position="33.47619,23.52381"
+       id="guide5764" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="28.409524,34.109524"
+       id="guide5766" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4474">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-540.36214)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect3677"
+       width="523"
+       height="523"
+       x="-5"
+       y="-6"
+       transform="translate(0,540.36214)" />
+    <rect
+       style="fill:url(#linearGradient4997);fill-opacity:1;stroke:none"
+       id="rect4479"
+       width="512.11108"
+       height="512.11108"
+       x="0"
+       y="540.25104"
+       inkscape:export-filename="/Users/matt/Code/Timeout/Graphics/Icon2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect5017"
+       width="26.953217"
+       height="32.191124"
+       x="242.57863"
+       y="619.59906"
+       inkscape:export-filename="/Users/matt/Code/Timeout/Graphics/Icon2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:url(#linearGradient5803);fill-opacity:1;stroke:#ffffff;stroke-width:3.5001746;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4999"
+       sodipodi:cx="26.961905"
+       sodipodi:cy="27.414286"
+       sodipodi:rx="19.814285"
+       sodipodi:ry="20.176191"
+       d="m 46.77619,27.414286 a 19.814285,20.176191 0 1 1 -39.6285708,0 19.814285,20.176191 0 1 1 39.6285708,0 z"
+       transform="matrix(7.784029,0,0,7.6444046,46.182992,596.62403)"
+       inkscape:export-filename="/Users/matt/Code/Timeout/Graphics/Icon2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.77512413;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+       id="rect5027"
+       width="46.942406"
+       height="15.496984"
+       x="232.58403"
+       y="607.18243"
+       inkscape:export-filename="/Users/matt/Code/Timeout/Graphics/Icon2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:18;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:none"
+       d="m 256.05524,667.03302 0,17.86729"
+       id="path5071"
+       inkscape:export-filename="/Users/matt/Code/Timeout/Graphics/Icon2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       id="path5703"
+       d="m 256.05524,927.58078 0,17.86729"
+       style="fill:none;stroke:#ffffff;stroke-width:18;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:none"
+       inkscape:export-filename="/Users/matt/Code/Timeout/Graphics/Icon2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:18;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:none"
+       d="m 134.74031,806.18978 -17.9179,0"
+       id="path5705"
+       inkscape:export-filename="/Users/matt/Code/Timeout/Graphics/Icon2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       id="path5707"
+       d="m 395.26262,806.18978 -17.91791,0"
+       style="fill:none;stroke:#ffffff;stroke-width:18;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:none"
+       inkscape:export-filename="/Users/matt/Code/Timeout/Graphics/Icon2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       id="path5713"
+       d="m 331.55898,683.71616 -8.93357,15.47385"
+       style="fill:none;stroke:#ffffff;stroke-width:8;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:none" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:8;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:none"
+       d="m 391.52287,724.54759 -26.84189,15.4999"
+       id="path5715" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:8;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:none"
+       d="m 185.37363,683.71167 8.93395,15.47384"
+       id="path5717" />
+    <path
+       id="path5719"
+       d="m 122.44429,726.17287 26.84189,15.4999"
+       style="fill:none;stroke:#ffffff;stroke-width:8;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:none" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:8;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:none"
+       d="m 330.7461,929.44234 -8.93357,-15.47385"
+       id="path5729" />
+    <path
+       id="path5731"
+       d="M 390.70999,888.61091 363.8681,873.11101"
+       style="fill:none;stroke:#ffffff;stroke-width:8;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:none" />
+    <path
+       id="path5733"
+       d="m 184.56076,929.44683 8.93395,-15.47384"
+       style="fill:none;stroke:#ffffff;stroke-width:8;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:none" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:8;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:none"
+       d="m 121.63141,886.98563 26.8419,-15.4999"
+       id="path5735" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#f4f4f4;fill-opacity:1;stroke:none"
+       id="path5758"
+       sodipodi:cx="29.22381"
+       sodipodi:cy="28.273809"
+       sodipodi:rx="0.90476191"
+       sodipodi:ry="0.94999999"
+       d="m 30.128572,28.273809 a 0.90476191,0.94999999 0 1 1 -1.809524,0 0.90476191,0.94999999 0 1 1 1.809524,0 z"
+       transform="matrix(14.895198,0,0,14.185904,-179.23922,405.10058)"
+       inkscape:export-filename="/Users/matt/Code/Timeout/Graphics/Icon2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       id="path5770"
+       d="m 269.40606,806.76299 -14.22667,104.45449 -12.60076,-104.86149 26.82743,0.4043 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/Users/matt/Code/Timeout/Graphics/Icon2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       id="path5776"
+       d="m 255.24213,791.55778 -104.45449,14.22501 104.86148,12.59973 -0.40429,-26.82474 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/Users/matt/Code/Timeout/Graphics/Icon2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       d="m 255.2426,791.55778 104.45449,14.22501 -104.86149,12.59973 0.4043,-26.82474 z"
+       id="path5778"
+       inkscape:export-filename="/Users/matt/Code/Timeout/Graphics/Icon2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>
