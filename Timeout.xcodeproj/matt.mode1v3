@@ -197,48 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>C9DE4C981137616E00BBF839</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>Timeout.xcdatamodel</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>C9DE4C991137616E00BBF839</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>Timeout.xcdatamodel</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>C9DE4CBB1138CF3E00BBF839</string>
-						<key>history</key>
-						<array>
-							<string>C9DE4C9A1137616E00BBF839</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {720, 781}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>1189 236 720 822 0 0 1920 1058 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -320,8 +279,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>12</integer>
-									<integer>4</integer>
+									<integer>25</integer>
+									<integer>23</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -363,7 +322,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TOLogsViewController.m</string>
+								<string>TimeoutAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -371,11 +330,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TOLogsViewController.m</string>
+										<string>TimeoutAppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>C9DE4CBA1138CF3E00BBF839</string>
+										<string>C9DE4CC31138D4B800BBF839</string>
 										<key>history</key>
 										<array>
 											<string>C98209D4112A2ADE005F4CA2</string>
@@ -389,23 +348,23 @@
 											<string>C9820F1A113390B2005F4CA2</string>
 											<string>C9DE4C231134D76A00BBF839</string>
 											<string>C9DE4C3C1134DD5F00BBF839</string>
-											<string>C9DE4C3D1134DD5F00BBF839</string>
 											<string>C9DE4C461134E1EA00BBF839</string>
-											<string>C9DE4C541134E56D00BBF839</string>
 											<string>C9DE4C551134E56D00BBF839</string>
 											<string>C9DE4C561134E56D00BBF839</string>
 											<string>C9DE4C591134E56D00BBF839</string>
 											<string>C9DE4C5B1134E56D00BBF839</string>
 											<string>C9DE4C921137616E00BBF839</string>
 											<string>C9DE4C931137616E00BBF839</string>
-											<string>C9DE4C941137616E00BBF839</string>
 											<string>C9DE4C951137616E00BBF839</string>
 											<string>C9DE4CA61138A56800BBF839</string>
 											<string>C9DE4CB51138CF3E00BBF839</string>
 											<string>C9DE4CB61138CF3E00BBF839</string>
 											<string>C9DE4CB71138CF3E00BBF839</string>
-											<string>C9DE4CB81138CF3E00BBF839</string>
-											<string>C9DE4CB91138CF3E00BBF839</string>
+											<string>C9DE4CBF1138D4B800BBF839</string>
+											<string>C9DE4CC01138D4B800BBF839</string>
+											<string>C9DE4CC11138D4B800BBF839</string>
+											<string>C9DE4CC21138D4B800BBF839</string>
+											<string>C9DE4C941137616E00BBF839</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -606,7 +565,6 @@
 		<string>C9DE4BFD1134BDF100BBF839</string>
 		<string>C9DE4BFE1134BDF100BBF839</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>C9DE4C981137616E00BBF839</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>C910CBD911284DF9000B9D23</string>
 		<string>/Users/matt/Code/Timeout/Timeout.xcodeproj</string>

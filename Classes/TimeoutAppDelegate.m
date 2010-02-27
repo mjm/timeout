@@ -48,8 +48,7 @@
         return logController;
     }
     
-    logController = [[TOLogController alloc] init];
-    logController.managedObjectContext = self.managedObjectContext;
+    logController = [[TOLogController alloc] initWithManagedObjectContext:self.managedObjectContext];
     return logController;
 }
 
