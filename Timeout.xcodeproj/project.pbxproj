@@ -34,6 +34,8 @@
 		C9DE4C0A1134BE2B00BBF839 /* TOLogsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4C041134BE2B00BBF839 /* TOLogsViewController.xib */; };
 		C9DE4C6811363B7B00BBF839 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4C6711363B7B00BBF839 /* Icon.png */; };
 		C9DE4C911137614C00BBF839 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4C901137614C00BBF839 /* Entitlements.plist */; };
+		C9DE4D25113AECF400BBF839 /* TOTimerTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DE4D23113AECF400BBF839 /* TOTimerTypeController.m */; };
+		C9DE4D28113AED2500BBF839 /* TOTimerTypeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4D27113AED2500BBF839 /* TOTimerTypeController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +79,9 @@
 		C9DE4C041134BE2B00BBF839 /* TOLogsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TOLogsViewController.xib; path = XIBs/TOLogsViewController.xib; sourceTree = "<group>"; };
 		C9DE4C6711363B7B00BBF839 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Graphics/Icon.png; sourceTree = "<group>"; };
 		C9DE4C901137614C00BBF839 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		C9DE4D22113AECF400BBF839 /* TOTimerTypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTimerTypeController.h; sourceTree = "<group>"; };
+		C9DE4D23113AECF400BBF839 /* TOTimerTypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTimerTypeController.m; sourceTree = "<group>"; };
+		C9DE4D27113AED2500BBF839 /* TOTimerTypeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TOTimerTypeController.xib; path = XIBs/TOTimerTypeController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +154,7 @@
 				C9DE4BFF1134BE2B00BBF839 /* GoalView.xib */,
 				C9DE4C001134BE2B00BBF839 /* MainView.xib */,
 				C9DE4C011134BE2B00BBF839 /* MainWindow.xib */,
+				C9DE4D27113AED2500BBF839 /* TOTimerTypeController.xib */,
 				C9DE4C021134BE2B00BBF839 /* TOEntryViewController.xib */,
 				C9DE4C031134BE2B00BBF839 /* TOLogDetailViewController.xib */,
 				C9DE4C041134BE2B00BBF839 /* TOLogsViewController.xib */,
@@ -193,6 +199,8 @@
 				C9820E01113213EE005F4CA2 /* TOLogDetailViewController.m */,
 				C9820E711132243C005F4CA2 /* TOEntryViewController.h */,
 				C9820E721132243C005F4CA2 /* TOEntryViewController.m */,
+				C9DE4D22113AECF400BBF839 /* TOTimerTypeController.h */,
+				C9DE4D23113AECF400BBF839 /* TOTimerTypeController.m */,
 			);
 			name = Controllers;
 			path = Classes/Controllers;
@@ -278,6 +286,7 @@
 				C9DE4C0A1134BE2B00BBF839 /* TOLogsViewController.xib in Resources */,
 				C9DE4C6811363B7B00BBF839 /* Icon.png in Resources */,
 				C9DE4C911137614C00BBF839 /* Entitlements.plist in Resources */,
+				C9DE4D28113AED2500BBF839 /* TOTimerTypeController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +309,7 @@
 				C9820D431131B1D4005F4CA2 /* TOLogsViewController.m in Sources */,
 				C9820E03113213EE005F4CA2 /* TOLogDetailViewController.m in Sources */,
 				C9820E741132243C005F4CA2 /* TOEntryViewController.m in Sources */,
+				C9DE4D25113AECF400BBF839 /* TOTimerTypeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,8 +10,13 @@
 #import "MainViewController.h"
 #import "TOLogController.h"
 
-@implementation TimeoutAppDelegate
+@interface TimeoutAppDelegate (PrivateMethods)
 
+- (TOTimerType)preferredTimerType;
+
+@end
+
+@implementation TimeoutAppDelegate
 
 @synthesize window;
 @synthesize mainViewController;
@@ -20,6 +25,8 @@
 #pragma mark Application Lifecycle
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
+	TOTimerType timerType = [self preferredTimerType];
+
 	MainViewController *aController = [[MainViewController alloc] initWithLogController:self.logController];
 	self.mainViewController = aController;
 	[aController release];
@@ -38,6 +45,15 @@
             abort();
         }
     }
+}
+
+#pragma mark -
+#pragma mark User preferences
+
+- (TOTimerType)preferredTimerType {
+	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+	TOTimerType timerType = [userDefaults integerForKey:@"TOTimerType"];
+	return timerType;
 }
 
 #pragma mark -

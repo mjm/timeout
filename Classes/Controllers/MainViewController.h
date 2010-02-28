@@ -12,6 +12,12 @@
 #import "GoalViewController.h"
 #import "../Models/TOWorkLog.h"
 
+typedef enum {
+	TOTimerTypeNone,
+	TOTimerTypeGoal,
+	TOTimerTypePay
+} TOTimerType;
+
 @interface MainViewController : UIViewController <GoalViewControllerDelegate, TOLogsViewControllerDelegate> {
     TOWorkLog *todayLog;
 
