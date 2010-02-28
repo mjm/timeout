@@ -1,5 +1,5 @@
 //
-//  MainViewController.h
+//  TOMainViewController.h
 //  Timeout
 //
 //  Created by Matt Moriarity on 2/14/10.
@@ -9,7 +9,8 @@
 @class TOLogController;
 
 #import "TOLogsViewController.h"
-#import "GoalViewController.h"
+#import "TOGoalViewController.h"
+
 #import "../Models/TOWorkLog.h"
 
 typedef enum {
@@ -18,7 +19,7 @@ typedef enum {
 	TOTimerTypePay
 } TOTimerType;
 
-@interface MainViewController : UIViewController <GoalViewControllerDelegate, TOLogsViewControllerDelegate> {
+@interface TOMainViewController : UIViewController <TOGoalViewControllerDelegate, TOLogsViewControllerDelegate> {
     TOWorkLog *todayLog;
 
     NSTimer *timer;

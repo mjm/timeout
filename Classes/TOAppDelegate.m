@@ -1,25 +1,24 @@
 //
-//  TimeoutAppDelegate.m
+//  TOAppDelegate.m
 //  Timeout
 //
 //  Created by Matt Moriarity on 2/14/10.
 //  Copyright __MyCompanyName__ 2010. All rights reserved.
 //
 
-#import "TimeoutAppDelegate.h"
-#import "MainViewController.h"
+#import "TOAppDelegate.h"
+#import "TOMainViewController.h"
 #import "TOLogController.h"
 
-@interface TimeoutAppDelegate (PrivateMethods)
+@interface TOAppDelegate (PrivateMethods)
 
 - (TOTimerType)preferredTimerType;
 
 @end
 
-@implementation TimeoutAppDelegate
+@implementation TOAppDelegate
 
-@synthesize window;
-@synthesize mainViewController;
+@synthesize window, mainViewController;
 
 #pragma mark -
 #pragma mark Application Lifecycle
@@ -27,7 +26,7 @@
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
 	TOTimerType timerType = [self preferredTimerType];
 
-	MainViewController *aController = [[MainViewController alloc] initWithLogController:self.logController];
+	TOMainViewController *aController = [[TOMainViewController alloc] initWithLogController:self.logController];
 	self.mainViewController = aController;
 	[aController release];
 	

@@ -7,7 +7,7 @@
 //
 
 #import "TOTimerTypeController.h"
-#import "MainViewController.h"
+#import "TOMainViewController.h"
 
 @interface TOTimerTypeController (PrivateMethods)
 - (void)setTimerType:(TOTimerType)timerType;

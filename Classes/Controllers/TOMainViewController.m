@@ -1,12 +1,12 @@
 //
-//  MainViewController.m
+//  TOMainViewController.m
 //  Timeout
 //
 //  Created by Matt Moriarity on 2/14/10.
 //  Copyright __MyCompanyName__ 2010. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "TOMainViewController.h"
 
 #import "NSCalendarAdditions.h"
 
@@ -14,7 +14,7 @@
 #import "TOLogEntry.h"
 
 
-@interface MainViewController (PrivateMethods)
+@interface TOMainViewController (PrivateMethods)
 
 - (void)timerUpdate:(NSTimer *)aTimer;
 - (void)updateWithLogInfo;
@@ -24,13 +24,13 @@
 
 @end
 
-@implementation MainViewController
+@implementation TOMainViewController
 
 @synthesize logController, todayLog;
 @synthesize todayItem, departureLabel, elapsedLabel, leftLabel, startStopButton;
 
 - (id)initWithLogController:(TOLogController *)controller {
-	if (![super initWithNibName:@"MainView" bundle:nil])
+	if (![super initWithNibName:@"TOMainViewController" bundle:nil])
 		return nil;
 	
 	self.logController = controller;
@@ -93,7 +93,7 @@
 	[self dismissModalViewControllerAnimated:YES];
 }
 
-- (void)goalViewControllerDidFinish:(GoalViewController *)controller {
+- (void)goalViewControllerDidFinish:(TOGoalViewController *)controller {
     [self dismissModalViewControllerAnimated:YES];
     [self.logController save];
 }
@@ -112,7 +112,7 @@
 }
 
 - (IBAction)changeGoal {
-    GoalViewController *controller = [[GoalViewController alloc] initWithLog:self.todayLog];
+    TOGoalViewController *controller = [[TOGoalViewController alloc] initWithLog:self.todayLog];
     controller.delegate = self;
     controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
 	

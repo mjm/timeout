@@ -27,6 +27,6 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSMainNibFile</key>
-	<string>MainWindow</string>
+	<string>TOMainWindow</string>
 </dict>
 </plist>

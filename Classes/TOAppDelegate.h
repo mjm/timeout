@@ -1,17 +1,17 @@
 //
-//  TimeoutAppDelegate.h
+//  TOAppDelegate.h
 //  Timeout
 //
 //  Created by Matt Moriarity on 2/14/10.
 //  Copyright __MyCompanyName__ 2010. All rights reserved.
 //
 
-@class MainViewController;
+@class TOMainViewController;
 @class TOLogController;
 
-@interface TimeoutAppDelegate : NSObject <UIApplicationDelegate> {
+@interface TOAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-    MainViewController *mainViewController;
+    TOMainViewController *mainViewController;
     
     TOLogController *logController;
     
@@ -29,7 +29,7 @@
 @property (nonatomic, readonly) NSString *applicationDocumentsDirectory;
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) MainViewController *mainViewController;
+@property (nonatomic, retain) TOMainViewController *mainViewController;
 
 @end
 

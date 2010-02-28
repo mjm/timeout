@@ -1,22 +1,21 @@
 //
-//  GoalViewController.m
+//  TOGoalViewController.m
 //  Timeout
 //
 //  Created by Matt Moriarity on 2/18/10.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "GoalViewController.h"
-#import "TOWorkLog.h"
+#import "TOGoalViewController.h"
+#import "../Models/TOWorkLog.h"
 
-
-@implementation GoalViewController
+@implementation TOGoalViewController
 
 @synthesize delegate, log;
 @synthesize datePicker;
 
 - (id)initWithLog:(TOWorkLog *)aLog {
-	if (![super initWithNibName:@"GoalView" bundle:nil])
+	if (![super initWithNibName:@"TOGoalViewController" bundle:nil])
 		return nil;
 	
 	self.log = aLog;

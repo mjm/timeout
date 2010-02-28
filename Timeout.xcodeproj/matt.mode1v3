@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -279,13 +281,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>27</integer>
-									<integer>25</integer>
+									<integer>37</integer>
+									<integer>31</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {251, 780}}</string>
+							<string>{{0, 3}, {251, 780}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -315,14 +317,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TimeoutAppDelegate.m</string>
+								<string>TOTimerTypeController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,17 +330,16 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TimeoutAppDelegate.m</string>
+										<string>TOTimerTypeController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>C9B5351D113B0B7200FBCABF</string>
+										<string>C9B53535113B109D00FBCABF</string>
 										<key>history</key>
 										<array>
 											<string>C98209D4112A2ADE005F4CA2</string>
 											<string>C9820D1511310491005F4CA2</string>
 											<string>C9820D1611310491005F4CA2</string>
-											<string>C9820D371131057F005F4CA2</string>
 											<string>C9820E5A1132217C005F4CA2</string>
 											<string>C9820E5B1132217C005F4CA2</string>
 											<string>C9DE4C231134D76A00BBF839</string>
@@ -359,11 +358,12 @@
 											<string>C9DE4D10113A38D100BBF839</string>
 											<string>C9DE4D11113A38D100BBF839</string>
 											<string>C9DE4D1B113A3D9E00BBF839</string>
-											<string>C9DE4D1C113A3D9E00BBF839</string>
-											<string>C9DE4D1D113A3D9E00BBF839</string>
 											<string>C9B5351A113B0B7200FBCABF</string>
-											<string>C9B5351B113B0B7200FBCABF</string>
-											<string>C9B5351C113B0B7200FBCABF</string>
+											<string>C9B53530113B109D00FBCABF</string>
+											<string>C9B53531113B109D00FBCABF</string>
+											<string>C9B53532113B109D00FBCABF</string>
+											<string>C9B53533113B109D00FBCABF</string>
+											<string>C9B53534113B109D00FBCABF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -587,7 +587,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>TimeoutAppDelegate.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -604,6 +604,8 @@
 							<string>381pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -656,7 +658,7 @@
 			<key>WindowToolGUID</key>
 			<string>C910CBD911284DF9000B9D23</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
