@@ -1,0 +1,18 @@
+Introductory price - $0.99
+
+For two weeks only! On March 20th the price will increase to $1.99. Don't miss this opportunity!
+
+Timeout is a work timer that tells you what you really want to know: when am I done working?
+
+Many jobs require you to work a certain number of hours each day. In Timeout, you can tell it your goal for the day. Then, as you start and stop the timer during the day, Timeout will tell you the time when you will meet your goal.
+
+Timeout also keeps track of when you start and stop the timer so you can look back at your history. You can edit entries if you make a mistake or remove a log if you desire.
+
+Timeout was designed with simplicity and ease of use in mind. It avoids cluttering the screen with useless information or ads and only tells you what you actually want to know.
+
+Timeout was created from a desire for a simple application to tell me the one thing I wanted to know from a work timer: when can I leave?
+
+Features planned for future versions:
+ - Alternative timer view for people who don't have a specific goal but still want to track their time
+ - Push notifications when the goal time has been reached
+ - Suggestions welcome! Send a tweet to @timeoutapp
