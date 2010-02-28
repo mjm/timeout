@@ -7,7 +7,7 @@
 //
 
 #import "TOAppDelegate.h"
-#import "TOMainViewController.h"
+#import "TOTimerGoalViewController.h"
 #import "TOLogController.h"
 
 @interface TOAppDelegate (PrivateMethods)
@@ -26,7 +26,7 @@
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
 	TOTimerType timerType = [self preferredTimerType];
 
-	TOMainViewController *aController = [[TOMainViewController alloc] initWithLogController:self.logController];
+	TOTimerGoalViewController *aController = [[TOTimerGoalViewController alloc] initWithLogController:self.logController];
 	self.mainViewController = aController;
 	[aController release];
 	

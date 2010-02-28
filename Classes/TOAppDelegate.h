@@ -6,12 +6,12 @@
 //  Copyright __MyCompanyName__ 2010. All rights reserved.
 //
 
-@class TOMainViewController;
+@class TOTimerGoalViewController;
 @class TOLogController;
 
 @interface TOAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-    TOMainViewController *mainViewController;
+    TOTimerGoalViewController *mainViewController;
     
     TOLogController *logController;
     
@@ -29,7 +29,7 @@
 @property (nonatomic, readonly) NSString *applicationDocumentsDirectory;
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) TOMainViewController *mainViewController;
+@property (nonatomic, retain) TOTimerGoalViewController *mainViewController;
 
 @end
 

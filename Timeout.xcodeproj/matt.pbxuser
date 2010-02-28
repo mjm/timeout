@@ -126,6 +126,31 @@
 			C9B53533113B109D00FBCABF /* PBXTextBookmark */ = C9B53533113B109D00FBCABF /* PBXTextBookmark */;
 			C9B53534113B109D00FBCABF /* PBXTextBookmark */ = C9B53534113B109D00FBCABF /* PBXTextBookmark */;
 			C9B53535113B109D00FBCABF /* PBXTextBookmark */ = C9B53535113B109D00FBCABF /* PBXTextBookmark */;
+			C9B5355E113B158500FBCABF /* PBXTextBookmark */ = C9B5355E113B158500FBCABF /* PBXTextBookmark */;
+			C9B5355F113B158500FBCABF /* PBXTextBookmark */ = C9B5355F113B158500FBCABF /* PBXTextBookmark */;
+			C9B53560113B158500FBCABF /* XCBuildMessageTextBookmark */ = C9B53560113B158500FBCABF /* XCBuildMessageTextBookmark */;
+			C9B53561113B158500FBCABF /* PBXTextBookmark */ = C9B53561113B158500FBCABF /* PBXTextBookmark */;
+			C9B5356D113B15A500FBCABF /* PBXTextBookmark */ = C9B5356D113B15A500FBCABF /* PBXTextBookmark */;
+			C9B5356E113B15A500FBCABF /* PBXTextBookmark */ = C9B5356E113B15A500FBCABF /* PBXTextBookmark */;
+			C9B5356F113B15A500FBCABF /* PlistBookmark */ = C9B5356F113B15A500FBCABF /* PlistBookmark */;
+			C9B53570113B15A500FBCABF /* PBXTextBookmark */ = C9B53570113B15A500FBCABF /* PBXTextBookmark */;
+			C9B53571113B15A500FBCABF /* PBXTextBookmark */ = C9B53571113B15A500FBCABF /* PBXTextBookmark */;
+			C9B53572113B15A500FBCABF /* PBXTextBookmark */ = C9B53572113B15A500FBCABF /* PBXTextBookmark */;
+			C9B53573113B15A500FBCABF /* PBXTextBookmark */ = C9B53573113B15A500FBCABF /* PBXTextBookmark */;
+			C9B53574113B15A500FBCABF /* PBXTextBookmark */ = C9B53574113B15A500FBCABF /* PBXTextBookmark */;
+			C9B53575113B15A500FBCABF /* PBXTextBookmark */ = C9B53575113B15A500FBCABF /* PBXTextBookmark */;
+			C9B53576113B15A500FBCABF /* PBXTextBookmark */ = C9B53576113B15A500FBCABF /* PBXTextBookmark */;
+			C9B53594113B204400FBCABF /* PBXTextBookmark */ = C9B53594113B204400FBCABF /* PBXTextBookmark */;
+			C9B53595113B204400FBCABF /* XCBuildMessageTextBookmark */ = C9B53595113B204400FBCABF /* XCBuildMessageTextBookmark */;
+			C9B53596113B204400FBCABF /* PBXTextBookmark */ = C9B53596113B204400FBCABF /* PBXTextBookmark */;
+			C9B53599113B20CD00FBCABF /* XCBuildMessageTextBookmark */ = C9B53599113B20CD00FBCABF /* XCBuildMessageTextBookmark */;
+			C9B5359A113B20CD00FBCABF /* PBXTextBookmark */ = C9B5359A113B20CD00FBCABF /* PBXTextBookmark */;
+			C9B5359C113B21B800FBCABF /* PBXTextBookmark */ = C9B5359C113B21B800FBCABF /* PBXTextBookmark */;
+			C9B5359D113B21B800FBCABF /* PBXTextBookmark */ = C9B5359D113B21B800FBCABF /* PBXTextBookmark */;
+			C9B5359E113B21B800FBCABF /* PBXTextBookmark */ = C9B5359E113B21B800FBCABF /* PBXTextBookmark */;
+			C9B5359F113B21B800FBCABF /* PBXTextBookmark */ = C9B5359F113B21B800FBCABF /* PBXTextBookmark */;
+			C9B535A0113B21B800FBCABF /* PBXTextBookmark */ = C9B535A0113B21B800FBCABF /* PBXTextBookmark */;
+			C9B535A1113B21B800FBCABF /* PBXTextBookmark */ = C9B535A1113B21B800FBCABF /* PBXTextBookmark */;
 			C9DE4BF91134BDF100BBF839 = C9DE4BF91134BDF100BBF839 /* PBXTextBookmark */;
 			C9DE4C231134D76A00BBF839 = C9DE4C231134D76A00BBF839 /* PBXBookmark */;
 			C9DE4C241134D76A00BBF839 = C9DE4C241134D76A00BBF839 /* PBXTextBookmark */;
@@ -318,15 +343,15 @@
 	C9177FD811286D39008FCD2F /* TOAppDelegate.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1042, 523}}";
-			sepNavSelRange = "{9, 0}";
-			sepNavVisRange = "{0, 1089}";
+			sepNavSelRange = "{161, 0}";
+			sepNavVisRange = "{0, 1104}";
 		};
 	};
 	C9177FD911286D39008FCD2F /* TOAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1042, 1932}}";
-			sepNavSelRange = "{159, 0}";
-			sepNavVisRange = "{0, 923}";
+			sepNavIntBoundsRect = "{{0, 0}, {1042, 1988}}";
+			sepNavSelRange = "{751, 0}";
+			sepNavVisRange = "{975, 1009}";
 		};
 	};
 	C98209BA1128FCA0005F4CA2 /* Timeout.xcdatamodel */ = {
@@ -519,18 +544,19 @@
 			sepNavVisRange = "{0, 816}";
 		};
 	};
-	C9820CD81131009F005F4CA2 /* TOMainViewController.h */ = {
+	C9820CD81131009F005F4CA2 /* TOTimerGoalViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1042, 728}}";
-			sepNavSelRange = "{412, 0}";
-			sepNavVisRange = "{242, 1078}";
+			sepNavIntBoundsRect = "{{0, 0}, {1042, 523}}";
+			sepNavSelRange = "{694, 0}";
+			sepNavVisRange = "{0, 701}";
 		};
 	};
-	C9820CD91131009F005F4CA2 /* TOMainViewController.m */ = {
+	C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1042, 2744}}";
-			sepNavSelRange = "{2983, 0}";
-			sepNavVisRange = "{2509, 1198}";
+			sepNavIntBoundsRect = "{{0, 0}, {1042, 1050}}";
+			sepNavSelRange = "{2091, 0}";
+			sepNavVisRange = "{886, 1215}";
+			sepNavWindowFrame = "{{15, 7}, {627, 871}}";
 		};
 	};
 	C9820CDA1131009F005F4CA2 /* TOLogController.h */ = {
@@ -610,7 +636,7 @@
 		fRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */;
 		name = "TimeoutAppDelegate.m: 54";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1810;
 		rType = 0;
 		vrLen = 1652;
 		vrLoc = 276;
@@ -682,20 +708,20 @@
 	};
 	C9820E5C1132217C005F4CA2 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD81131009F005F4CA2 /* TOMainViewController.h */;
+		fRef = C9820CD81131009F005F4CA2 /* TOTimerGoalViewController.h */;
 		name = "MainViewController.h: 15";
 		rLen = 0;
-		rLoc = 468;
+		rLoc = 307;
 		rType = 0;
 		vrLen = 902;
 		vrLoc = 0;
 	};
 	C9820E641132219E005F4CA2 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD91131009F005F4CA2 /* TOMainViewController.m */;
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
 		name = "MainViewController.m: 173";
 		rLen = 0;
-		rLoc = 5370;
+		rLoc = 2093;
 		rType = 0;
 		vrLen = 1112;
 		vrLoc = 0;
@@ -832,10 +858,10 @@
 	};
 	C9820F3711339505005F4CA2 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD91131009F005F4CA2 /* TOMainViewController.m */;
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
 		name = "MainViewController.m: 138";
 		rLen = 0;
-		rLoc = 3564;
+		rLoc = 1085;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 2034;
@@ -845,7 +871,7 @@
 		fRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */;
 		name = "TimeoutAppDelegate.m: 30";
 		rLen = 0;
-		rLoc = 559;
+		rLoc = 564;
 		rType = 0;
 		vrLen = 1124;
 		vrLoc = 364;
@@ -865,7 +891,7 @@
 		fRef = C9DE4D23113AECF400BBF839 /* TOTimerTypeController.m */;
 		name = "TOTimerTypeController.m: 60";
 		rLen = 0;
-		rLoc = 1472;
+		rLoc = 1477;
 		rType = 0;
 		vrLen = 965;
 		vrLoc = 678;
@@ -875,7 +901,7 @@
 		fRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */;
 		name = "TimeoutAppDelegate.m: 30";
 		rLen = 0;
-		rLoc = 559;
+		rLoc = 564;
 		rType = 0;
 		vrLen = 1124;
 		vrLoc = 364;
@@ -885,14 +911,14 @@
 		fRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */;
 		name = "TimeoutAppDelegate.m: 29";
 		rLen = 0;
-		rLoc = 560;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1201;
 		vrLoc = 418;
 	};
 	C9B53530113B109D00FBCABF /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD81131009F005F4CA2 /* TOMainViewController.h */;
+		fRef = C9820CD81131009F005F4CA2 /* TOTimerGoalViewController.h */;
 		name = "TOMainViewController.h: 2";
 		rLen = 0;
 		rLoc = 9;
@@ -902,7 +928,7 @@
 	};
 	C9B53531113B109D00FBCABF /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD91131009F005F4CA2 /* TOMainViewController.m */;
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
 		name = "TOMainViewController.m: 2";
 		rLen = 0;
 		rLoc = 9;
@@ -915,7 +941,7 @@
 		fRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */;
 		name = "TimeoutAppDelegate.m: 34";
 		rLen = 0;
-		rLoc = 737;
+		rLoc = 752;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 289;
@@ -925,7 +951,7 @@
 		fRef = C9177FD811286D39008FCD2F /* TOAppDelegate.h */;
 		name = "TimeoutAppDelegate.h: 16";
 		rLen = 0;
-		rLoc = 350;
+		rLoc = 360;
 		rType = 0;
 		vrLen = 1099;
 		vrLoc = 0;
@@ -935,7 +961,7 @@
 		fRef = C9DE4D23113AECF400BBF839 /* TOTimerTypeController.m */;
 		name = "TOTimerTypeController.m: 60";
 		rLen = 0;
-		rLoc = 1472;
+		rLoc = 1477;
 		rType = 0;
 		vrLen = 946;
 		vrLoc = 676;
@@ -945,17 +971,280 @@
 		fRef = C9DE4D23113AECF400BBF839 /* TOTimerTypeController.m */;
 		name = "TOTimerTypeController.m: 60";
 		rLen = 0;
-		rLoc = 1472;
+		rLoc = 1477;
 		rType = 0;
 		vrLen = 946;
 		vrLoc = 676;
 	};
+	C9B5355E113B158500FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9DE4D23113AECF400BBF839 /* TOTimerTypeController.m */;
+		name = "TOTimerTypeController.m: 10";
+		rLen = 0;
+		rLoc = 196;
+		rType = 0;
+		vrLen = 527;
+		vrLoc = 0;
+	};
+	C9B5355F113B158500FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */;
+		name = "TOAppDelegate.m: 27";
+		rLen = 0;
+		rLoc = 513;
+		rType = 0;
+		vrLen = 726;
+		vrLoc = 314;
+	};
+	C9B53560113B158500FBCABF /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "TOMainViewController.h: No such file or directory";
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 8;
+		rType = 1;
+	};
+	C9B53561113B158500FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
+		name = "TOTimerGoalViewController.m: 9";
+		rLen = 0;
+		rLoc = 175;
+		rType = 0;
+		vrLen = 515;
+		vrLoc = 0;
+	};
+	C9B5356D113B15A500FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CD71131009F005F4CA2 /* TOGoalViewController.m */;
+		name = "TOGoalViewController.m: 2";
+		rLen = 0;
+		rLoc = 9;
+		rType = 0;
+		vrLen = 816;
+		vrLoc = 0;
+	};
+	C9B5356E113B15A500FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CD61131009F005F4CA2 /* TOGoalViewController.h */;
+		name = "TOGoalViewController.h: 2";
+		rLen = 0;
+		rLoc = 9;
+		rType = 0;
+		vrLen = 733;
+		vrLoc = 0;
+	};
+	C9B5356F113B15A500FBCABF /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Timeout-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/matt/Code/Timeout/Timeout-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	C9B53570113B15A500FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CD81131009F005F4CA2 /* TOTimerGoalViewController.h */;
+		name = "TOTimerGoalViewController.h: 2";
+		rLen = 0;
+		rLoc = 18;
+		rType = 0;
+		vrLen = 913;
+		vrLoc = 0;
+	};
+	C9B53571113B15A500FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
+		name = "TOTimerGoalViewController.m: 33";
+		rLen = 0;
+		rLoc = 535;
+		rType = 0;
+		vrLen = 1357;
+		vrLoc = 2099;
+	};
+	C9B53572113B15A500FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9177FD811286D39008FCD2F /* TOAppDelegate.h */;
+		name = "TOAppDelegate.h: 9";
+		rLen = 0;
+		rLoc = 161;
+		rType = 0;
+		vrLen = 1104;
+		vrLoc = 0;
+	};
+	C9B53573113B15A500FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */;
+		name = "TOAppDelegate.m: 29";
+		rLen = 0;
+		rLoc = 621;
+		rType = 0;
+		vrLen = 1133;
+		vrLoc = 2594;
+	};
+	C9B53574113B15A500FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9DE4D22113AECF400BBF839 /* TOTimerTypeController.h */;
+		name = "TOTimerTypeController.h: 27";
+		rLen = 0;
+		rLoc = 572;
+		rType = 0;
+		vrLen = 744;
+		vrLoc = 0;
+	};
+	C9B53575113B15A500FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9DE4D23113AECF400BBF839 /* TOTimerTypeController.m */;
+		name = "TOTimerTypeController.m: 60";
+		rLen = 0;
+		rLoc = 1477;
+		rType = 0;
+		vrLen = 946;
+		vrLoc = 676;
+	};
+	C9B53576113B15A500FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9DE4D23113AECF400BBF839 /* TOTimerTypeController.m */;
+		name = "TOTimerTypeController.m: 10";
+		rLen = 0;
+		rLoc = 205;
+		rType = 0;
+		vrLen = 767;
+		vrLoc = 0;
+	};
+	C9B53577113B15C000FBCABF /* TOTimerViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {661, 750}}";
+			sepNavSelRange = "{226, 0}";
+			sepNavVisRange = "{0, 1058}";
+		};
+	};
+	C9B53578113B15C000FBCABF /* TOTimerViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {661, 2422}}";
+			sepNavSelRange = "{279, 0}";
+			sepNavVisRange = "{0, 1171}";
+			sepNavWindowFrame = "{{638, 0}, {720, 878}}";
+		};
+	};
+	C9B53594113B204400FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
+		name = "TOTimerGoalViewController.m: 9";
+		rLen = 0;
+		rLoc = 175;
+		rType = 0;
+		vrLen = 594;
+		vrLoc = 0;
+	};
+	C9B53595113B204400FBCABF /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Unused variable 'timerType'";
+		fRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 26;
+		rType = 1;
+	};
+	C9B53596113B204400FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */;
+		name = "TOAppDelegate.m: 27";
+		rLen = 0;
+		rLoc = 513;
+		rType = 0;
+		vrLen = 722;
+		vrLoc = 279;
+	};
+	C9B53599113B20CD00FBCABF /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Value stored to 'timerType' during its initialization is never read";
+		fRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 26;
+		rType = 1;
+	};
+	C9B5359A113B20CD00FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */;
+		name = "TOAppDelegate.m: 27";
+		rLen = 0;
+		rLoc = 553;
+		rType = 0;
+		vrLen = 761;
+		vrLoc = 279;
+	};
+	C9B5359C113B21B800FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9DE4D23113AECF400BBF839 /* TOTimerTypeController.m */;
+		name = "TOTimerTypeController.m: 19";
+		rLen = 0;
+		rLoc = 395;
+		rType = 0;
+		vrLen = 906;
+		vrLoc = 0;
+	};
+	C9B5359D113B21B800FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9B53577113B15C000FBCABF /* TOTimerViewController.h */;
+		name = "TOTimerViewController.h: 13";
+		rLen = 0;
+		rLoc = 584;
+		rType = 0;
+		vrLen = 240;
+		vrLoc = 0;
+	};
+	C9B5359E113B21B800FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
+		name = "TOTimerGoalViewController.m: 70";
+		rLen = 0;
+		rLoc = 2091;
+		rType = 0;
+		vrLen = 1215;
+		vrLoc = 886;
+	};
+	C9B5359F113B21B800FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */;
+		name = "TOAppDelegate.m: 32";
+		rLen = 0;
+		rLoc = 751;
+		rType = 0;
+		vrLen = 1009;
+		vrLoc = 975;
+	};
+	C9B535A0113B21B800FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CD81131009F005F4CA2 /* TOTimerGoalViewController.h */;
+		name = "TOTimerGoalViewController.h: 15";
+		rLen = 0;
+		rLoc = 379;
+		rType = 0;
+		vrLen = 676;
+		vrLoc = 0;
+	};
+	C9B535A1113B21B800FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CD81131009F005F4CA2 /* TOTimerGoalViewController.h */;
+		name = "TOTimerGoalViewController.h: 26";
+		rLen = 0;
+		rLoc = 694;
+		rType = 0;
+		vrLen = 701;
+		vrLoc = 0;
+	};
 	C9DE4BF91134BDF100BBF839 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD91131009F005F4CA2 /* TOMainViewController.m */;
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
 		name = "MainViewController.m: 138";
 		rLen = 0;
-		rLoc = 3564;
+		rLoc = 1085;
 		rType = 0;
 		vrLen = 1626;
 		vrLoc = 2033;
@@ -1006,50 +1295,50 @@
 	};
 	C9DE4C281134D76A00BBF839 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD81131009F005F4CA2 /* TOMainViewController.h */;
+		fRef = C9820CD81131009F005F4CA2 /* TOTimerGoalViewController.h */;
 		name = "MainViewController.h: 30";
 		rLen = 0;
-		rLoc = 1176;
+		rLoc = 694;
 		rType = 0;
 		vrLen = 953;
 		vrLoc = 0;
 	};
 	C9DE4C291134D76A00BBF839 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD91131009F005F4CA2 /* TOMainViewController.m */;
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
 		name = "MainViewController.m: 44";
 		rLen = 0;
-		rLoc = 849;
+		rLoc = 609;
 		rType = 0;
 		vrLen = 1283;
 		vrLoc = 313;
 	};
 	C9DE4C2A1134D76A00BBF839 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD91131009F005F4CA2 /* TOMainViewController.m */;
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
 		name = "MainViewController.m: 53";
 		rLen = 0;
-		rLoc = 1135;
+		rLoc = 609;
 		rType = 0;
 		vrLen = 1236;
 		vrLoc = 313;
 	};
 	C9DE4C2D1134D77B00BBF839 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD91131009F005F4CA2 /* TOMainViewController.m */;
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
 		name = "MainViewController.m: 29";
 		rLen = 0;
-		rLoc = 574;
+		rLoc = 378;
 		rType = 0;
 		vrLen = 1246;
 		vrLoc = 313;
 	};
 	C9DE4C2E1134D90600BBF839 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD91131009F005F4CA2 /* TOMainViewController.m */;
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
 		name = "MainViewController.m: 29";
 		rLen = 0;
-		rLoc = 574;
+		rLoc = 378;
 		rType = 0;
 		vrLen = 1246;
 		vrLoc = 313;
@@ -1176,30 +1465,30 @@
 	};
 	C9DE4C461134E1EA00BBF839 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD81131009F005F4CA2 /* TOMainViewController.h */;
+		fRef = C9820CD81131009F005F4CA2 /* TOTimerGoalViewController.h */;
 		name = "MainViewController.h: 12";
 		rLen = 0;
-		rLoc = 241;
+		rLoc = 179;
 		rType = 0;
 		vrLen = 1228;
 		vrLoc = 0;
 	};
 	C9DE4C471134E1EA00BBF839 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD91131009F005F4CA2 /* TOMainViewController.m */;
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
 		name = "MainViewController.m: 30";
 		rLen = 0;
-		rLoc = 656;
+		rLoc = 431;
 		rType = 0;
 		vrLen = 1302;
 		vrLoc = 40;
 	};
 	C9DE4C481134E1EA00BBF839 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD91131009F005F4CA2 /* TOMainViewController.m */;
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
 		name = "MainViewController.m: 162";
 		rLen = 0;
-		rLoc = 4741;
+		rLoc = 1544;
 		rType = 0;
 		vrLen = 1876;
 		vrLoc = 3246;
@@ -1234,10 +1523,10 @@
 	};
 	C9DE4C541134E56D00BBF839 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD91131009F005F4CA2 /* TOMainViewController.m */;
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
 		name = "MainViewController.m: 184";
 		rLen = 0;
-		rLoc = 5323;
+		rLoc = 2093;
 		rType = 0;
 		vrLen = 1734;
 		vrLoc = 3641;
@@ -1408,7 +1697,7 @@
 		fRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */;
 		name = "TimeoutAppDelegate.m: 37";
 		rLen = 0;
-		rLoc = 1172;
+		rLoc = 1187;
 		rType = 0;
 		vrLen = 1617;
 		vrLoc = 276;
@@ -1579,10 +1868,10 @@
 	};
 	C9DE4CC21138D4B800BBF839 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD91131009F005F4CA2 /* TOMainViewController.m */;
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
 		name = "MainViewController.m: 184";
 		rLen = 0;
-		rLoc = 5323;
+		rLoc = 2093;
 		rType = 0;
 		vrLen = 1382;
 		vrLoc = 1773;
@@ -1592,7 +1881,7 @@
 		fRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */;
 		name = "TimeoutAppDelegate.m: 51";
 		rLen = 0;
-		rLoc = 1765;
+		rLoc = 1780;
 		rType = 0;
 		vrLen = 1053;
 		vrLoc = 555;
@@ -1602,7 +1891,7 @@
 		fRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */;
 		name = "TimeoutAppDelegate.m: 39";
 		rLen = 0;
-		rLoc = 1248;
+		rLoc = 1263;
 		rType = 0;
 		vrLen = 1133;
 		vrLoc = 2218;
@@ -1612,17 +1901,17 @@
 		fRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */;
 		name = "TimeoutAppDelegate.m: 39";
 		rLen = 0;
-		rLoc = 1248;
+		rLoc = 1263;
 		rType = 0;
 		vrLen = 1133;
 		vrLoc = 2218;
 	};
 	C9DE4CD91139975700BBF839 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD91131009F005F4CA2 /* TOMainViewController.m */;
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
 		name = "MainViewController.m: 184";
 		rLen = 0;
-		rLoc = 5323;
+		rLoc = 2093;
 		rType = 0;
 		vrLen = 1312;
 		vrLoc = 1843;
@@ -1752,17 +2041,17 @@
 		fRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */;
 		name = "TimeoutAppDelegate.m: 13";
 		rLen = 0;
-		rLoc = 345;
+		rLoc = 350;
 		rType = 0;
 		vrLen = 1132;
 		vrLoc = 0;
 	};
 	C9DE4D0E113A38D100BBF839 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD81131009F005F4CA2 /* TOMainViewController.h */;
+		fRef = C9820CD81131009F005F4CA2 /* TOTimerGoalViewController.h */;
 		name = "MainViewController.h: 15";
 		rLen = 0;
-		rLoc = 356;
+		rLoc = 246;
 		rType = 0;
 		vrLen = 1108;
 		vrLoc = 40;
@@ -1819,20 +2108,20 @@
 	};
 	C9DE4D1C113A3D9E00BBF839 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD91131009F005F4CA2 /* TOMainViewController.m */;
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
 		name = "MainViewController.m: 184";
 		rLen = 0;
-		rLoc = 5323;
+		rLoc = 2093;
 		rType = 0;
 		vrLen = 1312;
 		vrLoc = 1843;
 	};
 	C9DE4D1D113A3D9E00BBF839 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = C9820CD81131009F005F4CA2 /* TOMainViewController.h */;
+		fRef = C9820CD81131009F005F4CA2 /* TOTimerGoalViewController.h */;
 		name = "MainViewController.h: 16";
 		rLen = 0;
-		rLoc = 307;
+		rLoc = 246;
 		rType = 0;
 		vrLen = 1033;
 		vrLoc = 28;
@@ -1842,7 +2131,7 @@
 		fRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */;
 		name = "TimeoutAppDelegate.m: 46";
 		rLen = 0;
-		rLoc = 1499;
+		rLoc = 1514;
 		rType = 0;
 		vrLen = 1132;
 		vrLoc = 0;
@@ -1852,7 +2141,7 @@
 		fRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */;
 		name = "TimeoutAppDelegate.m: 30";
 		rLen = 0;
-		rLoc = 559;
+		rLoc = 564;
 		rType = 0;
 		vrLen = 1124;
 		vrLoc = 364;
@@ -1866,9 +2155,9 @@
 	};
 	C9DE4D23113AECF400BBF839 /* TOTimerTypeController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1042, 1036}}";
-			sepNavSelRange = "{1472, 0}";
-			sepNavVisRange = "{676, 946}";
+			sepNavIntBoundsRect = "{{0, 0}, {1042, 1008}}";
+			sepNavSelRange = "{395, 0}";
+			sepNavVisRange = "{0, 906}";
 		};
 	};
 }

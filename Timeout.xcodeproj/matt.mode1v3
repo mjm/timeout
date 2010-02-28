@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -281,13 +279,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>37</integer>
-									<integer>31</integer>
+									<integer>7</integer>
+									<integer>4</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 3}, {251, 780}}</string>
+							<string>{{0, 1}, {251, 780}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -317,12 +315,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TOTimerTypeController.m</string>
+								<string>TOTimerGoalViewController.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,11 +330,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TOTimerTypeController.m</string>
+										<string>TOTimerGoalViewController.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>C9B53535113B109D00FBCABF</string>
+										<string>C9B535A1113B21B800FBCABF</string>
 										<key>history</key>
 										<array>
 											<string>C98209D4112A2ADE005F4CA2</string>
@@ -343,11 +343,8 @@
 											<string>C9820E5A1132217C005F4CA2</string>
 											<string>C9820E5B1132217C005F4CA2</string>
 											<string>C9DE4C231134D76A00BBF839</string>
-											<string>C9DE4C551134E56D00BBF839</string>
-											<string>C9DE4C561134E56D00BBF839</string>
 											<string>C9DE4C5B1134E56D00BBF839</string>
 											<string>C9DE4C921137616E00BBF839</string>
-											<string>C9DE4C931137616E00BBF839</string>
 											<string>C9DE4C951137616E00BBF839</string>
 											<string>C9DE4CA61138A56800BBF839</string>
 											<string>C9DE4CB51138CF3E00BBF839</string>
@@ -358,12 +355,16 @@
 											<string>C9DE4D10113A38D100BBF839</string>
 											<string>C9DE4D11113A38D100BBF839</string>
 											<string>C9DE4D1B113A3D9E00BBF839</string>
-											<string>C9B5351A113B0B7200FBCABF</string>
-											<string>C9B53530113B109D00FBCABF</string>
-											<string>C9B53531113B109D00FBCABF</string>
-											<string>C9B53532113B109D00FBCABF</string>
-											<string>C9B53533113B109D00FBCABF</string>
-											<string>C9B53534113B109D00FBCABF</string>
+											<string>C9B5356D113B15A500FBCABF</string>
+											<string>C9B5356E113B15A500FBCABF</string>
+											<string>C9B5356F113B15A500FBCABF</string>
+											<string>C9B53572113B15A500FBCABF</string>
+											<string>C9B53574113B15A500FBCABF</string>
+											<string>C9B5359C113B21B800FBCABF</string>
+											<string>C9B5359D113B21B800FBCABF</string>
+											<string>C9B5359E113B21B800FBCABF</string>
+											<string>C9B5359F113B21B800FBCABF</string>
+											<string>C9B535A0113B21B800FBCABF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -561,6 +562,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>C910CBD911284DF9000B9D23</string>
 		<string>/Users/matt/Code/Timeout/Timeout.xcodeproj</string>
@@ -582,12 +584,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TimeoutAppDelegate.m</string>
+								<string>TOAppDelegate.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -604,8 +608,6 @@
 							<string>381pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -658,7 +660,7 @@
 			<key>WindowToolGUID</key>
 			<string>C910CBD911284DF9000B9D23</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -900,8 +902,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -937,7 +937,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>C9DE4BEE113396D000BBF839</string>
+				<string>C9B53562113B158500FBCABF</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

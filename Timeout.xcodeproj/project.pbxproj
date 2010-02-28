@@ -16,18 +16,19 @@
 		C98209BB1128FCA0005F4CA2 /* Timeout.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = C98209BA1128FCA0005F4CA2 /* Timeout.xcdatamodel */; };
 		C9820CEA1131009F005F4CA2 /* NSCalendarAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820CD21131009F005F4CA2 /* NSCalendarAdditions.m */; };
 		C9820CEC1131009F005F4CA2 /* TOGoalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820CD71131009F005F4CA2 /* TOGoalViewController.m */; };
-		C9820CED1131009F005F4CA2 /* TOMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820CD91131009F005F4CA2 /* TOMainViewController.m */; };
+		C9820CED1131009F005F4CA2 /* TOTimerGoalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */; };
 		C9820CEE1131009F005F4CA2 /* TOLogController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */; };
 		C9820CEF1131009F005F4CA2 /* TOLogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820CDE1131009F005F4CA2 /* TOLogEntry.m */; };
 		C9820CF01131009F005F4CA2 /* TOWorkLog.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820CE01131009F005F4CA2 /* TOWorkLog.m */; };
 		C9820D431131B1D4005F4CA2 /* TOLogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */; };
 		C9820E03113213EE005F4CA2 /* TOLogDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820E01113213EE005F4CA2 /* TOLogDetailViewController.m */; };
 		C9820E741132243C005F4CA2 /* TOEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820E721132243C005F4CA2 /* TOEntryViewController.m */; };
+		C9B53579113B15C000FBCABF /* TOTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B53578113B15C000FBCABF /* TOTimerViewController.m */; };
 		C9DE4BF21134BDE100BBF839 /* StartButton.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4BEF1134BDE100BBF839 /* StartButton.png */; };
 		C9DE4BF31134BDE100BBF839 /* StopButton.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4BF01134BDE100BBF839 /* StopButton.png */; };
 		C9DE4BF41134BDE100BBF839 /* TimerScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4BF11134BDE100BBF839 /* TimerScreen.png */; };
 		C9DE4C051134BE2B00BBF839 /* TOGoalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4BFF1134BE2B00BBF839 /* TOGoalViewController.xib */; };
-		C9DE4C061134BE2B00BBF839 /* TOMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4C001134BE2B00BBF839 /* TOMainViewController.xib */; };
+		C9DE4C061134BE2B00BBF839 /* TOTimerGoalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4C001134BE2B00BBF839 /* TOTimerGoalViewController.xib */; };
 		C9DE4C071134BE2B00BBF839 /* TOMainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4C011134BE2B00BBF839 /* TOMainWindow.xib */; };
 		C9DE4C081134BE2B00BBF839 /* TOEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4C021134BE2B00BBF839 /* TOEntryViewController.xib */; };
 		C9DE4C091134BE2B00BBF839 /* TOLogDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4C031134BE2B00BBF839 /* TOLogDetailViewController.xib */; };
@@ -54,8 +55,8 @@
 		C9820CD21131009F005F4CA2 /* NSCalendarAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCalendarAdditions.m; sourceTree = "<group>"; };
 		C9820CD61131009F005F4CA2 /* TOGoalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOGoalViewController.h; sourceTree = "<group>"; };
 		C9820CD71131009F005F4CA2 /* TOGoalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOGoalViewController.m; sourceTree = "<group>"; };
-		C9820CD81131009F005F4CA2 /* TOMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOMainViewController.h; sourceTree = "<group>"; };
-		C9820CD91131009F005F4CA2 /* TOMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOMainViewController.m; sourceTree = "<group>"; };
+		C9820CD81131009F005F4CA2 /* TOTimerGoalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTimerGoalViewController.h; sourceTree = "<group>"; };
+		C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTimerGoalViewController.m; sourceTree = "<group>"; };
 		C9820CDA1131009F005F4CA2 /* TOLogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOLogController.h; sourceTree = "<group>"; };
 		C9820CDB1131009F005F4CA2 /* TOLogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOLogController.m; sourceTree = "<group>"; };
 		C9820CDD1131009F005F4CA2 /* TOLogEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOLogEntry.h; sourceTree = "<group>"; };
@@ -68,11 +69,13 @@
 		C9820E01113213EE005F4CA2 /* TOLogDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOLogDetailViewController.m; sourceTree = "<group>"; };
 		C9820E711132243C005F4CA2 /* TOEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOEntryViewController.h; sourceTree = "<group>"; };
 		C9820E721132243C005F4CA2 /* TOEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOEntryViewController.m; sourceTree = "<group>"; };
+		C9B53577113B15C000FBCABF /* TOTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTimerViewController.h; sourceTree = "<group>"; };
+		C9B53578113B15C000FBCABF /* TOTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTimerViewController.m; sourceTree = "<group>"; };
 		C9DE4BEF1134BDE100BBF839 /* StartButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StartButton.png; path = Graphics/StartButton.png; sourceTree = "<group>"; };
 		C9DE4BF01134BDE100BBF839 /* StopButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StopButton.png; path = Graphics/StopButton.png; sourceTree = "<group>"; };
 		C9DE4BF11134BDE100BBF839 /* TimerScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TimerScreen.png; path = Graphics/TimerScreen.png; sourceTree = "<group>"; };
 		C9DE4BFF1134BE2B00BBF839 /* TOGoalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TOGoalViewController.xib; path = XIBs/TOGoalViewController.xib; sourceTree = "<group>"; };
-		C9DE4C001134BE2B00BBF839 /* TOMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TOMainViewController.xib; path = XIBs/TOMainViewController.xib; sourceTree = "<group>"; };
+		C9DE4C001134BE2B00BBF839 /* TOTimerGoalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TOTimerGoalViewController.xib; path = XIBs/TOTimerGoalViewController.xib; sourceTree = "<group>"; };
 		C9DE4C011134BE2B00BBF839 /* TOMainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TOMainWindow.xib; path = XIBs/TOMainWindow.xib; sourceTree = "<group>"; };
 		C9DE4C021134BE2B00BBF839 /* TOEntryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TOEntryViewController.xib; path = XIBs/TOEntryViewController.xib; sourceTree = "<group>"; };
 		C9DE4C031134BE2B00BBF839 /* TOLogDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TOLogDetailViewController.xib; path = XIBs/TOLogDetailViewController.xib; sourceTree = "<group>"; };
@@ -152,7 +155,7 @@
 				C9DE4BF01134BDE100BBF839 /* StopButton.png */,
 				C9DE4BF11134BDE100BBF839 /* TimerScreen.png */,
 				C9DE4BFF1134BE2B00BBF839 /* TOGoalViewController.xib */,
-				C9DE4C001134BE2B00BBF839 /* TOMainViewController.xib */,
+				C9DE4C001134BE2B00BBF839 /* TOTimerGoalViewController.xib */,
 				C9DE4C011134BE2B00BBF839 /* TOMainWindow.xib */,
 				C9DE4D27113AED2500BBF839 /* TOTimerTypeController.xib */,
 				C9DE4C021134BE2B00BBF839 /* TOEntryViewController.xib */,
@@ -189,8 +192,8 @@
 			children = (
 				C9820CD61131009F005F4CA2 /* TOGoalViewController.h */,
 				C9820CD71131009F005F4CA2 /* TOGoalViewController.m */,
-				C9820CD81131009F005F4CA2 /* TOMainViewController.h */,
-				C9820CD91131009F005F4CA2 /* TOMainViewController.m */,
+				C9820CD81131009F005F4CA2 /* TOTimerGoalViewController.h */,
+				C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */,
 				C9820CDA1131009F005F4CA2 /* TOLogController.h */,
 				C9820CDB1131009F005F4CA2 /* TOLogController.m */,
 				C9820D401131B1D4005F4CA2 /* TOLogsViewController.h */,
@@ -201,6 +204,8 @@
 				C9820E721132243C005F4CA2 /* TOEntryViewController.m */,
 				C9DE4D22113AECF400BBF839 /* TOTimerTypeController.h */,
 				C9DE4D23113AECF400BBF839 /* TOTimerTypeController.m */,
+				C9B53577113B15C000FBCABF /* TOTimerViewController.h */,
+				C9B53578113B15C000FBCABF /* TOTimerViewController.m */,
 			);
 			name = Controllers;
 			path = Classes/Controllers;
@@ -279,7 +284,7 @@
 				C9DE4BF31134BDE100BBF839 /* StopButton.png in Resources */,
 				C9DE4BF41134BDE100BBF839 /* TimerScreen.png in Resources */,
 				C9DE4C051134BE2B00BBF839 /* TOGoalViewController.xib in Resources */,
-				C9DE4C061134BE2B00BBF839 /* TOMainViewController.xib in Resources */,
+				C9DE4C061134BE2B00BBF839 /* TOTimerGoalViewController.xib in Resources */,
 				C9DE4C071134BE2B00BBF839 /* TOMainWindow.xib in Resources */,
 				C9DE4C081134BE2B00BBF839 /* TOEntryViewController.xib in Resources */,
 				C9DE4C091134BE2B00BBF839 /* TOLogDetailViewController.xib in Resources */,
@@ -302,7 +307,7 @@
 				C98209BB1128FCA0005F4CA2 /* Timeout.xcdatamodel in Sources */,
 				C9820CEA1131009F005F4CA2 /* NSCalendarAdditions.m in Sources */,
 				C9820CEC1131009F005F4CA2 /* TOGoalViewController.m in Sources */,
-				C9820CED1131009F005F4CA2 /* TOMainViewController.m in Sources */,
+				C9820CED1131009F005F4CA2 /* TOTimerGoalViewController.m in Sources */,
 				C9820CEE1131009F005F4CA2 /* TOLogController.m in Sources */,
 				C9820CEF1131009F005F4CA2 /* TOLogEntry.m in Sources */,
 				C9820CF01131009F005F4CA2 /* TOWorkLog.m in Sources */,
@@ -310,6 +315,7 @@
 				C9820E03113213EE005F4CA2 /* TOLogDetailViewController.m in Sources */,
 				C9820E741132243C005F4CA2 /* TOEntryViewController.m in Sources */,
 				C9DE4D25113AECF400BBF839 /* TOTimerTypeController.m in Sources */,
+				C9B53579113B15C000FBCABF /* TOTimerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
