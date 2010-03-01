@@ -9,6 +9,7 @@
 #import "TOMainViewController.h"
 
 #import "TOTimerGoalViewController.h"
+#import "TOTimerPayViewController.h"
 #import "TOTimerTypeController.h"
 
 @interface TOMainViewController (PrivateMethods)
@@ -38,6 +39,9 @@
 			break;
 		case TOTimerTypeGoal:
 			controller = [[TOTimerGoalViewController alloc] initWithLogController:self.logController];
+			break;
+		case TOTimerTypePay:
+			controller = [[TOTimerPayViewController alloc] initWithLogController:self.logController];
 			break;
 		default:
 			return;
