@@ -7,14 +7,8 @@
 //
 
 #import "TOAppDelegate.h"
-#import "TOTimerGoalViewController.h"
+#import "TOMainViewController.h"
 #import "TOLogController.h"
-
-@interface TOAppDelegate (PrivateMethods)
-
-- (TOTimerType)preferredTimerType;
-
-@end
 
 @implementation TOAppDelegate
 
@@ -24,15 +18,15 @@
 #pragma mark Application Lifecycle
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
-	TOTimerType timerType = [self preferredTimerType];
-
-	TOTimerGoalViewController *aController = [[TOTimerGoalViewController alloc] initWithLogController:self.logController];
+	TOMainViewController *aController = [[TOMainViewController alloc] initWithLogController:self.logController];
 	self.mainViewController = aController;
 	[aController release];
 	
     mainViewController.view.frame = [UIScreen mainScreen].applicationFrame;
 	[window addSubview:[mainViewController view]];
     [window makeKeyAndVisible];
+	
+	[aController presentMainController];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
@@ -44,15 +38,6 @@
             abort();
         }
     }
-}
-
-#pragma mark -
-#pragma mark User preferences
-
-- (TOTimerType)preferredTimerType {
-	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-	TOTimerType timerType = [userDefaults integerForKey:@"TOTimerType"];
-	return timerType;
 }
 
 #pragma mark -

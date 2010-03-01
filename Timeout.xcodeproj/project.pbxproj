@@ -24,6 +24,8 @@
 		C9820E03113213EE005F4CA2 /* TOLogDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820E01113213EE005F4CA2 /* TOLogDetailViewController.m */; };
 		C9820E741132243C005F4CA2 /* TOEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820E721132243C005F4CA2 /* TOEntryViewController.m */; };
 		C9B53579113B15C000FBCABF /* TOTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B53578113B15C000FBCABF /* TOTimerViewController.m */; };
+		C9B535A8113B293E00FBCABF /* TOMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B535A7113B293E00FBCABF /* TOMainViewController.m */; };
+		C9B535AA113B299100FBCABF /* TOMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B535A9113B299100FBCABF /* TOMainViewController.xib */; };
 		C9DE4BF21134BDE100BBF839 /* StartButton.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4BEF1134BDE100BBF839 /* StartButton.png */; };
 		C9DE4BF31134BDE100BBF839 /* StopButton.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4BF01134BDE100BBF839 /* StopButton.png */; };
 		C9DE4BF41134BDE100BBF839 /* TimerScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4BF11134BDE100BBF839 /* TimerScreen.png */; };
@@ -71,6 +73,9 @@
 		C9820E721132243C005F4CA2 /* TOEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOEntryViewController.m; sourceTree = "<group>"; };
 		C9B53577113B15C000FBCABF /* TOTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTimerViewController.h; sourceTree = "<group>"; };
 		C9B53578113B15C000FBCABF /* TOTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTimerViewController.m; sourceTree = "<group>"; };
+		C9B535A6113B293E00FBCABF /* TOMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOMainViewController.h; sourceTree = "<group>"; };
+		C9B535A7113B293E00FBCABF /* TOMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOMainViewController.m; sourceTree = "<group>"; };
+		C9B535A9113B299100FBCABF /* TOMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TOMainViewController.xib; path = XIBs/TOMainViewController.xib; sourceTree = "<group>"; };
 		C9DE4BEF1134BDE100BBF839 /* StartButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StartButton.png; path = Graphics/StartButton.png; sourceTree = "<group>"; };
 		C9DE4BF01134BDE100BBF839 /* StopButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StopButton.png; path = Graphics/StopButton.png; sourceTree = "<group>"; };
 		C9DE4BF11134BDE100BBF839 /* TimerScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TimerScreen.png; path = Graphics/TimerScreen.png; sourceTree = "<group>"; };
@@ -161,6 +166,7 @@
 				C9DE4C021134BE2B00BBF839 /* TOEntryViewController.xib */,
 				C9DE4C031134BE2B00BBF839 /* TOLogDetailViewController.xib */,
 				C9DE4C041134BE2B00BBF839 /* TOLogsViewController.xib */,
+				C9B535A9113B299100FBCABF /* TOMainViewController.xib */,
 				8D1107310486CEB800E47090 /* Timeout-Info.plist */,
 				C98209BA1128FCA0005F4CA2 /* Timeout.xcdatamodel */,
 			);
@@ -206,6 +212,8 @@
 				C9DE4D23113AECF400BBF839 /* TOTimerTypeController.m */,
 				C9B53577113B15C000FBCABF /* TOTimerViewController.h */,
 				C9B53578113B15C000FBCABF /* TOTimerViewController.m */,
+				C9B535A6113B293E00FBCABF /* TOMainViewController.h */,
+				C9B535A7113B293E00FBCABF /* TOMainViewController.m */,
 			);
 			name = Controllers;
 			path = Classes/Controllers;
@@ -292,6 +300,7 @@
 				C9DE4C6811363B7B00BBF839 /* Icon.png in Resources */,
 				C9DE4C911137614C00BBF839 /* Entitlements.plist in Resources */,
 				C9DE4D28113AED2500BBF839 /* TOTimerTypeController.xib in Resources */,
+				C9B535AA113B299100FBCABF /* TOMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +325,7 @@
 				C9820E741132243C005F4CA2 /* TOEntryViewController.m in Sources */,
 				C9DE4D25113AECF400BBF839 /* TOTimerTypeController.m in Sources */,
 				C9B53579113B15C000FBCABF /* TOTimerViewController.m in Sources */,
+				C9B535A8113B293E00FBCABF /* TOMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
