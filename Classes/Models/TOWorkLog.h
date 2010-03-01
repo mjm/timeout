@@ -18,6 +18,7 @@
 
 @property (nonatomic, retain) NSDate * day;
 @property (nonatomic, retain) NSNumber * goal;
+@property (nonatomic, retain) NSDecimalNumber * rate;
 @property (nonatomic, retain) NSSet* entries;
 @property (nonatomic, retain) NSArray* runningEntry;
 @property (nonatomic, retain) NSArray* orderedEntries;
@@ -31,5 +32,7 @@
 - (NSDateComponents *)timeElapsed;
 - (NSDateComponents *)timeLeft;
 - (NSDate *)estimatedDepartureFromDate:(NSDate *)date;
+
+- (NSNumber *)earnedPay;
 
 @end

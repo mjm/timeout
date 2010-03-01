@@ -38,7 +38,7 @@
 	NSDate *elapsed = [calendar dateFromComponents:[self.log timeElapsed]];
 	NSDate *start = entry.startTime;
 	// TODO actually populate
-	NSNumber *earned = [NSDecimalNumber decimalNumberWithString:@"0"];
+	NSNumber *earned = [self.log earnedPay];
 	
 	dateFormatter.dateFormat = @"H:mm:ss";
 	self.elapsedLabel.text = [dateFormatter stringFromDate:elapsed];

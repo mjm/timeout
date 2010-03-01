@@ -12,7 +12,7 @@
 
 @implementation TOWorkLog
 
-@dynamic day, goal, entries, runningEntry, orderedEntries;
+@dynamic day, goal, rate, entries, runningEntry, orderedEntries;
 
 - (NSString *)title {
 	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -66,6 +66,16 @@ const NSUInteger timeUnits = NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecon
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDate *now = [NSDate date];
     return [calendar dateByAddingComponents:[self timeLeft] toDate:now options:0];
+}
+
+- (NSNumber *)earnedPay {
+	NSDecimalNumber *total = [NSDecimalNumber zero];
+	
+	for (TOLogEntry *entry in self.entries) {
+		total = [total decimalNumberByAdding:[entry earnedPay]];
+	}
+	
+	return total;
 }
 
 @end

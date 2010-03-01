@@ -84,6 +84,7 @@
 		C9B5361B113B634D00FBCABF /* TOTimerPayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TOTimerPayViewController.xib; path = XIBs/TOTimerPayViewController.xib; sourceTree = "<group>"; };
 		C9B5361F113B659600FBCABF /* TimerPayScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TimerPayScreen.png; path = Graphics/TimerPayScreen.png; sourceTree = "<group>"; };
 		C9B5363C113B69CB00FBCABF /* Timeout 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Timeout 2.xcdatamodel"; sourceTree = "<group>"; };
+		C9B536BB113B803200FBCABF /* Timeout 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Timeout 3.xcdatamodel"; sourceTree = "<group>"; };
 		C9DE4BEF1134BDE100BBF839 /* StartButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StartButton.png; path = Graphics/StartButton.png; sourceTree = "<group>"; };
 		C9DE4BF01134BDE100BBF839 /* StopButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StopButton.png; path = Graphics/StopButton.png; sourceTree = "<group>"; };
 		C9DE4BF11134BDE100BBF839 /* TimerScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TimerScreen.png; path = Graphics/TimerScreen.png; sourceTree = "<group>"; };
@@ -486,8 +487,9 @@
 			children = (
 				C98209BA1128FCA0005F4CA2 /* Timeout.xcdatamodel */,
 				C9B5363C113B69CB00FBCABF /* Timeout 2.xcdatamodel */,
+				C9B536BB113B803200FBCABF /* Timeout 3.xcdatamodel */,
 			);
-			currentVersion = C9B5363C113B69CB00FBCABF /* Timeout 2.xcdatamodel */;
+			currentVersion = C9B536BB113B803200FBCABF /* Timeout 3.xcdatamodel */;
 			path = Timeout.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

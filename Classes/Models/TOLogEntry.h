@@ -19,6 +19,7 @@
 @property (nonatomic, retain) TOWorkLog * log;
 
 - (NSTimeInterval)timeElapsed;
+- (NSDecimalNumber *)earnedPay;
 
 - (BOOL)isRunning;
 - (void)startTimer;

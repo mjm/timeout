@@ -8,6 +8,7 @@
 
 #import "TOLogEntry.h"
 
+#import "TOWorkLog.h"
 
 @implementation TOLogEntry
 
@@ -24,6 +25,15 @@
     NSDate *end = (self.endTime == nil) ? [NSDate date] : self.endTime;
     
     return [end timeIntervalSinceDate:start];
+}
+
+- (NSDecimalNumber *)earnedPay {
+	NSDecimalNumber *rate = self.log.rate;
+	NSTimeInterval elapsed = [self timeElapsed];
+	
+	double hours = elapsed / 3600;
+	return [rate decimalNumberByMultiplyingBy:[NSDecimalNumber decimalNumberWithDecimal:
+											   [[NSNumber numberWithDouble:hours] decimalValue]]];
 }
 
 - (BOOL)isRunning {
