@@ -31,6 +31,11 @@
 	[formatter release];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque];
+	[super viewDidAppear:animated];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

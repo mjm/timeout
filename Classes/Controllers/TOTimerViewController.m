@@ -39,6 +39,8 @@
 #pragma mark View controller lifecycle
 
 - (void)viewDidAppear:(BOOL)animated {
+	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque];
+	
 	self.log = [self.logController currentLog];
 	[self updateWithLogInfo];
 	

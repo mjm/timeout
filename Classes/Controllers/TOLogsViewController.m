@@ -36,6 +36,11 @@
 	[self.tableView reloadData];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+	[super viewDidAppear:animated];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

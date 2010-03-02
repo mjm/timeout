@@ -47,6 +47,11 @@
 	[super viewWillAppear:animated];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+	[super viewDidAppear:animated];
+}
+
 - (IBAction)edit {
 	[self.tableView setEditing:YES animated:YES];
 	self.navigationItem.rightBarButtonItem = self.doneButton;

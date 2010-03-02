@@ -34,6 +34,11 @@
     self.datePicker.countDownDuration = [self.log.goal doubleValue];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque];
+	[super viewDidAppear:animated];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

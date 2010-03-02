@@ -31,6 +31,7 @@
 		C9B5363B113B69CB00FBCABF /* Timeout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9B5363A113B69CB00FBCABF /* Timeout.xcdatamodeld */; };
 		C9B536D5113C840500FBCABF /* TOPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B536D4113C840500FBCABF /* TOPayViewController.m */; };
 		C9B536D7113C841E00FBCABF /* TOPayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B536D6113C841E00FBCABF /* TOPayViewController.xib */; };
+		C9B537F2113CC9BF00FBCABF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C9B537F1113CC9BF00FBCABF /* Settings.bundle */; };
 		C9DE4BF21134BDE100BBF839 /* StartButton.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4BEF1134BDE100BBF839 /* StartButton.png */; };
 		C9DE4BF31134BDE100BBF839 /* StopButton.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4BF01134BDE100BBF839 /* StopButton.png */; };
 		C9DE4BF41134BDE100BBF839 /* TimerScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DE4BF11134BDE100BBF839 /* TimerScreen.png */; };
@@ -90,6 +91,7 @@
 		C9B536D3113C840500FBCABF /* TOPayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOPayViewController.h; sourceTree = "<group>"; };
 		C9B536D4113C840500FBCABF /* TOPayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOPayViewController.m; sourceTree = "<group>"; };
 		C9B536D6113C841E00FBCABF /* TOPayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TOPayViewController.xib; path = XIBs/TOPayViewController.xib; sourceTree = "<group>"; };
+		C9B537F1113CC9BF00FBCABF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		C9DE4BEF1134BDE100BBF839 /* StartButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StartButton.png; path = Graphics/StartButton.png; sourceTree = "<group>"; };
 		C9DE4BF01134BDE100BBF839 /* StopButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StopButton.png; path = Graphics/StopButton.png; sourceTree = "<group>"; };
 		C9DE4BF11134BDE100BBF839 /* TimerScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TimerScreen.png; path = Graphics/TimerScreen.png; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				C9B536D6113C841E00FBCABF /* TOPayViewController.xib */,
 				8D1107310486CEB800E47090 /* Timeout-Info.plist */,
 				C9B5363A113B69CB00FBCABF /* Timeout.xcdatamodeld */,
+				C9B537F1113CC9BF00FBCABF /* Settings.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				C9B5361C113B634D00FBCABF /* TOTimerPayViewController.xib in Resources */,
 				C9B53620113B659600FBCABF /* TimerPayScreen.png in Resources */,
 				C9B536D7113C841E00FBCABF /* TOPayViewController.xib in Resources */,
+				C9B537F2113CC9BF00FBCABF /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
