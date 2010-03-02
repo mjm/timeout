@@ -13,6 +13,7 @@
 
 #import "TOEntryViewController.h"
 #import "TOLogController.h"
+#import "TOTimerViewController.h"
 
 @implementation TOLogDetailViewController
 
@@ -56,30 +57,6 @@
 	self.navigationItem.rightBarButtonItem = self.editButton;
 }
 
-/*
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-*/
-/*
-- (void)viewWillDisappear:(BOOL)animated {
-	[super viewWillDisappear:animated];
-}
-*/
-/*
-- (void)viewDidDisappear:(BOOL)animated {
-	[super viewDidDisappear:animated];
-}
-*/
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
@@ -94,13 +71,21 @@
 #pragma mark Table view methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	if (section == 0)
+		return 1;
     return [self.log.orderedEntries count];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+	if (section == 1)
+		return @"Entries";
+	return nil;
 }
 
 
@@ -108,6 +93,39 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *CellIdentifier = @"Cell";
+	static NSString *HeaderIdentifier = @"Header";
+	
+	if (indexPath.section == 0) {
+		UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:HeaderIdentifier];
+		if (cell == nil) {
+			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:HeaderIdentifier] autorelease];
+		}
+		
+		TOTimerType timerType = [[NSUserDefaults standardUserDefaults] integerForKey:@"TOTimerType"];
+		switch (timerType) {
+			case TOTimerTypeGoal:
+				cell.textLabel.text = @"Hours Worked";
+				
+				NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+				dateFormatter.dateFormat = @"H:mm:ss";
+				cell.detailTextLabel.text = [dateFormatter stringFromDate:[[NSCalendar currentCalendar]
+																		   dateFromComponents:[self.log timeElapsed]]];
+				[dateFormatter release];
+				
+				break;
+			default:
+				cell.textLabel.text = @"Earned Pay";
+				
+				NSNumberFormatter *numFormatter = [[NSNumberFormatter alloc] init];
+				numFormatter.numberStyle = NSNumberFormatterCurrencyStyle;
+				cell.detailTextLabel.text = [numFormatter stringFromNumber:[self.log earnedPay]];
+				[numFormatter release];
+				
+				break;
+		}
+		
+		return cell;
+	}
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
@@ -130,6 +148,15 @@
 }
 
 
+- (NSIndexPath *)tableView:(UITableView *)table willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	if (indexPath.section == 0) {
+		return nil;
+	}
+	
+	return indexPath;
+}
+
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	TOLogEntry *entry = [self.log.orderedEntries objectAtIndex:indexPath.row];
 	
@@ -144,10 +171,18 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
  forRowAtIndexPath:(NSIndexPath *)indexPath {
 	
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-		TOLogEntry *entry = [self.log.orderedEntries objectAtIndex:indexPath.row];
+		TOLogEntry *entry = [self.log.orderedEntries objectAtIndex:indexPath.row - 1];
 		[self.logController deleteEntry:entry fromLog:self.log];
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)table editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+	if (indexPath.section == 0) {
+		return UITableViewCellEditingStyleNone;
+	}
+	
+	return UITableViewCellEditingStyleDelete;
 }
 
 
