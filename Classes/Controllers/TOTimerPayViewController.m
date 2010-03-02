@@ -25,6 +25,8 @@
 
 - (void)payViewController:(TOPayViewController *)controller rateDidChange:(NSDecimalNumber *)rate {
 	self.log.rate = rate;
+	[[NSUserDefaults standardUserDefaults] setObject:rate forKey:@"TOLastRate"];
+	
 	[self dismissModalViewControllerAnimated:YES];
 	[self.logController save];
 }

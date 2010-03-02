@@ -28,6 +28,8 @@
 
 - (void)goalViewControllerDidFinish:(TOGoalViewController *)controller {
     [self dismissModalViewControllerAnimated:YES];
+	
+	[[NSUserDefaults standardUserDefaults] setObject:self.log.goal forKey:@"TOLastGoal"];
     [self.logController save];
 }
 

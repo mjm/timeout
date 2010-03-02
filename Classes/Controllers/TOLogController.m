@@ -40,6 +40,15 @@
 	return self;
 }
 
++ (void)initialize {
+	NSDictionary *defaults = [NSDictionary dictionaryWithObjectsAndKeys:
+							  [NSNumber numberWithInteger:28800], @"TOLastGoal",
+							  [NSNumber numberWithInteger:0], @"TOLastRate", nil];
+	
+	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+	[userDefaults registerDefaults:defaults];
+}
+
 - (NSEntityDescription *)logEntityDescription {
     NSManagedObjectContext *moc = self.managedObjectContext;
     NSEntityDescription *desc = [NSEntityDescription entityForName:@"Log"
@@ -79,10 +88,14 @@
         if (count > 0) {
             return [array objectAtIndex:0];
         } else {
+			NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+			
             TOWorkLog *log = [NSEntityDescription
                 insertNewObjectForEntityForName:@"Log"
                 inManagedObjectContext:self.managedObjectContext];
             log.day = date;
+			log.goal = [userDefaults objectForKey:@"TOLastGoal"];
+			log.rate = [NSDecimalNumber decimalNumberWithDecimal:[[userDefaults objectForKey:@"TOLastRate"] decimalValue]];
             
             [self save];
             
