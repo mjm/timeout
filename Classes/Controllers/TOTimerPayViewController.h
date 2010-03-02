@@ -9,8 +9,9 @@
 @class TOLogController;
 
 #import "TOTimerViewController.h"
+#import "TOPayViewController.h"
 
-@interface TOTimerPayViewController : TOTimerViewController {
+@interface TOTimerPayViewController : TOTimerViewController <TOPayViewControllerDelegate> {
 	IBOutlet UILabel *elapsedLabel;
 	IBOutlet UILabel *startLabel;
 	IBOutlet UILabel *earnedLabel;

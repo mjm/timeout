@@ -23,8 +23,19 @@
 	return self;
 }
 
+- (void)payViewController:(TOPayViewController *)controller rateDidChange:(NSDecimalNumber *)rate {
+	self.log.rate = rate;
+	[self dismissModalViewControllerAnimated:YES];
+	[self.logController save];
+}
+
 - (IBAction)changeRate {
-	// TODO
+    TOPayViewController *controller = [[TOPayViewController alloc] initWithRate:self.log.rate];
+    controller.delegate = self;
+    controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+	
+    [self presentModalViewController:controller animated:YES];
+    [controller release];
 }
 
 - (void)updateWithDateComponents:(NSDateComponents *)components {
@@ -37,7 +48,6 @@
 	
 	NSDate *elapsed = [calendar dateFromComponents:[self.log timeElapsed]];
 	NSDate *start = entry.startTime;
-	// TODO actually populate
 	NSNumber *earned = [self.log earnedPay];
 	
 	dateFormatter.dateFormat = @"H:mm:ss";

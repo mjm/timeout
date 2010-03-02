@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>C9B536C9113B807800FBCABF</string>
+						<string>C9B5370E113C963900FBCABF</string>
 						<key>history</key>
 						<array>
 							<string>C9B536BC113B803600FBCABF</string>
@@ -270,8 +270,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -323,14 +321,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>56</integer>
-									<integer>53</integer>
-									<integer>37</integer>
+									<integer>26</integer>
+									<integer>4</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 292}, {251, 780}}</string>
+							<string>{{0, 2}, {251, 780}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -360,12 +357,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TOLogEntry.m</string>
+								<string>TOPayViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -373,11 +372,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TOLogEntry.m</string>
+										<string>TOPayViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>C9B536C8113B807800FBCABF</string>
+										<string>C9B5370D113C963900FBCABF</string>
 										<key>history</key>
 										<array>
 											<string>C98209D4112A2ADE005F4CA2</string>
@@ -392,7 +391,6 @@
 											<string>C9DE4D10113A38D100BBF839</string>
 											<string>C9DE4D11113A38D100BBF839</string>
 											<string>C9B5356D113B15A500FBCABF</string>
-											<string>C9B5356E113B15A500FBCABF</string>
 											<string>C9B5356F113B15A500FBCABF</string>
 											<string>C9B535C1113B336C00FBCABF</string>
 											<string>C9B535C2113B336C00FBCABF</string>
@@ -405,18 +403,22 @@
 											<string>C9B53610113B627A00FBCABF</string>
 											<string>C9B53611113B627A00FBCABF</string>
 											<string>C9B53612113B627A00FBCABF</string>
-											<string>C9B53613113B627A00FBCABF</string>
 											<string>C9B53627113B65F200FBCABF</string>
 											<string>C9B5362D113B68EA00FBCABF</string>
 											<string>C9B5364F113B6A9800FBCABF</string>
-											<string>C9B5365B113B6B2A00FBCABF</string>
-											<string>C9B53694113B7F4700FBCABF</string>
 											<string>C9B53695113B7F4700FBCABF</string>
 											<string>C9B53697113B7F4700FBCABF</string>
 											<string>C9B53698113B7F4700FBCABF</string>
-											<string>C9B536B0113B7FE600FBCABF</string>
-											<string>C9B536C1113B804500FBCABF</string>
-											<string>C9B536C2113B804500FBCABF</string>
+											<string>C9B536D9113C842200FBCABF</string>
+											<string>C9B536DA113C842200FBCABF</string>
+											<string>C9B536DB113C842200FBCABF</string>
+											<string>C9B536DC113C842200FBCABF</string>
+											<string>C9B536E1113C8AE400FBCABF</string>
+											<string>C9B536F3113C8FFA00FBCABF</string>
+											<string>C9B536F4113C8FFA00FBCABF</string>
+											<string>C9B536FB113C91B800FBCABF</string>
+											<string>C9B536FC113C91B800FBCABF</string>
+											<string>C9B536F5113C8FFA00FBCABF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -614,14 +616,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>C9B536C7113B804500FBCABF</string>
 		<string>C9B535DE113B34DC00FBCABF</string>
 		<string>C9B535E0113B34DC00FBCABF</string>
 		<string>C910CBD911284DF9000B9D23</string>
 		<string>1C78EAAD065D492600B07095</string>
-		<string>/Users/matt/Code/Timeout/Timeout.xcodeproj</string>
-		<string>C9B536C4113B804500FBCABF</string>
 		<string>1CD10A99069EF8BA00B06720</string>
+		<string>C9B536C4113B804500FBCABF</string>
+		<string>/Users/matt/Code/Timeout/Timeout.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 39 1376 839 0 0 1440 878 </string>
@@ -640,12 +641,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TOTimerPayViewController.m</string>
+								<string>TOPayViewController.h</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -662,8 +665,6 @@
 							<string>381pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -716,7 +717,7 @@
 			<key>WindowToolGUID</key>
 			<string>C910CBD911284DF9000B9D23</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
