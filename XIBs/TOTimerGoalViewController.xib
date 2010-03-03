@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="69"/>
+			<integer value="34"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -173,7 +173,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBUINavigationItem" id="204960769">
 								<reference key="IBUINavigationBar" ref="66203734"/>
-								<string key="IBUITitle">Wednesday, 12/28/20</string>
+								<string key="IBUITitle">Today</string>
 								<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="316801135">
 									<int key="IBUIStyle">1</int>
 									<int key="IBUISystemItemIdentifier">11</int>
@@ -389,7 +389,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>TOTimerGoalViewController</string>
 					<string>UIResponder</string>
-					<string>{{707, 180}, {320, 480}}</string>
+					<string>{{707, 331}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>

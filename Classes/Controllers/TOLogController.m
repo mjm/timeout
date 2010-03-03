@@ -117,7 +117,6 @@
         entry.log = log;
         [self save];
         
-        NSLog(@"Entry: %@", entry);
         return entry;
     }
 }
