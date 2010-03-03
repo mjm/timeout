@@ -17,10 +17,10 @@
 @end
 
 
-@interface TOLogsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+@interface TOLogsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate> {
 	id <TOLogsViewControllerDelegate> delegate;
 	TOLogController *logController;
-	NSArray *logs;
+	NSFetchedResultsController *fetchedResultsController;
 	
 	IBOutlet UITableView *tableView;
 	IBOutlet UIBarButtonItem *doneButton;
@@ -30,7 +30,7 @@
 
 @property (nonatomic, assign) id <TOLogsViewControllerDelegate> delegate;
 @property (nonatomic, retain) TOLogController *logController;
-@property (nonatomic, retain) NSArray *logs;
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 
 @property (nonatomic, retain) UITableView *tableView;
 @property (nonatomic, retain) UIBarButtonItem *doneButton;

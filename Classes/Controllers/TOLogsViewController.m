@@ -14,7 +14,7 @@
 
 @implementation TOLogsViewController
 
-@synthesize delegate, logController, logs;
+@synthesize delegate, logController, fetchedResultsController;
 @synthesize tableView, doneButton, editButton, cancelButton;
 
 - (id)initWithLogController:(TOLogController *)controller {
@@ -29,7 +29,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	self.logs = [self.logController logs];
+	NSError *error;
+	self.fetchedResultsController = [self.logController logsFetchedResultsController];
+	self.fetchedResultsController.delegate = self;
+	[self.fetchedResultsController performFetch:&error];
+	
 	self.navigationItem.leftBarButtonItem = self.doneButton;
 	self.navigationItem.rightBarButtonItem = self.editButton;
 	
@@ -69,7 +73,7 @@
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)table didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	TOWorkLog *log = [self.logs objectAtIndex:indexPath.row];
+	TOWorkLog *log = (TOWorkLog *) [self.fetchedResultsController objectAtIndexPath:indexPath];
 	
 	TOLogDetailViewController *controller = [[TOLogDetailViewController alloc] initWithLog:log
 																			 logController:self.logController];
@@ -82,11 +86,12 @@
 #pragma mark Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	return 1;
+	return [[self.fetchedResultsController sections] count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return [self.logs count];
+	id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
+	return [sectionInfo numberOfObjects];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)table
@@ -98,7 +103,7 @@
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
 	}
 	
-	TOWorkLog *log = [self.logs objectAtIndex:indexPath.row];
+	TOWorkLog *log = (TOWorkLog *) [self.fetchedResultsController objectAtIndexPath:indexPath];
 	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
 	formatter.dateStyle = NSDateFormatterLongStyle;
 	
@@ -114,16 +119,43 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
  forRowAtIndexPath:(NSIndexPath *)indexPath {
 	
 	if (editingStyle == UITableViewCellEditingStyleDelete) {
-		[self.logController deleteLog:[self.logs objectAtIndex:indexPath.row]];
-		self.logs = [self.logController logs];
-		[table deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+		TOWorkLog *log = (TOWorkLog *) [self.fetchedResultsController objectAtIndexPath:indexPath];
+		[self.logController deleteLog:log];
+	}
+}
+
+
+#pragma mark -
+#pragma mark Fetched results controller delegate
+
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
+	[self.tableView beginUpdates];
+}
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
+	[self.tableView endUpdates];
+}
+
+- (void)controller:(NSFetchedResultsController *)controller
+   didChangeObject:(id)anObject
+	   atIndexPath:(NSIndexPath *)indexPath
+	 forChangeType:(NSFetchedResultsChangeType)type
+	  newIndexPath:(NSIndexPath *)newIndexPath {
+	
+	switch (type) {
+		case NSFetchedResultsChangeInsert:
+			[self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+			break;
+		case NSFetchedResultsChangeDelete:
+			[self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+			break;
 	}
 }
 
 
 - (void)dealloc {
 	self.logController = nil;
-	self.logs = nil;
+	self.fetchedResultsController = nil;
     [super dealloc];
 }
 

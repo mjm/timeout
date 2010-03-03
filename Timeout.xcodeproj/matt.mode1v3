@@ -279,7 +279,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>16</integer>
+									<integer>12</integer>
 									<integer>4</integer>
 									<integer>0</integer>
 								</array>
@@ -322,7 +322,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TOEntryViewController.m</string>
+								<string>TOLogsViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,11 +330,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TOEntryViewController.m</string>
+										<string>TOLogsViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>C9B5381B113E00B300FBCABF</string>
+										<string>C9B5383A113E11A400FBCABF</string>
 										<key>history</key>
 										<array>
 											<string>C98209D4112A2ADE005F4CA2</string>
@@ -344,8 +344,6 @@
 											<string>C9DE4CA61138A56800BBF839</string>
 											<string>C9DE4CB51138CF3E00BBF839</string>
 											<string>C9DE4CB61138CF3E00BBF839</string>
-											<string>C9DE4D10113A38D100BBF839</string>
-											<string>C9DE4D11113A38D100BBF839</string>
 											<string>C9B535C1113B336C00FBCABF</string>
 											<string>C9B535C2113B336C00FBCABF</string>
 											<string>C9B535C3113B336C00FBCABF</string>
@@ -363,11 +361,9 @@
 											<string>C9B536E1113C8AE400FBCABF</string>
 											<string>C9B536F3113C8FFA00FBCABF</string>
 											<string>C9B536FC113C91B800FBCABF</string>
-											<string>C9B5371A113C99B000FBCABF</string>
 											<string>C9B5379D113CB63500FBCABF</string>
 											<string>C9B537A3113CB72600FBCABF</string>
 											<string>C9B537D9113CC37F00FBCABF</string>
-											<string>C9B53802113CCBF900FBCABF</string>
 											<string>C9B53803113CCBF900FBCABF</string>
 											<string>C9B53805113CCBF900FBCABF</string>
 											<string>C9B53806113CCBF900FBCABF</string>
@@ -377,7 +373,11 @@
 											<string>C9B5380A113CCBF900FBCABF</string>
 											<string>C9B5380B113CCBF900FBCABF</string>
 											<string>C9B53812113E002E00FBCABF</string>
-											<string>C9B53804113CCBF900FBCABF</string>
+											<string>C9B53820113E0DC300FBCABF</string>
+											<string>C9B53821113E0DC300FBCABF</string>
+											<string>C9B53822113E0DC300FBCABF</string>
+											<string>C9B53826113E0F0C00FBCABF</string>
+											<string>C9B53832113E10D100FBCABF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -577,8 +577,8 @@
 	<array>
 		<string>C9B53814113E002E00FBCABF</string>
 		<string>C9B53815113E002E00FBCABF</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>C910CBD911284DF9000B9D23</string>
 		<string>/Users/matt/Code/Timeout/Timeout.xcodeproj</string>
 	</array>
@@ -599,12 +599,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>TOLogsViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -673,7 +675,7 @@
 			<key>WindowToolGUID</key>
 			<string>C910CBD911284DF9000B9D23</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -915,6 +917,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -960,7 +964,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

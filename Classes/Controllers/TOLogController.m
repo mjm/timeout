@@ -122,7 +122,7 @@
     }
 }
 
-- (NSArray *)logs {
+- (NSFetchedResultsController *)logsFetchedResultsController {
 	NSFetchRequest *request = [[self managedObjectModel] fetchRequestTemplateForName:@"logs"];
 	[request setFetchBatchSize:10];
 	
@@ -130,14 +130,10 @@
 	[request setSortDescriptors:[NSArray arrayWithObject:sortDescriptor]];
 	[sortDescriptor release];
 	
-	NSError *error;
-	NSArray *results = [self.managedObjectContext executeFetchRequest:request error:&error];
-	
-	if (!results) {
-		NSLog(@"Error fetching logs: %@, %@", error, [error userInfo]);
-	}
-	
-	return results;
+	return [[[NSFetchedResultsController alloc] initWithFetchRequest:request
+											    managedObjectContext:self.managedObjectContext
+												  sectionNameKeyPath:nil
+														   cacheName:nil] autorelease];
 }
 
 - (void)deleteLog:(TOWorkLog *)log {

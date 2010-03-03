@@ -347,6 +347,19 @@
 			C9B53813113E002E00FBCABF /* PBXTextBookmark */ = C9B53813113E002E00FBCABF /* PBXTextBookmark */;
 			C9B53818113E003A00FBCABF /* PBXTextBookmark */ = C9B53818113E003A00FBCABF /* PBXTextBookmark */;
 			C9B5381B113E00B300FBCABF /* PBXTextBookmark */ = C9B5381B113E00B300FBCABF /* PBXTextBookmark */;
+			C9B53820113E0DC300FBCABF /* PBXTextBookmark */ = C9B53820113E0DC300FBCABF /* PBXTextBookmark */;
+			C9B53821113E0DC300FBCABF /* PBXTextBookmark */ = C9B53821113E0DC300FBCABF /* PBXTextBookmark */;
+			C9B53822113E0DC300FBCABF /* PBXTextBookmark */ = C9B53822113E0DC300FBCABF /* PBXTextBookmark */;
+			C9B53823113E0DC300FBCABF /* PBXTextBookmark */ = C9B53823113E0DC300FBCABF /* PBXTextBookmark */;
+			C9B53824113E0DC300FBCABF /* PBXTextBookmark */ = C9B53824113E0DC300FBCABF /* PBXTextBookmark */;
+			C9B53825113E0DC300FBCABF /* PBXTextBookmark */ = C9B53825113E0DC300FBCABF /* PBXTextBookmark */;
+			C9B53826113E0F0C00FBCABF /* PBXTextBookmark */ = C9B53826113E0F0C00FBCABF /* PBXTextBookmark */;
+			C9B53827113E0F0C00FBCABF /* PBXTextBookmark */ = C9B53827113E0F0C00FBCABF /* PBXTextBookmark */;
+			C9B53828113E0F0C00FBCABF /* PBXTextBookmark */ = C9B53828113E0F0C00FBCABF /* PBXTextBookmark */;
+			C9B5382B113E107200FBCABF /* PBXTextBookmark */ = C9B5382B113E107200FBCABF /* PBXTextBookmark */;
+			C9B53832113E10D100FBCABF /* XCBuildMessageTextBookmark */ = C9B53832113E10D100FBCABF /* XCBuildMessageTextBookmark */;
+			C9B53833113E10D100FBCABF /* PBXTextBookmark */ = C9B53833113E10D100FBCABF /* PBXTextBookmark */;
+			C9B5383A113E11A400FBCABF /* PBXTextBookmark */ = C9B5383A113E11A400FBCABF /* PBXTextBookmark */;
 			C9DE4BF91134BDF100BBF839 = C9DE4BF91134BDF100BBF839 /* PBXTextBookmark */;
 			C9DE4C231134D76A00BBF839 = C9DE4C231134D76A00BBF839 /* PBXBookmark */;
 			C9DE4C241134D76A00BBF839 = C9DE4C241134D76A00BBF839 /* PBXTextBookmark */;
@@ -757,16 +770,16 @@
 	};
 	C9820CDA1131009F005F4CA2 /* TOLogController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1093, 523}}";
-			sepNavSelRange = "{660, 0}";
-			sepNavVisRange = "{0, 682}";
+			sepNavIntBoundsRect = "{{0, 0}, {1044, 511}}";
+			sepNavSelRange = "{600, 0}";
+			sepNavVisRange = "{0, 725}";
 		};
 	};
 	C9820CDB1131009F005F4CA2 /* TOLogController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1042, 2198}}";
-			sepNavSelRange = "{3080, 0}";
-			sepNavVisRange = "{2150, 1289}";
+			sepNavIntBoundsRect = "{{0, 0}, {1044, 2198}}";
+			sepNavSelRange = "{4254, 0}";
+			sepNavVisRange = "{3801, 1148}";
 		};
 	};
 	C9820CDD1131009F005F4CA2 /* TOLogEntry.h */ = {
@@ -829,16 +842,16 @@
 	};
 	C9820D401131B1D4005F4CA2 /* TOLogsViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1093, 658}}";
-			sepNavSelRange = "{1112, 0}";
-			sepNavVisRange = "{174, 1062}";
+			sepNavIntBoundsRect = "{{0, 0}, {1044, 658}}";
+			sepNavSelRange = "{478, 0}";
+			sepNavVisRange = "{174, 1176}";
 		};
 	};
 	C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1044, 1946}}";
-			sepNavSelRange = "{999, 0}";
-			sepNavVisRange = "{146, 892}";
+			sepNavIntBoundsRect = "{{0, 0}, {1044, 2170}}";
+			sepNavSelRange = "{4493, 0}";
+			sepNavVisRange = "{3778, 1001}";
 		};
 	};
 	C9820D571131B761005F4CA2 /* PBXTextBookmark */ = {
@@ -947,7 +960,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1044, 2296}}";
 			sepNavSelRange = "{3691, 0}";
-			sepNavVisRange = "{3070, 1073}";
+			sepNavVisRange = "{3070, 1083}";
 			sepNavWindowFrame = "{{130, 70}, {720, 878}}";
 		};
 	};
@@ -956,7 +969,7 @@
 		fRef = C9820D401131B1D4005F4CA2 /* TOLogsViewController.h */;
 		name = "TOLogsViewController.h: 33";
 		rLen = 0;
-		rLoc = 1112;
+		rLoc = 1226;
 		rType = 0;
 		vrLen = 939;
 		vrLoc = 0;
@@ -966,7 +979,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 35";
 		rLen = 0;
-		rLoc = 1036;
+		rLoc = 1221;
 		rType = 0;
 		vrLen = 1409;
 		vrLoc = 283;
@@ -3348,7 +3361,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 40";
 		rLen = 0;
-		rLoc = 999;
+		rLoc = 1184;
 		rType = 0;
 		vrLen = 892;
 		vrLoc = 146;
@@ -3511,6 +3524,135 @@
 		vrLen = 1073;
 		vrLoc = 3070;
 	};
+	C9B53820113E0DC300FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820E721132243C005F4CA2 /* TOEntryViewController.m */;
+		name = "TOEntryViewController.m: 144";
+		rLen = 0;
+		rLoc = 3691;
+		rType = 0;
+		vrLen = 1083;
+		vrLoc = 3070;
+	};
+	C9B53821113E0DC300FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CDA1131009F005F4CA2 /* TOLogController.h */;
+		name = "TOLogController.h: 25";
+		rLen = 0;
+		rLoc = 600;
+		rType = 0;
+		vrLen = 725;
+		vrLoc = 0;
+	};
+	C9B53822113E0DC300FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */;
+		name = "TOLogController.m: 132";
+		rLen = 0;
+		rLoc = 4254;
+		rType = 0;
+		vrLen = 1148;
+		vrLoc = 3801;
+	};
+	C9B53823113E0DC300FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820D401131B1D4005F4CA2 /* TOLogsViewController.h */;
+		name = "TOLogsViewController.h: 33";
+		rLen = 0;
+		rLoc = 992;
+		rType = 0;
+		vrLen = 1140;
+		vrLoc = 174;
+	};
+	C9B53824113E0DC300FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
+		name = "TOLogsViewController.m: 40";
+		rLen = 0;
+		rLoc = 1184;
+		rType = 0;
+		vrLen = 929;
+		vrLoc = 183;
+	};
+	C9B53825113E0DC300FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
+		name = "TOLogsViewController.m: 92";
+		rLen = 0;
+		rLoc = 2580;
+		rType = 0;
+		vrLen = 1228;
+		vrLoc = 1446;
+	};
+	C9B53826113E0F0C00FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820D401131B1D4005F4CA2 /* TOLogsViewController.h */;
+		name = "TOLogsViewController.h: 20";
+		rLen = 0;
+		rLoc = 478;
+		rType = 0;
+		vrLen = 1176;
+		vrLoc = 174;
+	};
+	C9B53827113E0F0C00FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
+		name = "TOLogsViewController.m: 125";
+		rLen = 0;
+		rLoc = 4670;
+		rType = 0;
+		vrLen = 1457;
+		vrLoc = 2356;
+	};
+	C9B53828113E0F0C00FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
+		name = "TOLogsViewController.m: 139";
+		rLen = 0;
+		rLoc = 4075;
+		rType = 0;
+		vrLen = 905;
+		vrLoc = 3313;
+	};
+	C9B5382B113E107200FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
+		name = "TOLogsViewController.m: 149";
+		rLen = 0;
+		rLoc = 4668;
+		rType = 0;
+		vrLen = 1284;
+		vrLoc = 2710;
+	};
+	C9B53832113E10D100FBCABF /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Request for member 'logs' in something not a structure or union";
+		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 75;
+		rType = 1;
+	};
+	C9B53833113E10D100FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
+		name = "TOLogsViewController.m: 76";
+		rLen = 0;
+		rLoc = 1967;
+		rType = 0;
+		vrLen = 828;
+		vrLoc = 3778;
+	};
+	C9B5383A113E11A400FBCABF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
+		name = "TOLogsViewController.m: 148";
+		rLen = 0;
+		rLoc = 4493;
+		rType = 0;
+		vrLen = 1001;
+		vrLoc = 3778;
+	};
 	C9DE4BF91134BDF100BBF839 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
@@ -3530,7 +3672,7 @@
 		fRef = C9820D401131B1D4005F4CA2 /* TOLogsViewController.h */;
 		name = "TOLogsViewController.h: 41";
 		rLen = 0;
-		rLoc = 1229;
+		rLoc = 1343;
 		rType = 0;
 		vrLen = 1057;
 		vrLoc = 0;
@@ -3540,7 +3682,7 @@
 		fRef = C9820CDA1131009F005F4CA2 /* TOLogController.h */;
 		name = "TOLogController.h: 26";
 		rLen = 0;
-		rLoc = 660;
+		rLoc = 703;
 		rType = 0;
 		vrLen = 616;
 		vrLoc = 0;
@@ -3550,7 +3692,7 @@
 		fRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */;
 		name = "TOLogController.m: 134";
 		rLen = 0;
-		rLoc = 4526;
+		rLoc = 4574;
 		rType = 0;
 		vrLen = 1330;
 		vrLoc = 2637;
@@ -3560,7 +3702,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 90";
 		rLen = 0;
-		rLoc = 2880;
+		rLoc = 3306;
 		rType = 0;
 		vrLen = 1145;
 		vrLoc = 0;
@@ -3630,7 +3772,7 @@
 		fRef = C9820D401131B1D4005F4CA2 /* TOLogsViewController.h */;
 		name = "TOLogsViewController.h: 41";
 		rLen = 0;
-		rLoc = 1229;
+		rLoc = 1343;
 		rType = 0;
 		vrLen = 1057;
 		vrLoc = 0;
@@ -3640,7 +3782,7 @@
 		fRef = C9820D401131B1D4005F4CA2 /* TOLogsViewController.h */;
 		name = "TOLogsViewController.h: 39";
 		rLen = 0;
-		rLoc = 1187;
+		rLoc = 1301;
 		rType = 0;
 		vrLen = 1057;
 		vrLoc = 0;
@@ -3650,7 +3792,7 @@
 		fRef = C9820D401131B1D4005F4CA2 /* TOLogsViewController.h */;
 		name = "TOLogsViewController.h: 39";
 		rLen = 0;
-		rLoc = 1187;
+		rLoc = 1301;
 		rType = 0;
 		vrLen = 1057;
 		vrLoc = 0;
@@ -3660,7 +3802,7 @@
 		fRef = C9820CDA1131009F005F4CA2 /* TOLogController.h */;
 		name = "TOLogController.h: 27";
 		rLen = 0;
-		rLoc = 660;
+		rLoc = 703;
 		rType = 0;
 		vrLen = 682;
 		vrLoc = 0;
@@ -3670,7 +3812,7 @@
 		fRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */;
 		name = "TOLogController.m: 138";
 		rLen = 0;
-		rLoc = 4724;
+		rLoc = 4772;
 		rType = 0;
 		vrLen = 1587;
 		vrLoc = 2731;
@@ -3690,7 +3832,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 65";
 		rLen = 0;
-		rLoc = 1870;
+		rLoc = 2089;
 		rType = 0;
 		vrLen = 1460;
 		vrLoc = 614;
@@ -3770,7 +3912,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 65";
 		rLen = 0;
-		rLoc = 2014;
+		rLoc = 2233;
 		rType = 0;
 		vrLen = 780;
 		vrLoc = 1144;
@@ -3828,7 +3970,7 @@
 		fRef = C9820D401131B1D4005F4CA2 /* TOLogsViewController.h */;
 		name = "TOLogsViewController.h: 38";
 		rLen = 0;
-		rLoc = 1112;
+		rLoc = 1226;
 		rType = 0;
 		vrLen = 1236;
 		vrLoc = 0;
@@ -3838,7 +3980,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 47";
 		rLen = 0;
-		rLoc = 1349;
+		rLoc = 1534;
 		rType = 0;
 		vrLen = 1590;
 		vrLoc = 1749;
@@ -4068,7 +4210,7 @@
 		fRef = C9820D401131B1D4005F4CA2 /* TOLogsViewController.h */;
 		name = "TOLogsViewController.h: 38";
 		rLen = 0;
-		rLoc = 1112;
+		rLoc = 1226;
 		rType = 0;
 		vrLen = 1084;
 		vrLoc = 146;
@@ -4088,7 +4230,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 47";
 		rLen = 0;
-		rLoc = 1349;
+		rLoc = 1534;
 		rType = 0;
 		vrLen = 869;
 		vrLoc = 211;
@@ -4098,7 +4240,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 74";
 		rLen = 0;
-		rLoc = 2169;
+		rLoc = 2388;
 		rType = 0;
 		vrLen = 1059;
 		vrLoc = 1081;
@@ -4123,7 +4265,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 67";
 		rLen = 0;
-		rLoc = 1844;
+		rLoc = 2063;
 		rType = 0;
 		vrLen = 1059;
 		vrLoc = 1081;
@@ -4133,7 +4275,7 @@
 		fRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */;
 		name = "TOLogController.m: 138";
 		rLen = 0;
-		rLoc = 4724;
+		rLoc = 4772;
 		rType = 0;
 		vrLen = 1139;
 		vrLoc = 311;
@@ -4193,7 +4335,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 40";
 		rLen = 0;
-		rLoc = 1108;
+		rLoc = 1293;
 		rType = 0;
 		vrLen = 864;
 		vrLoc = 642;
@@ -4213,7 +4355,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 44";
 		rLen = 0;
-		rLoc = 1135;
+		rLoc = 1320;
 		rType = 0;
 		vrLen = 895;
 		vrLoc = 642;
@@ -4223,7 +4365,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 51";
 		rLen = 0;
-		rLoc = 1349;
+		rLoc = 1534;
 		rType = 0;
 		vrLen = 918;
 		vrLoc = 642;
@@ -4233,7 +4375,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 123";
 		rLen = 0;
-		rLoc = 3547;
+		rLoc = 4786;
 		rType = 0;
 		vrLen = 984;
 		vrLoc = 2408;
@@ -4243,7 +4385,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 126";
 		rLen = 0;
-		rLoc = 3547;
+		rLoc = 4786;
 		rType = 0;
 		vrLen = 984;
 		vrLoc = 2408;
@@ -4253,7 +4395,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 127";
 		rLen = 0;
-		rLoc = 3547;
+		rLoc = 4786;
 		rType = 0;
 		vrLen = 1103;
 		vrLoc = 2289;
@@ -4263,7 +4405,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 127";
 		rLen = 0;
-		rLoc = 3547;
+		rLoc = 4786;
 		rType = 0;
 		vrLen = 1103;
 		vrLoc = 2289;
@@ -4273,7 +4415,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 127";
 		rLen = 0;
-		rLoc = 3547;
+		rLoc = 4786;
 		rType = 0;
 		vrLen = 1147;
 		vrLoc = 2245;
@@ -4293,7 +4435,7 @@
 		fRef = C9820D411131B1D4005F4CA2 /* TOLogsViewController.m */;
 		name = "TOLogsViewController.m: 127";
 		rLen = 0;
-		rLoc = 3547;
+		rLoc = 4786;
 		rType = 0;
 		vrLen = 1147;
 		vrLoc = 2245;
@@ -4333,7 +4475,7 @@
 		fRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */;
 		name = "TOLogController.m: 138";
 		rLen = 0;
-		rLoc = 4724;
+		rLoc = 4772;
 		rType = 0;
 		vrLen = 1185;
 		vrLoc = 264;
@@ -4343,7 +4485,7 @@
 		fRef = C9820CDA1131009F005F4CA2 /* TOLogController.h */;
 		name = "TOLogController.h: 27";
 		rLen = 0;
-		rLoc = 660;
+		rLoc = 703;
 		rType = 0;
 		vrLen = 682;
 		vrLoc = 0;
@@ -4353,7 +4495,7 @@
 		fRef = C9820D401131B1D4005F4CA2 /* TOLogsViewController.h */;
 		name = "TOLogsViewController.h: 38";
 		rLen = 0;
-		rLoc = 1112;
+		rLoc = 1226;
 		rType = 0;
 		vrLen = 1062;
 		vrLoc = 174;
