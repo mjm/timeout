@@ -252,7 +252,7 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleColumnWidthsKey</key>
 							<array>
-								<real>251</real>
+								<real>249</real>
 							</array>
 							<key>PBXSmartGroupTreeModuleColumnsKey_v4</key>
 							<array>
@@ -271,7 +271,6 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
-								<string>C9B5363A113B69CB00FBCABF</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
@@ -280,13 +279,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>18</integer>
+									<integer>16</integer>
 									<integer>4</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 32}, {251, 780}}</string>
+							<string>{{0, 0}, {249, 780}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -298,11 +297,11 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {268, 798}}</string>
+						<string>{{0, 0}, {266, 798}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
-							<real>251</real>
+							<real>249</real>
 						</array>
 						<key>RubberWindowFrame</key>
 						<string>0 39 1376 839 0 0 1440 878 </string>
@@ -310,7 +309,7 @@
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
 					<key>Proportion</key>
-					<string>268pt</string>
+					<string>266pt</string>
 				</dict>
 				<dict>
 					<key>Dock</key>
@@ -323,7 +322,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TOTimerTypeController.m</string>
+								<string>TOEntryViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -331,33 +330,28 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TOTimerTypeController.m</string>
+										<string>TOEntryViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>C9B537DE113CC3EF00FBCABF</string>
+										<string>C9B5381B113E00B300FBCABF</string>
 										<key>history</key>
 										<array>
 											<string>C98209D4112A2ADE005F4CA2</string>
 											<string>C9820D1511310491005F4CA2</string>
 											<string>C9820D1611310491005F4CA2</string>
 											<string>C9DE4C231134D76A00BBF839</string>
-											<string>C9DE4C921137616E00BBF839</string>
 											<string>C9DE4CA61138A56800BBF839</string>
 											<string>C9DE4CB51138CF3E00BBF839</string>
 											<string>C9DE4CB61138CF3E00BBF839</string>
 											<string>C9DE4D10113A38D100BBF839</string>
 											<string>C9DE4D11113A38D100BBF839</string>
-											<string>C9B5356D113B15A500FBCABF</string>
 											<string>C9B535C1113B336C00FBCABF</string>
 											<string>C9B535C2113B336C00FBCABF</string>
 											<string>C9B535C3113B336C00FBCABF</string>
 											<string>C9B535C4113B336C00FBCABF</string>
 											<string>C9B535C7113B336C00FBCABF</string>
 											<string>C9B5360D113B627A00FBCABF</string>
-											<string>C9B5360F113B627A00FBCABF</string>
-											<string>C9B53612113B627A00FBCABF</string>
-											<string>C9B53627113B65F200FBCABF</string>
 											<string>C9B5362D113B68EA00FBCABF</string>
 											<string>C9B5364F113B6A9800FBCABF</string>
 											<string>C9B53695113B7F4700FBCABF</string>
@@ -369,13 +363,21 @@
 											<string>C9B536E1113C8AE400FBCABF</string>
 											<string>C9B536F3113C8FFA00FBCABF</string>
 											<string>C9B536FC113C91B800FBCABF</string>
-											<string>C9B53719113C99B000FBCABF</string>
 											<string>C9B5371A113C99B000FBCABF</string>
 											<string>C9B5379D113CB63500FBCABF</string>
 											<string>C9B537A3113CB72600FBCABF</string>
-											<string>C9B537C6113CBA0500FBCABF</string>
 											<string>C9B537D9113CC37F00FBCABF</string>
-											<string>C9B537DA113CC37F00FBCABF</string>
+											<string>C9B53802113CCBF900FBCABF</string>
+											<string>C9B53803113CCBF900FBCABF</string>
+											<string>C9B53805113CCBF900FBCABF</string>
+											<string>C9B53806113CCBF900FBCABF</string>
+											<string>C9B53807113CCBF900FBCABF</string>
+											<string>C9B53808113CCBF900FBCABF</string>
+											<string>C9B53809113CCBF900FBCABF</string>
+											<string>C9B5380A113CCBF900FBCABF</string>
+											<string>C9B5380B113CCBF900FBCABF</string>
+											<string>C9B53812113E002E00FBCABF</string>
+											<string>C9B53804113CCBF900FBCABF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -387,7 +389,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1103, 543}}</string>
+								<string>{{0, 0}, {1105, 543}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 39 1376 839 0 0 1440 878 </string>
 							</dict>
@@ -407,7 +409,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 548}, {1103, 250}}</string>
+								<string>{{0, 548}, {1105, 250}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 39 1376 839 0 0 1440 878 </string>
 							</dict>
@@ -418,7 +420,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>1103pt</string>
+					<string>1105pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -573,6 +575,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>C9B53814113E002E00FBCABF</string>
+		<string>C9B53815113E002E00FBCABF</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>C910CBD911284DF9000B9D23</string>

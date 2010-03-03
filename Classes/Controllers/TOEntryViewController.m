@@ -136,8 +136,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	if (indexPath.row == 0) {
 		self.datePicker.date = self.entry.startTime;
+		self.datePicker.maximumDate = self.entry.endTime;
+		self.datePicker.minimumDate = nil;
 	} else {
 		self.datePicker.date = self.entry.endTime;
+		self.datePicker.minimumDate = self.entry.startTime;
+		self.datePicker.maximumDate = nil;
 	}
 }
 
