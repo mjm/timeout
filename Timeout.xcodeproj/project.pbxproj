@@ -465,6 +465,7 @@
 				GCC_PREFIX_HEADER = Timeout_Prefix.pch;
 				INFOPLIST_FILE = "Timeout-Info.plist";
 				PRODUCT_NAME = Timeout;
+				SDKROOT = iphoneos3.1;
 			};
 			name = "App Store";
 		};
