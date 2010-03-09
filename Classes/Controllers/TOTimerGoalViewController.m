@@ -13,6 +13,14 @@
 #import "TOLogController.h"
 #import "../Models/TOWorkLog.h"
 #import "../Models/TOLogEntry.h"
+#import "../Models/TOTimer.h"
+#import "../TOAppDelegate.h"
+
+@interface TOTimerGoalViewController (PrivateMethods)
+
+- (void)updatePushTimer;
+
+@end
 
 
 @implementation TOTimerGoalViewController
@@ -26,11 +34,33 @@
 	return self;
 }
 
+- (void)setButtonState:(BOOL)isStartButton {
+	[super setButtonState:isStartButton];
+	[self updatePushTimer];
+}
+
+- (void)updatePushTimer {
+	TOAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	NSString *token = delegate.deviceToken;
+	
+	TOLogEntry *entry = [self.logController runningEntryForLog:self.log];
+	
+	if (token) {
+		if ([entry isRunning]) {
+			[TOTimer createTimerForLog:self.log deviceToken:delegate.deviceToken delegate:nil];
+		} else {
+			[TOTimer deleteTimerForDeviceToken:delegate.deviceToken];
+		}
+	}
+}
+
 - (void)goalViewControllerDidFinish:(TOGoalViewController *)controller {
     [self dismissModalViewControllerAnimated:YES];
 	
 	[[NSUserDefaults standardUserDefaults] setObject:self.log.goal forKey:@"TOLastGoal"];
     [self.logController save];
+	
+	[self updatePushTimer];
 }
 
 - (IBAction)changeGoal {

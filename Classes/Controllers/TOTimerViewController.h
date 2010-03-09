@@ -44,4 +44,6 @@ typedef enum {
 - (IBAction)viewLogs;
 - (IBAction)startOrStopTimer;
 
+- (void)setButtonState:(BOOL)isStartButton;
+
 @end

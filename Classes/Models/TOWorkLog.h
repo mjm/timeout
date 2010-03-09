@@ -28,7 +28,7 @@
 //- (void)addEntries:(NSSet *)value;
 //- (void)removeEntries:(NSSet *)value;
 
-
+- (NSNumber *)remainingSeconds;
 - (NSDateComponents *)timeElapsed;
 - (NSDateComponents *)timeLeft;
 - (NSDate *)estimatedDepartureFromDate:(NSDate *)date;

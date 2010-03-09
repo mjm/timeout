@@ -13,6 +13,11 @@
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
 		C910CBC911284DC6000B9D23 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C910CBC811284DC6000B9D23 /* CoreData.framework */; };
 		C9177FDE11286D39008FCD2F /* TOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9177FD911286D39008FCD2F /* TOAppDelegate.m */; };
+		C926477111442CF400ADEF71 /* TODevice.m in Sources */ = {isa = PBXBuildFile; fileRef = C926477011442CF400ADEF71 /* TODevice.m */; };
+		C92647E511449C6600ADEF71 /* TORequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C92647E411449C6600ADEF71 /* TORequestOperation.m */; };
+		C92647EA11449D3D00ADEF71 /* TORestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C92647E911449D3D00ADEF71 /* TORestModel.m */; };
+		C92648281144AA0500ADEF71 /* TOTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = C92648271144AA0500ADEF71 /* TOTimer.m */; };
+		C92648C611460D0300ADEF71 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92648C511460D0300ADEF71 /* AudioToolbox.framework */; };
 		C9820CEA1131009F005F4CA2 /* NSCalendarAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820CD21131009F005F4CA2 /* NSCalendarAdditions.m */; };
 		C9820CEC1131009F005F4CA2 /* TOGoalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820CD71131009F005F4CA2 /* TOGoalViewController.m */; };
 		C9820CED1131009F005F4CA2 /* TOTimerGoalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */; };
@@ -58,6 +63,15 @@
 		C910CBC811284DC6000B9D23 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C9177FD811286D39008FCD2F /* TOAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOAppDelegate.h; sourceTree = "<group>"; };
 		C9177FD911286D39008FCD2F /* TOAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOAppDelegate.m; sourceTree = "<group>"; };
+		C926476F11442CF400ADEF71 /* TODevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TODevice.h; sourceTree = "<group>"; };
+		C926477011442CF400ADEF71 /* TODevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TODevice.m; sourceTree = "<group>"; };
+		C92647E311449C6600ADEF71 /* TORequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TORequestOperation.h; sourceTree = "<group>"; };
+		C92647E411449C6600ADEF71 /* TORequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TORequestOperation.m; sourceTree = "<group>"; };
+		C92647E811449D3D00ADEF71 /* TORestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TORestModel.h; sourceTree = "<group>"; };
+		C92647E911449D3D00ADEF71 /* TORestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TORestModel.m; sourceTree = "<group>"; };
+		C92648261144AA0500ADEF71 /* TOTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTimer.h; sourceTree = "<group>"; };
+		C92648271144AA0500ADEF71 /* TOTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTimer.m; sourceTree = "<group>"; };
+		C92648C511460D0300ADEF71 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C98209BA1128FCA0005F4CA2 /* Timeout.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Timeout.xcdatamodel; sourceTree = "<group>"; };
 		C9820CD11131009F005F4CA2 /* NSCalendarAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCalendarAdditions.h; sourceTree = "<group>"; };
 		C9820CD21131009F005F4CA2 /* NSCalendarAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCalendarAdditions.m; sourceTree = "<group>"; };
@@ -117,6 +131,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */,
 				C910CBC911284DC6000B9D23 /* CoreData.framework in Frameworks */,
+				C92648C611460D0300ADEF71 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +170,7 @@
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				C910CBC811284DC6000B9D23 /* CoreData.framework */,
 				C9DE4C901137614C00BBF839 /* Entitlements.plist */,
+				C92648C511460D0300ADEF71 /* AudioToolbox.framework */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -250,6 +266,14 @@
 				C9820CDE1131009F005F4CA2 /* TOLogEntry.m */,
 				C9820CDF1131009F005F4CA2 /* TOWorkLog.h */,
 				C9820CE01131009F005F4CA2 /* TOWorkLog.m */,
+				C926476F11442CF400ADEF71 /* TODevice.h */,
+				C926477011442CF400ADEF71 /* TODevice.m */,
+				C92647E311449C6600ADEF71 /* TORequestOperation.h */,
+				C92647E411449C6600ADEF71 /* TORequestOperation.m */,
+				C92647E811449D3D00ADEF71 /* TORestModel.h */,
+				C92647E911449D3D00ADEF71 /* TORestModel.m */,
+				C92648261144AA0500ADEF71 /* TOTimer.h */,
+				C92648271144AA0500ADEF71 /* TOTimer.m */,
 			);
 			name = Models;
 			path = Classes/Models;
@@ -356,6 +380,10 @@
 				C9B535A8113B293E00FBCABF /* TOMainViewController.m in Sources */,
 				C9B5360B113B3CDB00FBCABF /* TOTimerPayViewController.m in Sources */,
 				C9B536D5113C840500FBCABF /* TOPayViewController.m in Sources */,
+				C926477111442CF400ADEF71 /* TODevice.m in Sources */,
+				C92647E511449C6600ADEF71 /* TORequestOperation.m in Sources */,
+				C92647EA11449D3D00ADEF71 /* TORestModel.m in Sources */,
+				C92648281144AA0500ADEF71 /* TOTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,14 +393,25 @@
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = "~/Library/SDKs/httpriot-0.6.8/$(PLATFORM_NAME)$(IPHONEOS_DEPLOYMENT_TARGET).sdk";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matt Moriarity (9YL48JBH7D)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Timeout_Prefix.pch;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				INFOPLIST_FILE = "Timeout-Info.plist";
+				OTHER_LDFLAGS = (
+					"-lhttpriot",
+					"-lxml2",
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = Timeout;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3EEADB57-D6EE-4D8A-842B-7050833540A8";
+				SDKROOT = iphoneos3.1;
 			};
 			name = Debug;
 		};

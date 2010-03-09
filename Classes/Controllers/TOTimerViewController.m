@@ -16,7 +16,6 @@
 @interface TOTimerViewController (PrivateMethods)
 
 - (void)timerUpdate:(NSTimer *)aTimer;
-- (void)setButtonState:(BOOL)isStartButton;
 
 @end
 

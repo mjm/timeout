@@ -14,6 +14,7 @@
     TOMainViewController *mainViewController;
     
     TOLogController *logController;
+	NSString *deviceToken;
     
     NSManagedObjectModel *managedObjectModel;
     NSManagedObjectContext *managedObjectContext;	    
@@ -21,6 +22,7 @@
 }
 
 @property (nonatomic, retain, readonly) TOLogController *logController;
+@property (nonatomic, retain) NSString *deviceToken;
 
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;

@@ -6,18 +6,25 @@
 //  Copyright __MyCompanyName__ 2010. All rights reserved.
 //
 
+#import <AudioToolbox/AudioToolbox.h>
+
 #import "TOAppDelegate.h"
-#import "TOMainViewController.h"
-#import "TOLogController.h"
+#import "Controllers/TOMainViewController.h"
+#import "Controllers/TOLogController.h"
+
+#import "Models/TODevice.h"
 
 @implementation TOAppDelegate
 
+@synthesize deviceToken;
 @synthesize window, mainViewController;
 
 #pragma mark -
 #pragma mark Application Lifecycle
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
+	[[UIApplication sharedApplication] registerForRemoteNotificationTypes:UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound];
+	
 	TOMainViewController *aController = [[TOMainViewController alloc] initWithLogController:self.logController];
 	self.mainViewController = aController;
 	[aController release];
@@ -38,6 +45,37 @@
             abort();
         }
     }
+}
+
+#pragma mark -
+#pragma mark Push notifications
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)devToken {
+	NSString *tokenDesc = [devToken description];
+	self.deviceToken = [tokenDesc substringWithRange:NSMakeRange(1, [tokenDesc length] - 2)];
+	[TODevice registerDeviceWithToken:self.deviceToken];
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+	NSLog(@"registering error, %@, %@", error, [error userInfo]);
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+	NSLog(@"received notification: %@", userInfo);
+	
+	// TODO play an alert sound
+	SystemSoundID soundId = kSystemSoundID_Vibrate;
+	
+	NSDictionary *apsInfo = [userInfo valueForKey:@"aps"];
+	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Timeout"
+														message:[apsInfo valueForKey:@"alert"]
+													   delegate:nil
+											  cancelButtonTitle:@"OK"
+											  otherButtonTitles:nil];
+	[alertView show];
+	AudioServicesPlayAlertSound(soundId);
+	
+	[alertView release];
 }
 
 #pragma mark -

@@ -29,6 +29,13 @@
 
 const NSUInteger timeUnits = NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
 
+- (NSNumber *)remainingSeconds {
+	NSDateComponents *components = [self timeLeft];
+	
+	NSUInteger seconds = [components second] + (60 * [components minute]) + (3600 * [components hour]);
+	return [NSNumber numberWithInt:seconds];
+}
+
 - (NSDateComponents *)timeElapsed {
     NSTimeInterval elapsed = 0;
     for (TOLogEntry *entry in self.entries) {
