@@ -176,7 +176,7 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
  forRowAtIndexPath:(NSIndexPath *)indexPath {
 	
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-		TOLogEntry *entry = [self.log.orderedEntries objectAtIndex:indexPath.row - 1];
+		TOLogEntry *entry = [self.log.orderedEntries objectAtIndex:indexPath.row];
 		[self.logController deleteEntry:entry fromLog:self.log];
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
