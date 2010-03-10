@@ -15,7 +15,7 @@
 
 + (void)initialize {
 	[self setDelegate:self];
-	[self setBaseURL:[NSURL URLWithString:@"http://mmoriarity.ath.cx:3000"]];
+	[self setBaseURL:[NSURL URLWithString:PUSH_PROVIDER_URL]];
 }
 
 - (id)initWithDictionary:(NSDictionary *)values {
@@ -27,6 +27,10 @@
 }
 
 + (void)createTimerForLog:(TOWorkLog *)log deviceToken:(NSString *)token delegate:(id <TOTimerDelegate>)delegate {
+	if ([log remainingSeconds] == nil) {
+		return;
+	}
+	
 	NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
 							token, @"token", [[log remainingSeconds] stringValue], @"left", nil];
 	NSDictionary *options = [NSDictionary dictionaryWithObject:params forKey:@"body"];

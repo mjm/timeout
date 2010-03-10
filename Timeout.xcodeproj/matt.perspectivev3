@@ -277,13 +277,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>43</integer>
-									<integer>41</integer>
+									<integer>39</integer>
+									<integer>27</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {243, 780}}</string>
+							<string>{{0, 218}, {243, 780}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -300,7 +300,7 @@
 							<real>243</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>0 39 1388 839 0 0 1440 878 </string>
+						<string>0 219 1388 839 0 0 1920 1058 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -318,7 +318,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>C926475611440C0E00ADEF71</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TOAppDelegate.m</string>
+								<string>TOTimer.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,14 +326,13 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>C926475711440C0E00ADEF71</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TOAppDelegate.m</string>
+										<string>TOTimer.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>C92648BF11460C9000ADEF71</string>
+										<string>C92648E311473F4800ADEF71</string>
 										<key>history</key>
 										<array>
-											<string>C92647E111449C1400ADEF71</string>
 											<string>C92647EB11449D5E00ADEF71</string>
 											<string>C92647FC1144A41300ADEF71</string>
 											<string>C92648201144A89D00ADEF71</string>
@@ -344,17 +343,18 @@
 											<string>C92648591144BA5F00ADEF71</string>
 											<string>C926485C1144BA5F00ADEF71</string>
 											<string>C926485E1144BA5F00ADEF71</string>
-											<string>C926485F1144BA5F00ADEF71</string>
 											<string>C92648621144BA5F00ADEF71</string>
 											<string>C92648631144BA5F00ADEF71</string>
-											<string>C92648901144BC0600ADEF71</string>
 											<string>C92648911144BC0600ADEF71</string>
-											<string>C926489D1144BFD800ADEF71</string>
 											<string>C926489E1144BFD800ADEF71</string>
 											<string>C926489F1144BFD800ADEF71</string>
 											<string>C92648AB114606EB00ADEF71</string>
 											<string>C92648AC114606EB00ADEF71</string>
-											<string>C92648BE11460C5800ADEF71</string>
+											<string>C92648D21147356200ADEF71</string>
+											<string>C92648D31147356200ADEF71</string>
+											<string>C92648D41147356200ADEF71</string>
+											<string>C92648E111473F4800ADEF71</string>
+											<string>C92648E211473F4800ADEF71</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -370,7 +370,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1123, 577}}</string>
 								<key>RubberWindowFrame</key>
-								<string>0 39 1388 839 0 0 1440 878 </string>
+								<string>0 219 1388 839 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -394,6 +394,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1123, 189}}</string>
+										<key>RubberWindowFrame</key>
+										<string>0 219 1388 839 0 0 1920 1058 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -448,8 +450,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1123, 189}}</string>
-										<key>RubberWindowFrame</key>
-										<string>0 39 1388 839 0 0 1440 878 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -671,13 +671,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>C92648C011460C9000ADEF71</string>
 		<string>C92647A6114432F400ADEF71</string>
 		<string>C92647A7114432F400ADEF71</string>
 		<string>/Users/matt/Code/Timeout/Timeout.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>0 39 1388 839 0 0 1440 878 </string>
+	<string>0 219 1388 839 0 0 1920 1058 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

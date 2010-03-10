@@ -31,6 +31,9 @@ const NSUInteger timeUnits = NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecon
 
 - (NSNumber *)remainingSeconds {
 	NSDateComponents *components = [self timeLeft];
+	if (components == nil) {
+		return nil;
+	}
 	
 	NSUInteger seconds = [components second] + (60 * [components minute]) + (3600 * [components hour]);
 	return [NSNumber numberWithInt:seconds];

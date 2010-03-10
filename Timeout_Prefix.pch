@@ -7,6 +7,8 @@
 #warning "This project uses features only available in iPhone SDK 3.0 and later."
 #endif
 
+#define PUSH_PROVIDER_URL @"http://push.timeout-app.com"
+
 
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>

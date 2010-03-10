@@ -13,7 +13,7 @@
 
 + (void)initialize {
 	[self setDelegate:self];
-	[self setBaseURL:[NSURL URLWithString:@"http://mmoriarity.ath.cx:3000"]];
+	[self setBaseURL:[NSURL URLWithString:PUSH_PROVIDER_URL]];
 }
 
 + (void)registerDeviceWithToken:(NSString *)token {
