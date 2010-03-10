@@ -272,18 +272,19 @@
 								<string>C9820CDC1131009F005F4CA2</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
+								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>39</integer>
-									<integer>27</integer>
+									<integer>48</integer>
+									<integer>47</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 218}, {243, 780}}</string>
+							<string>{{0, 377}, {243, 780}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -311,14 +312,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>C926475611440C0E00ADEF71</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TOTimer.m</string>
+								<string>Timeout-Info.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,11 +325,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>C926475711440C0E00ADEF71</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TOTimer.m</string>
+										<string>Timeout-Info.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>C92648E311473F4800ADEF71</string>
+										<string>C92648F611474BE000ADEF71</string>
 										<key>history</key>
 										<array>
 											<string>C92647EB11449D5E00ADEF71</string>
@@ -354,7 +353,8 @@
 											<string>C92648D31147356200ADEF71</string>
 											<string>C92648D41147356200ADEF71</string>
 											<string>C92648E111473F4800ADEF71</string>
-											<string>C92648E211473F4800ADEF71</string>
+											<string>C92648F411474BE000ADEF71</string>
+											<string>C92648F511474BE000ADEF71</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -394,8 +394,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1123, 189}}</string>
-										<key>RubberWindowFrame</key>
-										<string>0 219 1388 839 0 0 1920 1058 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -450,6 +448,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1123, 189}}</string>
+										<key>RubberWindowFrame</key>
+										<string>0 219 1388 839 0 0 1920 1058 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>

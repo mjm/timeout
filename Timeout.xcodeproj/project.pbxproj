@@ -18,6 +18,7 @@
 		C92647EA11449D3D00ADEF71 /* TORestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C92647E911449D3D00ADEF71 /* TORestModel.m */; };
 		C92648281144AA0500ADEF71 /* TOTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = C92648271144AA0500ADEF71 /* TOTimer.m */; };
 		C92648C611460D0300ADEF71 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92648C511460D0300ADEF71 /* AudioToolbox.framework */; };
+		C92648EC11474B7400ADEF71 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C92648EB11474B7400ADEF71 /* Default.png */; };
 		C9820CEA1131009F005F4CA2 /* NSCalendarAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820CD21131009F005F4CA2 /* NSCalendarAdditions.m */; };
 		C9820CEC1131009F005F4CA2 /* TOGoalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820CD71131009F005F4CA2 /* TOGoalViewController.m */; };
 		C9820CED1131009F005F4CA2 /* TOTimerGoalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */; };
@@ -72,6 +73,7 @@
 		C92648261144AA0500ADEF71 /* TOTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTimer.h; sourceTree = "<group>"; };
 		C92648271144AA0500ADEF71 /* TOTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTimer.m; sourceTree = "<group>"; };
 		C92648C511460D0300ADEF71 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C92648EB11474B7400ADEF71 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Graphics/Default.png; sourceTree = "<group>"; };
 		C98209BA1128FCA0005F4CA2 /* Timeout.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Timeout.xcdatamodel; sourceTree = "<group>"; };
 		C9820CD11131009F005F4CA2 /* NSCalendarAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCalendarAdditions.h; sourceTree = "<group>"; };
 		C9820CD21131009F005F4CA2 /* NSCalendarAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCalendarAdditions.m; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C92648EB11474B7400ADEF71 /* Default.png */,
 				C9DE4C6711363B7B00BBF839 /* Icon.png */,
 				C9DE4BEF1134BDE100BBF839 /* StartButton.png */,
 				C9DE4BF01134BDE100BBF839 /* StopButton.png */,
@@ -353,6 +356,7 @@
 				C9B53620113B659600FBCABF /* TimerPayScreen.png in Resources */,
 				C9B536D7113C841E00FBCABF /* TOPayViewController.xib in Resources */,
 				C9B537F2113CC9BF00FBCABF /* Settings.bundle in Resources */,
+				C92648EC11474B7400ADEF71 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,10 +32,12 @@
 	TOTimerType timerType = self.timerType;
 	
 	UIViewController *controller;
+	BOOL animate = NO;
 	switch (timerType) {
 		case TOTimerTypeNone:
 			controller = [[TOTimerTypeController alloc] init];
 			((TOTimerTypeController *) controller).delegate = self;
+			animate = YES;
 			break;
 		case TOTimerTypeGoal:
 			controller = [[TOTimerGoalViewController alloc] initWithLogController:self.logController];
@@ -48,7 +50,7 @@
 	}
 	
 	controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-	[self presentModalViewController:controller animated:YES];
+	[self presentModalViewController:controller animated:animate];
 	
 	[controller release];
 }
