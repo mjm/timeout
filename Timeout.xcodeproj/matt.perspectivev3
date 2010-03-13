@@ -231,8 +231,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -275,22 +273,20 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
+								<string>C9B537F1113CC9BF00FBCABF</string>
 								<string>1C37FBAC04509CD000000102</string>
-								<string>C92649411147567600ADEF71</string>
-								<string>C92649421147567600ADEF71</string>
-								<string>C92649431147567600ADEF71</string>
-								<string>C92649441147567600ADEF71</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>115</integer>
-									<integer>73</integer>
-									<integer>72</integer>
+									<integer>67</integer>
+									<integer>66</integer>
+									<integer>47</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 896}, {243, 780}}</string>
+							<string>{{0, 593}, {243, 780}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -307,7 +303,7 @@
 							<real>243</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>-1428 311 1388 839 -1440 262 1440 900 </string>
+						<string>66 170 1388 839 0 0 1920 1058 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -323,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>C926475611440C0E00ADEF71</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Timeout-Info.plist</string>
+								<string>Root.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -331,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>C926475711440C0E00ADEF71</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Timeout-Info.plist</string>
+										<string>Root.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>C926494D114756A600ADEF71</string>
+										<string>C9264960114B4EF100ADEF71</string>
 										<key>history</key>
 										<array>
 											<string>C92647EB11449D5E00ADEF71</string>
@@ -362,7 +358,8 @@
 											<string>C92648F411474BE000ADEF71</string>
 											<string>C92649451147567600ADEF71</string>
 											<string>C92649461147567600ADEF71</string>
-											<string>C92649471147567600ADEF71</string>
+											<string>C926495E114B4EF100ADEF71</string>
+											<string>C926495F114B4EF100ADEF71</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -376,18 +373,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1123, 437}}</string>
+								<string>{{0, 0}, {1123, 428}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-1428 311 1388 839 -1440 262 1440 900 </string>
+								<string>66 170 1388 839 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>437pt</string>
+							<string>428pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>356pt</string>
+							<string>365pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -401,7 +398,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1123, 329}}</string>
+										<string>{{10, 27}, {1123, 338}}</string>
+										<key>RubberWindowFrame</key>
+										<string>66 170 1388 839 0 0 1920 1058 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -456,8 +455,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1123, 329}}</string>
-										<key>RubberWindowFrame</key>
-										<string>-1428 311 1388 839 -1440 262 1440 900 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -485,11 +482,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>C926475C11440C3300ADEF71</string>
+				<string>C9264962114B4EF100ADEF71</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>C926475D11440C3300ADEF71</string>
+				<string>C9264963114B4EF100ADEF71</string>
 				<string>C926475611440C0E00ADEF71</string>
-				<string>C926475E11440C3300ADEF71</string>
+				<string>C9264964114B4EF100ADEF71</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -638,14 +635,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>C926475F11440C3300ADEF71</string>
+				<string>C9264965114B4EF100ADEF71</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>C926476011440C3300ADEF71</string>
-				<string>C926476111440C3300ADEF71</string>
-				<string>C926476211440C3300ADEF71</string>
-				<string>C926476311440C3300ADEF71</string>
-				<string>C926475611440C0E00ADEF71</string>
+				<string>C9264966114B4EF100ADEF71</string>
+				<string>C9264967114B4EF100ADEF71</string>
+				<string>C9264968114B4EF100ADEF71</string>
+				<string>C9264969114B4EF100ADEF71</string>
+				<string>C926496A114B4EF100ADEF71</string>
 			</array>
 			<key>ToolbarConfigUserDefaultsMinorVersion</key>
 			<string>2</string>
@@ -679,12 +676,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>C92647A6114432F400ADEF71</string>
-		<string>C92647A7114432F400ADEF71</string>
 		<string>/Users/matt/Code/Timeout/Timeout.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>-1428 311 1388 839 -1440 262 1440 900 </string>
+	<string>66 170 1388 839 0 0 1920 1058 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

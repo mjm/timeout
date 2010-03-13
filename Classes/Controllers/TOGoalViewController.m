@@ -14,6 +14,11 @@
 @synthesize delegate, log;
 @synthesize datePicker;
 
++ (void)initialize {
+	[[NSUserDefaults standardUserDefaults] registerDefaults:[NSDictionary dictionaryWithObject:[NSNumber numberWithInt:6]
+																						forKey:@"TOGoalIncrement"]];
+}
+
 - (id)initWithLog:(TOWorkLog *)aLog {
 	if (![super initWithNibName:@"TOGoalViewController" bundle:nil])
 		return nil;
@@ -32,6 +37,7 @@
     [super viewDidLoad];
     
     self.datePicker.countDownDuration = [self.log.goal doubleValue];
+	self.datePicker.minuteInterval = [[[NSUserDefaults standardUserDefaults] objectForKey:@"TOGoalIncrement"] intValue];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

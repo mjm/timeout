@@ -26,6 +26,38 @@
 				<string>Track Pay</string>
 			</array>
 		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Goal Timer Increment</string>
+			<key>Key</key>
+			<string>TOGoalIncrement</string>
+			<key>DefaultValue</key>
+			<integer>6</integer>
+			<key>Values</key>
+			<array>
+				<integer>1</integer>
+				<string>2</string>
+				<string>3</string>
+				<string>4</string>
+				<string>5</string>
+				<string>6</string>
+				<string>10</string>
+				<string>15</string>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>1 Minute</string>
+				<string>2 Minutes</string>
+				<string>3 Minutes</string>
+				<string>4 Minutes</string>
+				<string>5 Minutes</string>
+				<string>6 Minutes</string>
+				<string>10 Minutes</string>
+				<string>15 Minutes</string>
+			</array>
+		</dict>
 	</array>
 </dict>
 </plist>
