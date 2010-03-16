@@ -16,6 +16,8 @@
 - (NSManagedObjectModel *)managedObjectModel;
 - (NSDate *)today;
 
+- (void)addSortDescriptorToOrderedEntries;
+
 @end
 
 
@@ -29,6 +31,13 @@
 	
 	self.managedObjectContext = context;
 	
+	[self addSortDescriptorToOrderedEntries];
+	[self deleteOldLogs];
+	
+	return self;
+}
+
+- (void)addSortDescriptorToOrderedEntries {
 	NSEntityDescription *entity = [self logEntityDescription];
 	NSPropertyDescription *property = [[entity propertiesByName] valueForKey:@"orderedEntries"];
 	NSFetchRequest *fetchRequest = [(NSFetchedPropertyDescription *)property fetchRequest];
@@ -36,14 +45,13 @@
 	NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"startTime" ascending:YES];
 	[fetchRequest setSortDescriptors:[NSArray arrayWithObject:sort]];
 	[sort release];
-	
-	return self;
 }
 
 + (void)initialize {
 	NSDictionary *defaults = [NSDictionary dictionaryWithObjectsAndKeys:
 							  [NSNumber numberWithInteger:28800], @"TOLastGoal",
-							  [NSNumber numberWithInteger:0], @"TOLastRate", nil];
+							  [NSNumber numberWithInteger:0], @"TOLastRate",
+							  [NSNumber numberWithInteger:0], @"TODeleteAfter", nil];
 	
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 	[userDefaults registerDefaults:defaults];
@@ -90,9 +98,8 @@
         } else {
 			NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 			
-            TOWorkLog *log = [NSEntityDescription
-                insertNewObjectForEntityForName:@"Log"
-                inManagedObjectContext:self.managedObjectContext];
+            TOWorkLog *log = [NSEntityDescription insertNewObjectForEntityForName:@"Log"
+														   inManagedObjectContext:self.managedObjectContext];
             log.day = date;
 			log.goal = [userDefaults objectForKey:@"TOLastGoal"];
 			log.rate = [NSDecimalNumber decimalNumberWithDecimal:[[userDefaults objectForKey:@"TOLastRate"] decimalValue]];
@@ -144,6 +151,36 @@
 	[self.managedObjectContext deleteObject:entry];
 	[self.managedObjectContext refreshObject:log mergeChanges:YES];
 	[self save];
+}
+
+- (void)deleteOldLogs {
+	NSInteger days = [[[NSUserDefaults standardUserDefaults] objectForKey:@"TODeleteAfter"] integerValue];
+	if (days == 0) {
+		// 0 actually means never delete old logs.
+		return;
+	}
+	
+	NSDate *today = [self today];
+	NSDateComponents *offset = [[NSDateComponents alloc] init];
+	[offset setDay:-days];
+	NSDate *date = [[NSCalendar currentCalendar] dateByAddingComponents:offset toDate:today options:0];
+	[offset release];
+	
+	NSFetchRequest *request = [[self managedObjectModel]
+							   fetchRequestFromTemplateWithName:@"oldLogs"
+										  substitutionVariables:[NSDictionary dictionaryWithObject:date forKey:@"DATE"]];
+	
+	NSError *error;
+	NSArray *results = [self.managedObjectContext executeFetchRequest:request error:&error];
+	if (results == nil) {
+		NSLog(@"Error deleting old logs: %@, %@", error, [error userInfo]);
+	} else {
+		for (TOWorkLog *log in results) {
+			// don't use [self deleteLog:log] because it would save on every iteration.
+			[self.managedObjectContext deleteObject:log];
+		}
+		[self save];
+	}
 }
 
 

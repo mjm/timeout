@@ -23,8 +23,10 @@
 - (TOWorkLog *)currentLog;
 - (TOLogEntry *)runningEntryForLog:(TOWorkLog *)log;
 - (NSFetchedResultsController *)logsFetchedResultsController;
+
 - (void)deleteLog:(TOWorkLog *)log;
 - (void)deleteEntry:(TOLogEntry *)entry fromLog:(TOWorkLog *)log;
+- (void)deleteOldLogs;
 
 - (void)save;
 

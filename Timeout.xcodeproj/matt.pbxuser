@@ -9,7 +9,7 @@
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = C910CBB211284BE6000B9D23 /* Timeout */;
-		activeSDKPreference = iphonesimulator3.1;
+		activeSDKPreference = iphoneos3.1;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Timeout */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* Timeout */,
@@ -101,6 +101,27 @@
 			C926495E114B4EF100ADEF71 /* PlistBookmark */ = C926495E114B4EF100ADEF71 /* PlistBookmark */;
 			C926495F114B4EF100ADEF71 /* PBXBookmark */ = C926495F114B4EF100ADEF71 /* PBXBookmark */;
 			C9264960114B4EF100ADEF71 /* PlistBookmark */ = C9264960114B4EF100ADEF71 /* PlistBookmark */;
+			C9264978115015B400ADEF71 /* PBXBookmark */ = C9264978115015B400ADEF71 /* PBXBookmark */;
+			C926498D115026CE00ADEF71 /* PBXTextBookmark */ = C926498D115026CE00ADEF71 /* PBXTextBookmark */;
+			C926498E115026CE00ADEF71 /* PBXTextBookmark */ = C926498E115026CE00ADEF71 /* PBXTextBookmark */;
+			C926498F115026CE00ADEF71 /* PBXTextBookmark */ = C926498F115026CE00ADEF71 /* PBXTextBookmark */;
+			C9264990115026CE00ADEF71 /* PlistBookmark */ = C9264990115026CE00ADEF71 /* PlistBookmark */;
+			C9264992115026CE00ADEF71 /* PBXTextBookmark */ = C9264992115026CE00ADEF71 /* PBXTextBookmark */;
+			C9264993115026CE00ADEF71 /* PBXTextBookmark */ = C9264993115026CE00ADEF71 /* PBXTextBookmark */;
+			C9264994115026D200ADEF71 /* PBXTextBookmark */ = C9264994115026D200ADEF71 /* PBXTextBookmark */;
+			C9264997115026D200ADEF71 /* PBXTextBookmark */ = C9264997115026D200ADEF71 /* PBXTextBookmark */;
+			C9264998115026D200ADEF71 /* PBXTextBookmark */ = C9264998115026D200ADEF71 /* PBXTextBookmark */;
+			C9264999115026D200ADEF71 /* PBXTextBookmark */ = C9264999115026D200ADEF71 /* PBXTextBookmark */;
+			C926499C115026D200ADEF71 /* XDModelBookmark */ = C926499C115026D200ADEF71 /* XDModelBookmark */;
+			C92649A1115027AC00ADEF71 /* PBXTextBookmark */ = C92649A1115027AC00ADEF71 /* PBXTextBookmark */;
+			C92649A2115027AC00ADEF71 /* PBXTextBookmark */ = C92649A2115027AC00ADEF71 /* PBXTextBookmark */;
+			C92649A311502AAA00ADEF71 /* PBXTextBookmark */ = C92649A311502AAA00ADEF71 /* PBXTextBookmark */;
+			C92649A411502AAB00ADEF71 /* PBXTextBookmark */ = C92649A411502AAB00ADEF71 /* PBXTextBookmark */;
+			C92649A511502AAC00ADEF71 /* PBXTextBookmark */ = C92649A511502AAC00ADEF71 /* PBXTextBookmark */;
+			C92649A611502AB500ADEF71 /* PBXTextBookmark */ = C92649A611502AB500ADEF71 /* PBXTextBookmark */;
+			C92649A711502AB500ADEF71 /* PBXTextBookmark */ = C92649A711502AB500ADEF71 /* PBXTextBookmark */;
+			C92649AD11502D7000ADEF71 /* PBXTextBookmark */ = C92649AD11502D7000ADEF71 /* PBXTextBookmark */;
+			C92649AE11502D7000ADEF71 /* PBXTextBookmark */ = C92649AE11502D7000ADEF71 /* PBXTextBookmark */;
 		};
 		sourceControlManager = C910CBBC11284C05000B9D23 /* Source Control */;
 		userBuildSettings = {
@@ -551,6 +572,374 @@
 		path = /Users/matt/Code/Timeout/Settings.bundle/Root.plist;
 		sourceTree = "<absolute>";
 	};
+	C9264978115015B400ADEF71 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = C9B536BB113B803200FBCABF /* Timeout 3.xcdatamodel */;
+	};
+	C926498D115026CE00ADEF71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */;
+		name = "TOTimerGoalViewController.m: 35";
+		rLen = 0;
+		rLoc = 755;
+		rType = 0;
+		vrLen = 807;
+		vrLoc = 481;
+	};
+	C926498E115026CE00ADEF71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CD71131009F005F4CA2 /* TOGoalViewController.m */;
+		name = "TOGoalViewController.m: 9";
+		rLen = 0;
+		rLoc = 181;
+		rType = 0;
+		vrLen = 716;
+		vrLoc = 42;
+	};
+	C926498F115026CE00ADEF71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9B535A7113B293E00FBCABF /* TOMainViewController.m */;
+		name = "TOMainViewController.m: 16";
+		rLen = 0;
+		rLoc = 372;
+		rType = 0;
+		vrLen = 662;
+		vrLoc = 0;
+	};
+	C9264990115026CE00ADEF71 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = C9264991115026CE00ADEF71 /* Root.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			PreferenceSpecifiers,
+			2,
+		);
+		name = /Users/matt/Code/Timeout/Settings.bundle/Root.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	C9264991115026CE00ADEF71 /* Root.plist */ = {
+		isa = PBXFileReference;
+		name = Root.plist;
+		path = /Users/matt/Code/Timeout/Settings.bundle/Root.plist;
+		sourceTree = "<absolute>";
+	};
+	C9264992115026CE00ADEF71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */;
+		name = "TOLogController.m: 117";
+		rLen = 0;
+		rLoc = 3933;
+		rType = 0;
+		vrLen = 820;
+		vrLoc = 219;
+	};
+	C9264993115026CE00ADEF71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */;
+		name = "TOLogController.m: 34";
+		rLen = 0;
+		rLoc = 677;
+		rType = 0;
+		vrLen = 346;
+		vrLoc = 426;
+	};
+	C9264994115026D200ADEF71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */;
+		name = "TOLogController.m: 34";
+		rLen = 0;
+		rLoc = 677;
+		rType = 0;
+		vrLen = 346;
+		vrLoc = 426;
+	};
+	C9264997115026D200ADEF71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CDA1131009F005F4CA2 /* TOLogController.h */;
+		name = "TOLogController.h: 29";
+		rLen = 0;
+		rLoc = 727;
+		rType = 0;
+		vrLen = 749;
+		vrLoc = 0;
+	};
+	C9264998115026D200ADEF71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */;
+		name = "TOLogController.m: 17";
+		rLen = 0;
+		rLoc = 419;
+		rType = 0;
+		vrLen = 1662;
+		vrLoc = 25;
+	};
+	C9264999115026D200ADEF71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */;
+		name = "TOLogController.m: 177";
+		rLen = 0;
+		rLoc = 5982;
+		rType = 0;
+		vrLen = 1549;
+		vrLoc = 728;
+	};
+	C926499C115026D200ADEF71 /* XDModelBookmark */ = {
+		isa = XDModelBookmark;
+		fRef = C9B536BB113B803200FBCABF /* Timeout 3.xcdatamodel */;
+		fallbackIsa = PBXBookmark;
+		uiCtxt = {
+			UIContextForDetailArea = {
+				_indexOfSelectedPane = 0;
+				_indexOfSelectedView = 1;
+			};
+			UIContextForEntityArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnns = (
+					"ET Entity",
+					"ET Abstract",
+					"ET Class",
+				);
+				chosenTableColumnns_sortDirections = (
+					YES,
+				);
+				chosenTableColumnns_sortKeys = (
+					name,
+				);
+				chosenTableColumnns_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableWidths = (
+					103.000000,
+					22.000000,
+					79.080078,
+				);
+			};
+			UIContextForLayoutManager = {
+				detailSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {508, 220}}",
+						"{{513, 0}, {266, 220}}",
+					);
+				};
+				diagramSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {779, 220}}",
+						"{{0, 225}, {779, 512}}",
+					);
+				};
+				tableSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {229, 220}}",
+						"{{234, 0}, {272, 220}}",
+					);
+				};
+			};
+			UIContextForPropertyArea = {
+				_indexOfSelectedView = 4;
+				chosenTableColumnnFRTs = (
+					"FT Fetch Request",
+					"FT Predicate",
+				);
+				chosenTableColumnnFRTs_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnFRTs_sortKeys = (
+					name,
+				);
+				chosenTableColumnnFRTs_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsAT = (
+					"AT Attribute",
+					"AT Type",
+				);
+				chosenTableColumnnsAT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsAT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsAT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsFPT = (
+					"FP FetchedProperty",
+					"FP Destination",
+					"FP Predicate",
+				);
+				chosenTableColumnnsFPT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsFPT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsFPT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsPT = (
+					"PT Property",
+					"PT Kind",
+					"PT SharedKeyOne",
+				);
+				chosenTableColumnnsPT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsPT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsPT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsRT = (
+					"RT Relationship",
+					"RT Destination",
+				);
+				chosenTableColumnnsRT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsRT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsRT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableWidthsAT = (
+					128.000000,
+					64.000000,
+				);
+				chosenTableWidthsFPT = (
+					128.000000,
+					64.000000,
+					144.764160,
+				);
+				chosenTableWidthsFRT = (
+					128.000000,
+					249.764160,
+				);
+				chosenTableWidthsPT = (
+					128.000000,
+					108.110840,
+					96.570801,
+				);
+				chosenTableWidthsRT = (
+					128.000000,
+					64.000000,
+				);
+			};
+			"xdesign model browser state key - shown/hidden" = 1;
+			"xdesign model diagram view visible rect key" = "{{-58, -33}, {764, 497}}";
+			"xdesign model selected entities key" = (
+				"<XDPMEntity: 0x203311820>{name=Log, package=}",
+			);
+			"xdesign model selected properties key" = (
+				"<XDPMFetchRequest: 0x20399e980>",
+			);
+		};
+	};
+	C92649A1115027AC00ADEF71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */;
+		name = "TOLogController.m: 34";
+		rLen = 0;
+		rLoc = 677;
+		rType = 0;
+		vrLen = 771;
+		vrLoc = 926;
+	};
+	C92649A2115027AC00ADEF71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */;
+		name = "TOLogController.m: 166";
+		rLen = 0;
+		rLoc = 5260;
+		rType = 0;
+		vrLen = 1323;
+		vrLoc = 4657;
+	};
+	C92649A311502AAA00ADEF71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */;
+		name = "TOLogController.m: 64";
+		rLen = 0;
+		rLoc = 1860;
+		rType = 0;
+		vrLen = 343;
+		vrLoc = 2114;
+	};
+	C92649A411502AAB00ADEF71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */;
+		name = "TOLogController.m: 64";
+		rLen = 0;
+		rLoc = 1860;
+		rType = 0;
+		vrLen = 715;
+		vrLoc = 1911;
+	};
+	C92649A511502AAC00ADEF71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */;
+		name = "TOLogController.m: 64";
+		rLen = 0;
+		rLoc = 1860;
+		rType = 0;
+		vrLen = 343;
+		vrLoc = 2114;
+	};
+	C92649A611502AB500ADEF71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */;
+		name = "TOLogController.m: 64";
+		rLen = 0;
+		rLoc = 1860;
+		rType = 0;
+		vrLen = 715;
+		vrLoc = 1911;
+	};
+	C92649A711502AB500ADEF71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */;
+		name = "TOLogController.m: 36";
+		rLen = 0;
+		rLoc = 710;
+		rType = 0;
+		vrLen = 1112;
+		vrLoc = 357;
+	};
+	C92649AD11502D7000ADEF71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */;
+		name = "TOLogController.m: 11";
+		rLen = 0;
+		rLoc = 205;
+		rType = 0;
+		vrLen = 461;
+		vrLoc = 0;
+	};
+	C92649AE11502D7000ADEF71 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9820CDB1131009F005F4CA2 /* TOLogController.m */;
+		name = "TOLogController.m: 36";
+		rLen = 0;
+		rLoc = 710;
+		rType = 0;
+		vrLen = 1112;
+		vrLoc = 357;
+	};
 	C98209BA1128FCA0005F4CA2 /* Timeout.xcdatamodel */ = {
 		uiCtxt = {
 			"Xdesign Model Editor Bookmark Key" = {
@@ -733,9 +1122,9 @@
 	};
 	C9820CD71131009F005F4CA2 /* TOGoalViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1044, 826}}";
-			sepNavSelRange = "{865, 0}";
-			sepNavVisRange = "{424, 708}";
+			sepNavIntBoundsRect = "{{0, 0}, {1062, 966}}";
+			sepNavSelRange = "{181, 0}";
+			sepNavVisRange = "{42, 716}";
 		};
 	};
 	C9820CD81131009F005F4CA2 /* TOTimerGoalViewController.h */ = {
@@ -747,24 +1136,24 @@
 	};
 	C9820CD91131009F005F4CA2 /* TOTimerGoalViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1062, 1568}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1062, 1610}}";
 			sepNavSelRange = "{755, 0}";
-			sepNavVisRange = "{481, 1086}";
+			sepNavVisRange = "{481, 807}";
 			sepNavWindowFrame = "{{15, 7}, {627, 871}}";
 		};
 	};
 	C9820CDA1131009F005F4CA2 /* TOLogController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1044, 511}}";
-			sepNavSelRange = "{600, 0}";
-			sepNavVisRange = "{0, 725}";
+			sepNavIntBoundsRect = "{{0, 0}, {956, 745}}";
+			sepNavSelRange = "{727, 0}";
+			sepNavVisRange = "{0, 749}";
 		};
 	};
 	C9820CDB1131009F005F4CA2 /* TOLogController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1044, 2058}}";
-			sepNavSelRange = "{3745, 0}";
-			sepNavVisRange = "{3231, 1210}";
+			sepNavIntBoundsRect = "{{0, 0}, {1131, 3240}}";
+			sepNavSelRange = "{710, 0}";
+			sepNavVisRange = "{357, 1112}";
 		};
 	};
 	C9820CDD1131009F005F4CA2 /* TOLogEntry.h */ = {
@@ -863,9 +1252,9 @@
 	};
 	C9B535A7113B293E00FBCABF /* TOMainViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {726, 1078}}";
-			sepNavSelRange = "{1390, 0}";
-			sepNavVisRange = "{343, 1517}";
+			sepNavIntBoundsRect = "{{0, 0}, {1062, 1120}}";
+			sepNavSelRange = "{372, 0}";
+			sepNavVisRange = "{0, 662}";
 			sepNavWindowFrame = "{{38, 159}, {779, 873}}";
 		};
 	};
@@ -1068,7 +1457,7 @@
 					chosenTableWidths = (
 						103.000000,
 						22.000000,
-						32.080078,
+						79.080078,
 					);
 				};
 				UIContextForLayoutManager = {
@@ -1098,8 +1487,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {166, 220}}",
-							"{{171, 0}, {337, 220}}",
+							"{{0, 0}, {229, 220}}",
+							"{{234, 0}, {272, 220}}",
 						);
 					};
 				};
