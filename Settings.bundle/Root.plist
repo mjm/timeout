@@ -58,6 +58,32 @@
 				<string>15 Minutes</string>
 			</array>
 		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Delete Logs After</string>
+			<key>Key</key>
+			<string>TODeleteAfter</string>
+			<key>DefaultValue</key>
+			<string>0</string>
+			<key>Values</key>
+			<array>
+				<string>0</string>
+				<string>7</string>
+				<string>14</string>
+				<string>30</string>
+				<string>60</string>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>Never</string>
+				<string>1 Week</string>
+				<string>2 Weeks</string>
+				<string>1 Month</string>
+				<string>2 Months</string>
+			</array>
+		</dict>
 	</array>
 </dict>
 </plist>
