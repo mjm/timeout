@@ -1,6 +1,9 @@
 @class TOWorkLog;
 
 //! An entry for a contiguous block of time in a work log.
+/*!
+ \ingroup models
+ */
 @interface TOLogEntry : NSManagedObject {
 }
 

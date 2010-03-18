@@ -3,6 +3,9 @@
 @class TOWorkLog;
 
 //! A timer on the push notification provider.
+/*!
+ \ingroup models
+ */
 @interface TOTimer : TORestModel {
 }
 

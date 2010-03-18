@@ -1,4 +1,4 @@
-#import "NSCalendarAdditions.h"
+#import "NSCalendar+Additions.h"
 
 @implementation NSCalendar (Additions)
 

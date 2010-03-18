@@ -7,17 +7,23 @@
  Presents the user with a date picker so that the user can select how much time they intend
  to work for the day. Calls to a delegate when the user is done changing the goal.
  
+ \nosubgrouping
+ \ingroup modal_controllers
  */
 @interface TOGoalViewController : UIViewController {
     id <TOGoalViewControllerDelegate> delegate; //!< Delegate for this controller.
     TOWorkLog *log; //!< The log whose goal is being changed.
     
+	//! \name Outlets
+	//@{
+	
     IBOutlet UIDatePicker *datePicker; //!< The date picker for selecting the goal.
+	
+	//@}
 }
 
 @property (nonatomic, assign) id <TOGoalViewControllerDelegate> delegate;
 @property (nonatomic, retain) TOWorkLog *log;
-
 @property (nonatomic, retain) IBOutlet UIDatePicker *datePicker;
 
 //! Creates a new controller for editing a log.
@@ -27,8 +33,13 @@
  */
 - (id)initWithLog:(TOWorkLog *)log;
 
+//! \name Actions
+//@{
+
 //! Action called when the user hits the "Done" button.
 - (IBAction)done;
+
+//@}
 
 @end
 

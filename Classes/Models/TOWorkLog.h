@@ -1,6 +1,9 @@
 @class TOLogEntry;
 
 //! A log of entries for a single day.
+/*!
+ \ingroup models
+ */
 @interface TOWorkLog : NSManagedObject {
 }
 

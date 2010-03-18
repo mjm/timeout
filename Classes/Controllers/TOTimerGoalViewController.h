@@ -8,11 +8,18 @@
  
  Displays three labels for departure time, time remaining, and time elapsed.
  
+ \nosubgrouping
+ \ingroup timer_controllers
  */
 @interface TOTimerGoalViewController : TOTimerViewController <TOGoalViewControllerDelegate> {
+	//! \name Outlets
+	//@{
+	
     IBOutlet UILabel *departureLabel; //!< Label for departure time.
     IBOutlet UILabel *elapsedLabel; //!< Label for time elapsed.
     IBOutlet UILabel *leftLabel; //!< Label for time remaining.
+	
+	//@}
 }
 
 @property (nonatomic, retain) IBOutlet UILabel *departureLabel;
@@ -26,7 +33,12 @@
  */
 - (id)initWithLogController:(TOLogController *)controller;
 
+//! \name Actions
+//@{
+
 //! Called when the user wants to change their goal time.
 - (IBAction)changeGoal;
+
+//@}
 
 @end

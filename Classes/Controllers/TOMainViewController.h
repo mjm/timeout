@@ -8,6 +8,7 @@
  This view controller shows nothing of value in its view. Its main purpose is to delegate to
  other view controllers.
  
+ \ingroup controllers
  */
 @interface TOMainViewController : UIViewController <TOTimerTypeControllerDelegate> {
 	TOLogController *logController; //!< The controller used for persistence.

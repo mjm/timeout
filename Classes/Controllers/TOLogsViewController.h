@@ -25,16 +25,23 @@
  Allows the user to delete logs or drill down into a specific log. Also has a button to switch back
  to the timer view.
  
+ \nosubgrouping
+ \ingroup nav_controllers
  */
 @interface TOLogsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate> {
 	id <TOLogsViewControllerDelegate> delegate; //!< Delegate object for the controller.
 	TOLogController *logController; //!< The persistence controller for the application.
 	NSFetchedResultsController *fetchedResultsController; //!< The fetched results controller for displaying the results.
 	
+	//! \name Outlets
+	//@{
+	
 	IBOutlet UITableView *tableView; //!< The table view displaying the data.
 	IBOutlet UIBarButtonItem *doneButton; //!< Button pressed when the user wants to switch to the timer view.
 	IBOutlet UIBarButtonItem *editButton; //!< Button pressed when the user wants to delete logs.
 	IBOutlet UIBarButtonItem *cancelButton; //!< Button pressed when the user is done deleting logs.
+	
+	//@}
 }
 
 @property (nonatomic, assign) id <TOLogsViewControllerDelegate> delegate;
@@ -53,6 +60,9 @@
  */
 - (id)initWithLogController:(TOLogController *)controller;
 
+//! \name Actions
+//@{
+
 //! Action called when the user wants to switch to the timer view.
 - (IBAction)done;
 
@@ -61,5 +71,7 @@
 
 //! Action called when the user is done deleting logs.
 - (IBAction)cancel;
+
+//@} 
 
 @end

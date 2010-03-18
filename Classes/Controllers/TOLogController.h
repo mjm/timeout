@@ -7,6 +7,7 @@
  Handles retrieving and manipulating logs and entries for the application.
  Also provides a convenient method for saving any changes.
  
+ \ingroup controllers
  */
 @interface TOLogController : NSObject {
     NSManagedObjectContext *managedObjectContext; //! The Core Data managed object context.

@@ -1,6 +1,6 @@
 #import "TOTimerGoalViewController.h"
 
-#import "../Categories/NSCalendarAdditions.h"
+#import "../Categories/NSCalendar+Additions.h"
 
 #import "TOLogController.h"
 #import "../Models/TOWorkLog.h"

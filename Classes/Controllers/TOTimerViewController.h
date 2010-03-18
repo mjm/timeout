@@ -18,6 +18,8 @@ typedef enum {
  Handles starting and stopping the timer and the button to view the list of logs.
  Schedules the timer to update the display every second.
  
+ \ingroup timer_controllers
+ \nosubgrouping
  */
 @interface TOTimerViewController : UIViewController <TOLogsViewControllerDelegate> {
 	TOWorkLog *log; //!< The log whose information is being displayed.
@@ -61,10 +63,7 @@ typedef enum {
  */
 - (void)updateWithDateComponents:(NSDateComponents *)components;
 
-/*!
- \name Actions
- Interface Builder actions that are wired to components.
- */
+//! \name Actions
 //@{
 
 //! Action called when the user wants to view the list of logs.

@@ -1,6 +1,9 @@
 #import "TORestModel.h"
 
 //! A registered device on the push notification provider server.
+/*!
+ \ingroup models
+ */
 @interface TODevice : TORestModel {
 }
 

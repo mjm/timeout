@@ -27,16 +27,22 @@
  chosen how the timer type they wish to use. It explains the two options and allows the
  user to select one.
  
+ \nosubgrouping
+ \ingroup modal_controllers
  */
 @interface TOTimerTypeController : UIViewController {
 	id <TOTimerTypeControllerDelegate> delegate; //!< Delegate for this controller.
 	
+	//! \name Outlets
+	//@{
+	
 	IBOutlet UIButton *goalButton; //!< Button pressed if the user chooses to track by goal.
 	IBOutlet UIButton *payButton; //!< Button pressed if the user chooses to track pay.
+	
+	//@}
 }
 
 @property (nonatomic, assign) id <TOTimerTypeControllerDelegate> delegate;
-
 @property (nonatomic, retain) IBOutlet UIButton *goalButton;
 @property (nonatomic, retain) IBOutlet UIButton *payButton;
 
@@ -46,10 +52,15 @@
  */
 - (id)init;
 
+//! \name Actions
+//@{
+
 //! Action called when the user chooses to track by goal.
 - (IBAction)selectGoal;
 
 //! Action called when the user chooses to track pay.
 - (IBAction)selectPay;
+
+//@}
 
 @end

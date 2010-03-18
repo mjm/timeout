@@ -8,13 +8,20 @@
  depending on how the user has chosen to track their timer. Shows a list of the entries in
  the log.
  
+ \nosubgrouping
+ \ingroup nav_controllers
  */
 @interface TOLogDetailViewController : UITableViewController {
 	TOWorkLog *log; //!< The log being displayed by this controller.
 	TOLogController *logController; //!< The persistence controller.
 	
+	//! \name Outlets
+	//@{
+	
 	IBOutlet UIBarButtonItem *editButton; //!< Button pressed when the user wants to delete entries.
 	IBOutlet UIBarButtonItem *doneButton; //!< Button pressed when the user is done deleting entries.
+	
+	//@}
 }
 
 @property (nonatomic, retain) TOLogController *logController;
@@ -31,10 +38,15 @@
  */
 - (id)initWithLog:(TOWorkLog *)log logController:(TOLogController *)controller;
 
+//! \name Actions
+//@{
+
 //! Action called when the user wants to delete entries from the log.
 - (IBAction)edit;
 
 //! Action called when the user wants to stop deleting entries from the log.
 - (IBAction)done;
+
+//@}
 
 @end

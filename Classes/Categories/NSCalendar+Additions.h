@@ -1,4 +1,7 @@
 //! Additional methods for NSCalendar that allow conversion between NSDateComponents and NSTimeInterval.
+/*!
+ \ingroup additions
+ */
 @interface NSCalendar (Additions)
 
 //! Converts a time interval into date components.

@@ -6,17 +6,23 @@
  Presents a text field where the user can enter their new pay rate. Calls to a delegate
  when the user is finished changing their rate.
  
+ \nosubgrouping
+ \ingroup modal_controllers
  */
 @interface TOPayViewController : UIViewController {
 	id <TOPayViewControllerDelegate> delegate; //!< Delegate for this controller.
 	NSDecimalNumber *rate; //!< The current rate as set by the user.
 	
+	//! \name Outlets
+	//@{
+	
 	IBOutlet UITextField *rateField; //!< The text field for the pay rate.
+	
+	//@}
 }
 
 @property (nonatomic, retain) id <TOPayViewControllerDelegate> delegate;
 @property (nonatomic, retain) NSDecimalNumber *rate;
-
 @property (nonatomic, retain) IBOutlet UITextField *rateField;
 
 //! Creates a view controller with the rate already filled in.
@@ -26,8 +32,13 @@
  */
 - (id)initWithRate:(NSDecimalNumber *)aRate;
 
+//! \name Actions
+//@{
+
 //! Action called when the user is done changing their pay rate.
 - (IBAction)done;
+
+//@}
 
 @end
 
