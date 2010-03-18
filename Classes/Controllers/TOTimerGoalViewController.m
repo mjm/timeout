@@ -1,11 +1,3 @@
-//
-//  TOTimerGoalViewController.m
-//  Timeout
-//
-//  Created by Matt Moriarity on 2/14/10.
-//  Copyright __MyCompanyName__ 2010. All rights reserved.
-//
-
 #import "TOTimerGoalViewController.h"
 
 #import "../Categories/NSCalendarAdditions.h"
@@ -18,6 +10,7 @@
 
 @interface TOTimerGoalViewController (PrivateMethods)
 
+//! Updates the status of the push notification server.
 - (void)updatePushTimer;
 
 @end
@@ -47,7 +40,7 @@
 	
 	if (token) {
 		if ([entry isRunning]) {
-			[TOTimer createTimerForLog:self.log deviceToken:delegate.deviceToken delegate:nil];
+			[TOTimer createTimerForLog:self.log deviceToken:delegate.deviceToken];
 		} else {
 			[TOTimer deleteTimerForDeviceToken:delegate.deviceToken];
 		}

@@ -1,11 +1,3 @@
-//
-//  TOPayViewController.m
-//  Timeout
-//
-//  Created by Matt Moriarity on 3/1/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import "TOPayViewController.h"
 
 @implementation TOPayViewController

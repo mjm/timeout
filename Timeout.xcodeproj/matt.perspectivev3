@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>C92649AE11502D7000ADEF71</string>
+						<string>C9264A7511511E8700ADEF71</string>
 						<key>history</key>
 						<array>
 							<string>C9264997115026D200ADEF71</string>
@@ -312,24 +312,25 @@
 								<string>C9820CD01131009F005F4CA2</string>
 								<string>C9820CD31131009F005F4CA2</string>
 								<string>C9820CDC1131009F005F4CA2</string>
+								<string>C9820CE31131009F005F4CA2</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>C9B5363A113B69CB00FBCABF</string>
 								<string>C9B537F1113CC9BF00FBCABF</string>
 								<string>1C37FBAC04509CD000000102</string>
+								<string>C9264955114B4D2700ADEF71</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>68</integer>
-									<integer>65</integer>
-									<integer>47</integer>
+									<integer>15</integer>
+									<integer>4</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 2}, {243, 780}}</string>
+							<string>{{0, 0}, {243, 780}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -346,7 +347,7 @@
 							<real>243</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>20 39 1388 839 0 0 1440 878 </string>
+						<string>15 38 1388 839 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -364,7 +365,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>C926475611440C0E00ADEF71</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TOLogController.m</string>
+								<string>TOEntryViewController.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -372,42 +373,47 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>C926475711440C0E00ADEF71</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TOLogController.m</string>
+										<string>TOEntryViewController.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>C92649AD11502D7000ADEF71</string>
+										<string>C9264A7411511E8700ADEF71</string>
 										<key>history</key>
 										<array>
 											<string>C92647EB11449D5E00ADEF71</string>
 											<string>C92647FC1144A41300ADEF71</string>
 											<string>C92648201144A89D00ADEF71</string>
 											<string>C92648211144A89D00ADEF71</string>
-											<string>C92648351144AD1D00ADEF71</string>
 											<string>C92648571144BA5F00ADEF71</string>
-											<string>C92648581144BA5F00ADEF71</string>
 											<string>C92648591144BA5F00ADEF71</string>
 											<string>C926485C1144BA5F00ADEF71</string>
 											<string>C926485E1144BA5F00ADEF71</string>
-											<string>C92648621144BA5F00ADEF71</string>
 											<string>C92648631144BA5F00ADEF71</string>
 											<string>C92648911144BC0600ADEF71</string>
-											<string>C926489E1144BFD800ADEF71</string>
 											<string>C926489F1144BFD800ADEF71</string>
-											<string>C92648AC114606EB00ADEF71</string>
 											<string>C92648D21147356200ADEF71</string>
-											<string>C92648D31147356200ADEF71</string>
 											<string>C92648D41147356200ADEF71</string>
 											<string>C92648E111473F4800ADEF71</string>
 											<string>C92648F411474BE000ADEF71</string>
 											<string>C92649451147567600ADEF71</string>
 											<string>C92649461147567600ADEF71</string>
 											<string>C926495E114B4EF100ADEF71</string>
-											<string>C926498D115026CE00ADEF71</string>
-											<string>C926498E115026CE00ADEF71</string>
 											<string>C926498F115026CE00ADEF71</string>
 											<string>C9264990115026CE00ADEF71</string>
-											<string>C92649A511502AAC00ADEF71</string>
+											<string>C92649B711505C0100ADEF71</string>
+											<string>C92649E111505FF100ADEF71</string>
+											<string>C92649E211505FF100ADEF71</string>
+											<string>C92649FA1150622300ADEF71</string>
+											<string>C9264A6A11511E8700ADEF71</string>
+											<string>C9264A6B11511E8700ADEF71</string>
+											<string>C9264A6C11511E8700ADEF71</string>
+											<string>C9264A6D11511E8700ADEF71</string>
+											<string>C9264A6E11511E8700ADEF71</string>
+											<string>C9264A6F11511E8700ADEF71</string>
+											<string>C9264A7011511E8700ADEF71</string>
+											<string>C9264A7111511E8700ADEF71</string>
+											<string>C9264A7211511E8700ADEF71</string>
+											<string>C9264A7311511E8700ADEF71</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -423,7 +429,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1123, 529}}</string>
 								<key>RubberWindowFrame</key>
-								<string>20 39 1388 839 0 0 1440 878 </string>
+								<string>15 38 1388 839 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -446,7 +452,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1123, 338}}</string>
+										<string>{{10, 27}, {1123, 237}}</string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -502,7 +508,7 @@
 										<key>Frame</key>
 										<string>{{10, 27}, {1123, 237}}</string>
 										<key>RubberWindowFrame</key>
-										<string>20 39 1388 839 0 0 1440 878 </string>
+										<string>15 38 1388 839 0 0 1440 878 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -730,7 +736,7 @@
 		<string>/Users/matt/Code/Timeout/Timeout.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>20 39 1388 839 0 0 1440 878 </string>
+	<string>15 38 1388 839 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

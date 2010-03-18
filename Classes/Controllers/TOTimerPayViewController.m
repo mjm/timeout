@@ -1,11 +1,3 @@
-//
-//  TOTimerPayViewController.m
-//  Timeout
-//
-//  Created by Matt Moriarity on 2/28/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import "TOTimerPayViewController.h"
 
 #import "TOLogController.h"

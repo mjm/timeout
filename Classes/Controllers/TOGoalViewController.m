@@ -1,11 +1,3 @@
-//
-//  TOGoalViewController.m
-//  Timeout
-//
-//  Created by Matt Moriarity on 2/18/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import "TOGoalViewController.h"
 #import "../Models/TOWorkLog.h"
 
@@ -37,7 +29,7 @@
     [super viewDidLoad];
     
     self.datePicker.countDownDuration = [self.log.goal doubleValue];
-	self.datePicker.minuteInterval = [[[NSUserDefaults standardUserDefaults] objectForKey:@"TOGoalIncrement"] intValue];
+	 self.datePicker.minuteInterval = [[[NSUserDefaults standardUserDefaults] objectForKey:@"TOGoalIncrement"] intValue];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

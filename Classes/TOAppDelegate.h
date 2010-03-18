@@ -1,24 +1,23 @@
-//
-//  TOAppDelegate.h
-//  Timeout
-//
-//  Created by Matt Moriarity on 2/14/10.
-//  Copyright __MyCompanyName__ 2010. All rights reserved.
-//
-
 @class TOMainViewController;
 @class TOLogController;
 
+//! Timeout's application delegate.
+/*!
+ 
+ Controls the lifecycle of the application and creates things needed for the entire application.
+ It loads the first view controller, handles push notifications, and creates the Core Data stack.
+ 
+ */
 @interface TOAppDelegate : NSObject <UIApplicationDelegate> {
-    UIWindow *window;
-    TOMainViewController *mainViewController;
+    IBOutlet UIWindow *window; //!< The main window of the application.
+    TOMainViewController *mainViewController; //!< The main view controller.
     
-    TOLogController *logController;
-	NSString *deviceToken;
+    TOLogController *logController; //!< The application's persistence controller.
+	NSString *deviceToken; //!< The token for the device running the application.
     
-    NSManagedObjectModel *managedObjectModel;
-    NSManagedObjectContext *managedObjectContext;	    
-    NSPersistentStoreCoordinator *persistentStoreCoordinator;
+    NSManagedObjectModel *managedObjectModel; //!< Core Data managed object model.
+    NSManagedObjectContext *managedObjectContext; //!< Core Data managed object context.
+    NSPersistentStoreCoordinator *persistentStoreCoordinator; //!< Core Data persistent store coordinator.
 }
 
 @property (nonatomic, retain, readonly) TOLogController *logController;
@@ -28,6 +27,7 @@
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
+//! Location of the application's documents directory for storing data.
 @property (nonatomic, readonly) NSString *applicationDocumentsDirectory;
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

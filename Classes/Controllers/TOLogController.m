@@ -1,24 +1,58 @@
-//
-//  TOLogController.m
-//  Timeout
-//
-//  Created by Matt Moriarity on 2/15/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import "TOLogController.h"
-#import "TOWorkLog.h"
-#import "TOLogEntry.h"
+#import "../Models/TOWorkLog.h"
+#import "../Models/TOLogEntry.h"
 
 @interface TOLogController (PrivateMethods)
 
+//! Gets the entity description for the Log entity.
 - (NSEntityDescription *)logEntityDescription;
+
+//! Gets the managed object model from the managed object context.
 - (NSManagedObjectModel *)managedObjectModel;
+
+//! Gets the current date without any time components.
 - (NSDate *)today;
 
+//! Modifies the "orderedEntries" fetched property of the Log entity to have sorting.
 - (void)addSortDescriptorToOrderedEntries;
 
 @end
+
+@implementation TOLogController (PrivateMethods)
+
+- (NSEntityDescription *)logEntityDescription {
+    NSManagedObjectContext *moc = self.managedObjectContext;
+    NSEntityDescription *desc = [NSEntityDescription entityForName:@"Log"
+                                            inManagedObjectContext:moc];
+    return desc;
+}
+
+- (NSManagedObjectModel *)managedObjectModel {
+    return self.managedObjectContext.persistentStoreCoordinator.managedObjectModel;
+}
+
+- (NSDate *)today {
+    NSDate *date = [NSDate date];
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    
+    static NSUInteger units = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
+    NSDateComponents *components = [calendar components:units fromDate:date];
+    
+    return [calendar dateFromComponents:components];
+}
+
+- (void)addSortDescriptorToOrderedEntries {
+	NSEntityDescription *entity = [self logEntityDescription];
+	NSPropertyDescription *property = [[entity propertiesByName] valueForKey:@"orderedEntries"];
+	NSFetchRequest *fetchRequest = [(NSFetchedPropertyDescription *)property fetchRequest];
+	
+	NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"startTime" ascending:YES];
+	[fetchRequest setSortDescriptors:[NSArray arrayWithObject:sort]];
+	[sort release];
+}
+
+@end
+
 
 
 @implementation TOLogController
@@ -37,16 +71,6 @@
 	return self;
 }
 
-- (void)addSortDescriptorToOrderedEntries {
-	NSEntityDescription *entity = [self logEntityDescription];
-	NSPropertyDescription *property = [[entity propertiesByName] valueForKey:@"orderedEntries"];
-	NSFetchRequest *fetchRequest = [(NSFetchedPropertyDescription *)property fetchRequest];
-	
-	NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"startTime" ascending:YES];
-	[fetchRequest setSortDescriptors:[NSArray arrayWithObject:sort]];
-	[sort release];
-}
-
 + (void)initialize {
 	NSDictionary *defaults = [NSDictionary dictionaryWithObjectsAndKeys:
 							  [NSNumber numberWithInteger:28800], @"TOLastGoal",
@@ -55,27 +79,6 @@
 	
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 	[userDefaults registerDefaults:defaults];
-}
-
-- (NSEntityDescription *)logEntityDescription {
-    NSManagedObjectContext *moc = self.managedObjectContext;
-    NSEntityDescription *desc = [NSEntityDescription entityForName:@"Log"
-                                            inManagedObjectContext:moc];
-    return desc;
-}
-
-- (NSManagedObjectModel *)managedObjectModel {
-    return self.managedObjectContext.persistentStoreCoordinator.managedObjectModel;
-}
-
-- (NSDate *)today {
-    NSDate *date = [NSDate date];
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    
-    NSUInteger units = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
-    NSDateComponents *components = [calendar components:units fromDate:date];
-    
-    return [calendar dateFromComponents:components];
 }
 
 - (TOWorkLog *)currentLog {

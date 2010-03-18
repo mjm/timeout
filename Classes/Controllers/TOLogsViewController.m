@@ -1,11 +1,3 @@
-//
-//  TFLogsViewController.m
-//  Timeout
-//
-//  Created by Matt Moriarity on 2/21/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import "TOLogsViewController.h"
 #import "TOLogController.h"
 #import "TOLogDetailViewController.h"

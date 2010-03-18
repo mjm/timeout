@@ -11,22 +11,12 @@
 
 @implementation TOTimer
 
-@synthesize timerId;
-
 + (void)initialize {
 	[self setDelegate:self];
 	[self setBaseURL:[NSURL URLWithString:PUSH_PROVIDER_URL]];
 }
 
-- (id)initWithDictionary:(NSDictionary *)values {
-	if (![super init])
-		return nil;
-	
-	self.timerId = [values objectForKey:@"id"];
-	return self;
-}
-
-+ (void)createTimerForLog:(TOWorkLog *)log deviceToken:(NSString *)token delegate:(id <TOTimerDelegate>)delegate {
++ (void)createTimerForLog:(TOWorkLog *)log deviceToken:(NSString *)token {
 	if ([log remainingSeconds] == nil) {
 		return;
 	}
@@ -35,7 +25,7 @@
 							token, @"token", [[log remainingSeconds] stringValue], @"left", nil];
 	NSDictionary *options = [NSDictionary dictionaryWithObject:params forKey:@"body"];
 	
-	[self postPath:@"/timers.json" withOptions:options object:delegate];
+	[self postPath:@"/timers.json" withOptions:options object:nil];
 }
 
 + (void)deleteTimerForDeviceToken:(NSString *)token {
@@ -60,13 +50,11 @@
 
 // Given I've passed the controller as the <tt>object</tt> here, I can call any method I want to on it
 // giving it a collection of models I've initialized.
-+ (void)restConnection:(NSURLConnection *)connection didReturnResource:(id)resource  object:(id)object {
++ (void)restConnection:(NSURLConnection *)connection didReturnResource:(id)resource object:(id)object {
 	NSLog(@"Success: %@", resource);
-//	NSDictionary *timerDict = [resource valueForKey:@"timer"];
 }
 
 - (void) dealloc {
-    self.timerId = nil;
     [super dealloc];
 }
 

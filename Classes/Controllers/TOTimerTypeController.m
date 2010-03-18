@@ -1,16 +1,14 @@
-//
-//  TOTimerTypeController.m
-//  Timeout
-//
-//  Created by Matt Moriarity on 2/28/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import "TOTimerTypeController.h"
 #import "TOTimerGoalViewController.h"
 
 @interface TOTimerTypeController (PrivateMethods)
+
+//! Sets the timer type for the application and notifies the delegate that the user is finished.
+/*!
+ \param timerType The timer type that the user has chosen.
+ */
 - (void)setTimerType:(TOTimerType)timerType;
+
 @end
 
 @implementation TOTimerTypeController
@@ -44,8 +42,7 @@
 }
 
 - (void)setTimerType:(TOTimerType)timerType {
-	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-	[userDefaults setInteger:timerType forKey:@"TOTimerType"];
+	[[NSUserDefaults standardUserDefaults] setInteger:timerType forKey:@"TOTimerType"];
 	[self.delegate timerTypeControllerDidFinish:self];
 }
 

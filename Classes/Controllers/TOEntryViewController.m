@@ -1,14 +1,6 @@
-//
-//  TOEntryViewController.m
-//  Timeout
-//
-//  Created by Matt Moriarity on 2/21/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import "TOEntryViewController.h"
 
-#import "TOLogEntry.h"
+#import "../Models/TOLogEntry.h"
 
 @implementation TOEntryViewController
 

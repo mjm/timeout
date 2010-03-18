@@ -1,11 +1,3 @@
-//
-//  TOLogDetailViewController.m
-//  Timeout
-//
-//  Created by Matt Moriarity on 2/21/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import "TOLogDetailViewController.h"
 
 #import "../Models/TOWorkLog.h"

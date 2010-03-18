@@ -1,14 +1,7 @@
-//
-//  TORestModel.m
-//  Timeout
-//
-//  Created by Matt Moriarity on 3/7/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import "TORestModel.h"
 #import "TORequestOperation.h"
 
+//! Declarations of private methods so they can be called from a subclass.
 @interface HRRestModel (PrivateMethods)
 
 + (NSMutableDictionary *)mergedOptions:(NSDictionary *)options;

@@ -1,11 +1,3 @@
-//
-//  TOMainViewController.m
-//  Timeout
-//
-//  Created by Matt Moriarity on 2/28/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import "TOMainViewController.h"
 
 #import "TOTimerGoalViewController.h"
@@ -13,7 +5,10 @@
 #import "TOTimerTypeController.h"
 
 @interface TOMainViewController (PrivateMethods)
+
+//! The current preferred timer type, loaded from the user defaults.
 @property (nonatomic, readonly) TOTimerType timerType;
+
 @end
 
 @implementation TOMainViewController

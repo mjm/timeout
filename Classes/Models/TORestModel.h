@@ -1,13 +1,5 @@
-//
-//  TORestModel.h
-//  Timeout
-//
-//  Created by Matt Moriarity on 3/7/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
+//! An HRRestModel subclass that uses TORequestOperation to perform its requests.
 @interface TORestModel : HRRestModel {
-
 }
 
 @end

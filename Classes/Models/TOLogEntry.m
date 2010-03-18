@@ -1,20 +1,9 @@
-//
-//  TOLogEntry.m
-//  Timeout
-//
-//  Created by Matt Moriarity on 2/14/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import "TOLogEntry.h"
-
 #import "TOWorkLog.h"
 
 @implementation TOLogEntry
 
-@dynamic startTime;
-@dynamic endTime;
-@dynamic log;
+@dynamic startTime, endTime, log;
 
 - (NSTimeInterval)timeElapsed {
     if (self.startTime == nil) {

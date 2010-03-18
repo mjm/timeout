@@ -1,31 +1,22 @@
-//
-//  TOTimer.h
-//  Timeout
-//
-//  Created by Matt Moriarity on 3/7/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import "TORestModel.h"
 
 @class TOWorkLog;
-@protocol TOTimerDelegate;
 
+//! A timer on the push notification provider.
 @interface TOTimer : TORestModel {
-	NSNumber *timerId;
 }
 
-@property (nonatomic, retain) NSNumber *timerId;
+//! Creates a timer on the push provider so that a notification will be sent when the timer is finished.
+/*!
+ \param log The work log to create a timer for.
+ \param token The device that the timer is for.
+ */
++ (void)createTimerForLog:(TOWorkLog *)log deviceToken:(NSString *)token;
 
-- (id)initWithDictionary:(NSDictionary *)values;
-
-+ (void)createTimerForLog:(TOWorkLog *)log deviceToken:(NSString *)token delegate:(id <TOTimerDelegate>)delegate;
+//! Deletes the timer for a device on the push provider.
+/*!
+ \param token The device that the timer is for.
+ */
 + (void)deleteTimerForDeviceToken:(NSString *)token;
-
-@end
-
-@protocol TOTimerDelegate 
-
-- (void)timerCreated:(TOTimer *)timer;
 
 @end

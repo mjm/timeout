@@ -1,13 +1,4 @@
-//
-//  NSCalendarAdditions.m
-//  Timeout
-//
-//  Created by Matt Moriarity on 2/16/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import "NSCalendarAdditions.h"
-
 
 @implementation NSCalendar (Additions)
 

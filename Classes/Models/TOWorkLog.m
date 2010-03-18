@@ -1,14 +1,5 @@
-//
-//  TOWorkLog.m
-//  Timeout
-//
-//  Created by Matt Moriarity on 2/14/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import "TOLogEntry.h"
 #import "TOWorkLog.h"
-
 
 @implementation TOWorkLog
 

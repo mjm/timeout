@@ -1,13 +1,4 @@
-//
-//  TODevice.m
-//  Timeout
-//
-//  Created by Matt Moriarity on 3/7/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import "TODevice.h"
-
 
 @implementation TODevice
 
@@ -36,8 +27,6 @@
 	NSLog(@"Did receive parse error: %@, %@", error, [error userInfo]);
 }
 
-// Given I've passed the controller as the <tt>object</tt> here, I can call any method I want to on it
-// giving it a collection of models I've initialized.
 + (void)restConnection:(NSURLConnection *)connection didReturnResource:(id)resource  object:(id)object {
 	NSLog(@"Success: %@", resource);
 }
