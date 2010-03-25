@@ -26,6 +26,9 @@
 @property (nonatomic, retain) IBOutlet UILabel *startLabel;
 @property (nonatomic, retain) IBOutlet UILabel *earnedLabel;
 
+//! \name Initializing a View Controller
+//@{
+
 //! Creates a new view controller with a persistence controller.
 /*!
  \param controller The controller to use for persistence operations.
@@ -33,6 +36,7 @@
  */
 - (id)initWithLogController:(TOLogController *)controller;
 
+//@}
 //! \name Actions
 //@{
 

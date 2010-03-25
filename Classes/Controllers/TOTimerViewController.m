@@ -5,7 +5,12 @@
 #import "../Models/TOWorkLog.h"
 #import "../Models/TOLogEntry.h"
 
+#pragma mark Private Methods
+
 @interface TOTimerViewController (PrivateMethods)
+
+//! \name Private Methods
+//@{
 
 //! Called when the timer fires.
 /*!
@@ -16,15 +21,19 @@
  */
 - (void)timerUpdate:(NSTimer *)aTimer;
 
+//@}
+
 @end
 
+#pragma mark -
 
 @implementation TOTimerViewController
 
 @synthesize logController, log;
 @synthesize navigationItem, startStopButton;
 
-#pragma mark Initialization
+#pragma mark -
+#pragma mark Initializing a View Controller
 
 - (id)initWithNibName:(NSString *)nibName logController:(TOLogController *)controller {
 	if (![super initWithNibName:nibName bundle:nil])
@@ -34,7 +43,8 @@
 	return self;
 }
 
-#pragma mark View controller lifecycle
+#pragma mark -
+#pragma mark View Controller Lifecycle
 
 - (void)viewDidAppear:(BOOL)animated {
 	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque];
@@ -73,7 +83,8 @@
 	[super viewDidUnload];
 }
 
-#pragma mark Display updating
+#pragma mark -
+#pragma mark Updating the View
 
 - (void)updateWithLogInfo {
 	self.navigationItem.title = self.log.title;
@@ -119,6 +130,7 @@
 	[self doesNotRecognizeSelector:_cmd];
 }
 
+#pragma mark -
 #pragma mark Actions
 
 - (IBAction)viewLogs {
@@ -146,12 +158,14 @@
 	[self timerUpdate:nil];
 }
 
-#pragma mark View controller delegate methods
+#pragma mark -
+#pragma mark View Controller Delegate Methods
 
 - (void)logsViewControllerDidFinish:(TOLogsViewController *)controller {
 	[self dismissModalViewControllerAnimated:YES];
 }
 
+#pragma mark -
 #pragma mark Memory management
 
 - (void)dealloc {

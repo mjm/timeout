@@ -26,6 +26,9 @@
 @property (nonatomic, retain) IBOutlet UILabel *elapsedLabel;
 @property (nonatomic, retain) IBOutlet UILabel *leftLabel;
 
+//! \name Initializing a View Controller
+//@{
+
 //! Creates a new controller with a log controller for persistence.
 /*!
  \param controller The log controller to use for handling persistence operations.
@@ -33,6 +36,7 @@
  */
 - (id)initWithLogController:(TOLogController *)controller;
 
+//@}
 //! \name Actions
 //@{
 

@@ -8,6 +8,9 @@
 
 @synthesize elapsedLabel, startLabel, earnedLabel;
 
+#pragma mark -
+#pragma mark Initializing a View Controller
+
 - (id)initWithLogController:(TOLogController *)controller {
 	if (![super initWithNibName:@"TOTimerPayViewController" logController:controller])
 		return nil;
@@ -22,6 +25,9 @@
 	[self dismissModalViewControllerAnimated:YES];
 	[self.logController save];
 }
+
+#pragma mark -
+#pragma mark Actions
 
 - (IBAction)changeRate {
     TOPayViewController *controller = [[TOPayViewController alloc] initWithRate:self.log.rate];

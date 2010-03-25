@@ -8,17 +8,28 @@
 #import "../Models/TOTimer.h"
 #import "../TOAppDelegate.h"
 
+#pragma mark Private Methods
+
 @interface TOTimerGoalViewController (PrivateMethods)
+
+//! \name Private Methods
+//@{
 
 //! Updates the status of the push notification server.
 - (void)updatePushTimer;
 
+//@}
+
 @end
 
+#pragma mark -
 
 @implementation TOTimerGoalViewController
 
 @synthesize departureLabel, elapsedLabel, leftLabel;
+
+#pragma mark -
+#pragma mark Initializing a View Controller
 
 - (id)initWithLogController:(TOLogController *)controller {
 	if (![super initWithNibName:@"TOTimerGoalViewController" logController:controller])
@@ -27,42 +38,12 @@
 	return self;
 }
 
+#pragma mark -
+#pragma mark Updating the View
+
 - (void)setButtonState:(BOOL)isStartButton {
 	[super setButtonState:isStartButton];
 	[self updatePushTimer];
-}
-
-- (void)updatePushTimer {
-	TOAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	NSString *token = delegate.deviceToken;
-	
-	TOLogEntry *entry = [self.logController runningEntryForLog:self.log];
-	
-	if (token) {
-		if ([entry isRunning]) {
-			[TOTimer createTimerForLog:self.log deviceToken:delegate.deviceToken];
-		} else {
-			[TOTimer deleteTimerForDeviceToken:delegate.deviceToken];
-		}
-	}
-}
-
-- (void)goalViewControllerDidFinish:(TOGoalViewController *)controller {
-    [self dismissModalViewControllerAnimated:YES];
-	
-	[[NSUserDefaults standardUserDefaults] setObject:self.log.goal forKey:@"TOLastGoal"];
-    [self.logController save];
-	
-	[self updatePushTimer];
-}
-
-- (IBAction)changeGoal {
-    TOGoalViewController *controller = [[TOGoalViewController alloc] initWithLog:self.log];
-    controller.delegate = self;
-    controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-	
-    [self presentModalViewController:controller animated:YES];
-    [controller release];
 }
 
 - (void)updateWithDateComponents:(NSDateComponents *)components {
@@ -87,6 +68,51 @@
     
     [formatter release];
 }
+
+#pragma mark -
+#pragma mark Updating the Push Provider
+
+- (void)updatePushTimer {
+	TOAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	NSString *token = delegate.deviceToken;
+	
+	TOLogEntry *entry = [self.logController runningEntryForLog:self.log];
+	
+	if (token) {
+		if ([entry isRunning]) {
+			[TOTimer createTimerForLog:self.log deviceToken:delegate.deviceToken];
+		} else {
+			[TOTimer deleteTimerForDeviceToken:delegate.deviceToken];
+		}
+	}
+}
+
+#pragma mark -
+#pragma mark View Controller Delegate Methods
+
+- (void)goalViewControllerDidFinish:(TOGoalViewController *)controller {
+    [self dismissModalViewControllerAnimated:YES];
+	
+	[[NSUserDefaults standardUserDefaults] setObject:self.log.goal forKey:@"TOLastGoal"];
+    [self.logController save];
+	
+	[self updatePushTimer];
+}
+
+#pragma mark -
+#pragma mark Actions
+
+- (IBAction)changeGoal {
+    TOGoalViewController *controller = [[TOGoalViewController alloc] initWithLog:self.log];
+    controller.delegate = self;
+    controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+	
+    [self presentModalViewController:controller animated:YES];
+    [controller release];
+}
+
+#pragma mark -
+#pragma mark View Controller Lifecycle
 
 - (void)viewDidUnload {
 	self.departureLabel = nil;

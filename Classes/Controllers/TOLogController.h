@@ -7,6 +7,7 @@
  Handles retrieving and manipulating logs and entries for the application.
  Also provides a convenient method for saving any changes.
  
+ \nosubgrouping
  \ingroup controllers
  */
 @interface TOLogController : NSObject {
@@ -15,12 +16,19 @@
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
+//! \name Initializing a Log Controller
+//@{
+
 //! Creates a new controller with a managed object context.
 /*!
  \param context The application's Core Data managed object context.
  \return the new log controller.
  */
 - (id)initWithManagedObjectContext:(NSManagedObjectContext *)context;
+
+//@}
+//! \name Retrieving Model Objects
+//@{
 
 //! Retrieves the log for the current day, creating it if it does not exist.
 /*!
@@ -55,6 +63,9 @@
  */
 - (NSFetchedResultsController *)logsFetchedResultsController;
 
+//@}
+//! \name Deleting Model Objects
+//@{
 
 //! Deletes a log from the application.
 /*!
@@ -78,7 +89,13 @@
  */
 - (void)deleteOldLogs;
 
+//@}
+//! \name Saving Changes
+//@{
+
 //! Saves any unsaved changes to the managed object context.
 - (void)save;
+
+//@}
 
 @end

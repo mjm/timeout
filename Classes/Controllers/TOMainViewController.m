@@ -4,6 +4,8 @@
 #import "TOTimerPayViewController.h"
 #import "TOTimerTypeController.h"
 
+#pragma mark Private Methods
+
 @interface TOMainViewController (PrivateMethods)
 
 //! The current preferred timer type, loaded from the user defaults.
@@ -11,9 +13,14 @@
 
 @end
 
+#pragma mark -
+
 @implementation TOMainViewController
 
 @synthesize logController;
+
+#pragma mark -
+#pragma mark Initializing a View Controller
 
 - (id)initWithLogController:(TOLogController *)controller {
 	if (![super initWithNibName:@"TOMainViewController" bundle:nil])
@@ -22,6 +29,9 @@
 	self.logController = controller;
 	return self;
 }
+
+#pragma mark -
+#pragma mark Displaying a View Controller
 
 - (void)presentMainController {
 	TOTimerType timerType = self.timerType;
@@ -49,6 +59,9 @@
 	
 	[controller release];
 }
+
+#pragma mark -
+#pragma mark Other
 
 - (TOTimerType)timerType {
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];

@@ -38,6 +38,9 @@ typedef enum {
 @property (nonatomic, retain) IBOutlet UINavigationItem *navigationItem;
 @property (nonatomic, retain) IBOutlet UIButton *startStopButton;
 
+//! \name Initializing a View Controller
+//@{
+
 //! Creates a new view controller using a given NIB and persistence controller.
 /*!
  Allows subclasses to provide their own NIB for the interface.
@@ -47,6 +50,10 @@ typedef enum {
  \return the new view controller.
  */
 - (id)initWithNibName:(NSString *)nibName logController:(TOLogController *)controller;
+
+//@}
+//! \name Updating the View
+//@{
 
 //! Updates the display with information about the current log.
 /*!
@@ -63,6 +70,14 @@ typedef enum {
  */
 - (void)updateWithDateComponents:(NSDateComponents *)components;
 
+//! Updates the state of the start/stop button to make sure the text and background are correct.
+/*!
+ \param isStartButton YES if the start button should be displayed, NO if the stop button should
+ be displayed.
+ */
+- (void)setButtonState:(BOOL)isStartButton;
+
+//@}
 //! \name Actions
 //@{
 
@@ -73,12 +88,5 @@ typedef enum {
 - (IBAction)startOrStopTimer;
 
 //@}
-
-//! Updates the state of the start/stop button to make sure the text and background are correct.
-/*!
- \param isStartButton YES if the start button should be displayed, NO if the stop button should
-	be displayed.
- */
-- (void)setButtonState:(BOOL)isStartButton;
 
 @end

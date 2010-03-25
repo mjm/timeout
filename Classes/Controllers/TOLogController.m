@@ -2,7 +2,12 @@
 #import "../Models/TOWorkLog.h"
 #import "../Models/TOLogEntry.h"
 
+#pragma mark Private Methods
+
 @interface TOLogController (PrivateMethods)
+
+//! \name Private Methods
+//@{
 
 //! Gets the entity description for the Log entity.
 - (NSEntityDescription *)logEntityDescription;
@@ -15,6 +20,8 @@
 
 //! Modifies the "orderedEntries" fetched property of the Log entity to have sorting.
 - (void)addSortDescriptorToOrderedEntries;
+
+//@}
 
 @end
 
@@ -53,11 +60,24 @@
 
 @end
 
-
+#pragma mark -
 
 @implementation TOLogController
 
 @synthesize managedObjectContext;
+
++ (void)initialize {
+	NSDictionary *defaults = [NSDictionary dictionaryWithObjectsAndKeys:
+							  [NSNumber numberWithInteger:28800], @"TOLastGoal",
+							  [NSNumber numberWithInteger:0], @"TOLastRate",
+							  [NSNumber numberWithInteger:0], @"TODeleteAfter", nil];
+	
+	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+	[userDefaults registerDefaults:defaults];
+}
+
+#pragma mark -
+#pragma mark Initializating a Log Controller
 
 - (id)initWithManagedObjectContext:(NSManagedObjectContext *)context {
 	if (![super init])
@@ -71,15 +91,8 @@
 	return self;
 }
 
-+ (void)initialize {
-	NSDictionary *defaults = [NSDictionary dictionaryWithObjectsAndKeys:
-							  [NSNumber numberWithInteger:28800], @"TOLastGoal",
-							  [NSNumber numberWithInteger:0], @"TOLastRate",
-							  [NSNumber numberWithInteger:0], @"TODeleteAfter", nil];
-	
-	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-	[userDefaults registerDefaults:defaults];
-}
+#pragma mark -
+#pragma mark Retrieving Model Objects
 
 - (TOWorkLog *)currentLog {
     NSDate *date = [self today];
@@ -145,6 +158,9 @@
 														   cacheName:nil] autorelease];
 }
 
+#pragma mark -
+#pragma mark Deleting Model Objects
+
 - (void)deleteLog:(TOWorkLog *)log {
 	[self.managedObjectContext deleteObject:log];
 	[self save];
@@ -186,6 +202,8 @@
 	}
 }
 
+#pragma mark -
+#pragma mark Saving Changes
 
 - (void)save {
     NSError *error;
