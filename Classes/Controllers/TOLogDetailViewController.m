@@ -74,8 +74,10 @@
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	if (section == 0)
-		return 1;
+	if (section == 0) {
+		TOTimerType timerType = [[NSUserDefaults standardUserDefaults] integerForKey:@"TOTimerType"];
+		return (timerType == TOTimerTypeGoal) ? 1 : 2;
+	}
     return [self.log.orderedEntries count];
 }
 
@@ -98,9 +100,8 @@
 			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:HeaderIdentifier] autorelease];
 		}
 		
-		TOTimerType timerType = [[NSUserDefaults standardUserDefaults] integerForKey:@"TOTimerType"];
-		switch (timerType) {
-			case TOTimerTypeGoal:
+		switch (indexPath.row) {
+			case 0:
 				cell.textLabel.text = @"Hours Worked";
 				
 				NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -110,7 +111,7 @@
 				[dateFormatter release];
 				
 				break;
-			default:
+			case 1:
 				cell.textLabel.text = @"Earned Pay";
 				
 				NSNumberFormatter *numFormatter = [[NSNumberFormatter alloc] init];
