@@ -1,3 +1,5 @@
+#ifndef SKIP_PUSH
+
 #import "TORequestOperation.h"
 
 //! Declarations of overriden private methods.
@@ -18,3 +20,5 @@
 }
 
 @end
+
+#endif

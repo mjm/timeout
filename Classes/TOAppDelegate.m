@@ -12,7 +12,9 @@
 #import "Controllers/TOMainViewController.h"
 #import "Controllers/TOLogController.h"
 
+#ifndef SKIP_PUSH
 #import "Models/TODevice.h"
+#endif
 
 @implementation TOAppDelegate
 
@@ -51,9 +53,11 @@
 #pragma mark Push notifications
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)devToken {
+#ifndef SKIP_PUSH
 	NSString *tokenDesc = [devToken description];
 	self.deviceToken = [tokenDesc substringWithRange:NSMakeRange(1, [tokenDesc length] - 2)];
 	[TODevice registerDeviceWithToken:self.deviceToken];
+#endif
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {

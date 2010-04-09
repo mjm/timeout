@@ -9,10 +9,13 @@
 
 #define PUSH_PROVIDER_URL @"http://push.timeout-app.com"
 
+#define SKIP_PUSH
 
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
     #import <CoreData/CoreData.h>
+#ifndef SKIP_PUSH
     #import <HTTPRiot/HTTPRiot.h>
+#endif
 #endif

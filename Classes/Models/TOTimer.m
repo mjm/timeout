@@ -1,10 +1,4 @@
-//
-//  TOTimer.m
-//  Timeout
-//
-//  Created by Matt Moriarity on 3/7/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
+#ifndef SKIP_PUSH
 
 #import "TOTimer.h"
 #import "TOWorkLog.h"
@@ -59,3 +53,5 @@
 }
 
 @end
+
+#endif

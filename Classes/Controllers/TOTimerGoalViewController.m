@@ -5,8 +5,11 @@
 #import "TOLogController.h"
 #import "../Models/TOWorkLog.h"
 #import "../Models/TOLogEntry.h"
-#import "../Models/TOTimer.h"
 #import "../TOAppDelegate.h"
+
+#ifndef SKIP_PUSH
+#import "../Models/TOTimer.h"
+#endif
 
 #pragma mark Private Methods
 
@@ -73,6 +76,7 @@
 #pragma mark Updating the Push Provider
 
 - (void)updatePushTimer {
+#ifndef SKIP_PUSH
 	TOAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	NSString *token = delegate.deviceToken;
 	
@@ -85,6 +89,7 @@
 			[TOTimer deleteTimerForDeviceToken:delegate.deviceToken];
 		}
 	}
+#endif
 }
 
 #pragma mark -

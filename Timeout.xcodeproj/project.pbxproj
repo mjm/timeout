@@ -414,7 +414,7 @@
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ADDITIONAL_SDKS = "~/Library/SDKs/httpriot-0.6.8/$(PLATFORM_NAME)$(IPHONEOS_DEPLOYMENT_TARGET).sdk";
+				ADDITIONAL_SDKS = "~/Library/SDKs/httpriot-0.6.9/$(PLATFORM_NAME)$(IPHONEOS_DEPLOYMENT_TARGET).sdk";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matt Moriarity (9YL48JBH7D)";
 				COPY_PHASE_STRIP = NO;
@@ -426,35 +426,36 @@
 				GCC_PREFIX_HEADER = Timeout_Prefix.pch;
 				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				INFOPLIST_FILE = "Timeout-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_LDFLAGS = (
-					"-lhttpriot",
 					"-lxml2",
 					"-ObjC",
 					"-all_load",
 				);
 				PRODUCT_NAME = Timeout;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3EEADB57-D6EE-4D8A-842B-7050833540A8";
-				SDKROOT = iphoneos3.1;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Debug;
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ADDITIONAL_SDKS = "~/Library/SDKs/httpriot-0.6.8/$(PLATFORM_NAME)$(IPHONEOS_DEPLOYMENT_TARGET).sdk";
+				ADDITIONAL_SDKS = "~/Library/SDKs/httpriot-0.6.9/$(PLATFORM_NAME)$(IPHONEOS_DEPLOYMENT_TARGET).sdk";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Timeout_Prefix.pch;
 				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				INFOPLIST_FILE = "Timeout-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_LDFLAGS = (
-					"-lhttpriot",
 					"-lxml2",
 					"-ObjC",
 					"-all_load",
 				);
 				PRODUCT_NAME = Timeout;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Release;
 		};
@@ -501,7 +502,7 @@
 		C9DE4C8D113760B500BBF839 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ADDITIONAL_SDKS = "~/Library/SDKs/httpriot-0.6.8/$(PLATFORM_NAME)$(IPHONEOS_DEPLOYMENT_TARGET).sdk";
+				ADDITIONAL_SDKS = "~/Library/SDKs/httpriot-0.6.9/$(PLATFORM_NAME)$(IPHONEOS_DEPLOYMENT_TARGET).sdk";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				COPY_PHASE_STRIP = YES;
@@ -509,13 +510,14 @@
 				GCC_PREFIX_HEADER = Timeout_Prefix.pch;
 				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				INFOPLIST_FILE = "Timeout-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_LDFLAGS = (
-					"-lhttpriot",
 					"-lxml2",
 					"-ObjC",
 					"-all_load",
 				);
 				PRODUCT_NAME = Timeout;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Distribution;
 		};
@@ -536,7 +538,7 @@
 		C9DE4CF8113A023200BBF839 /* App Store */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ADDITIONAL_SDKS = "~/Library/SDKs/httpriot-0.6.8/$(PLATFORM_NAME)$(IPHONEOS_DEPLOYMENT_TARGET).sdk";
+				ADDITIONAL_SDKS = "~/Library/SDKs/httpriot-0.6.9/$(PLATFORM_NAME)$(IPHONEOS_DEPLOYMENT_TARGET).sdk";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Matt Moriarity";
@@ -546,15 +548,15 @@
 				GCC_PREFIX_HEADER = Timeout_Prefix.pch;
 				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				INFOPLIST_FILE = "Timeout-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_LDFLAGS = (
-					"-lhttpriot",
 					"-lxml2",
 					"-ObjC",
 					"-all_load",
 				);
 				PRODUCT_NAME = Timeout;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3188515D-600C-42B1-8C7F-CE2C1C2B7EB5";
-				SDKROOT = iphoneos3.1;
+				SDKROOT = iphoneos4.0;
 			};
 			name = "App Store";
 		};

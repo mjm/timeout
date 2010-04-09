@@ -1,3 +1,5 @@
+#ifndef SKIP_PUSH
+
 #import "TODevice.h"
 
 @implementation TODevice
@@ -32,3 +34,5 @@
 }
 
 @end
+
+#endif
