@@ -112,6 +112,9 @@
 }
 
 - (void)timerUpdate:(NSTimer *)aTimer {
+	TOLogEntry *entry = [self.logController runningEntryForLog:self.log];
+	[self setButtonState:![entry isRunning]];
+	
     NSDate *date = [NSDate date];
     NSCalendar *calendar = [NSCalendar currentCalendar];
     

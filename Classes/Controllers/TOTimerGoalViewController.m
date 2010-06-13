@@ -19,7 +19,7 @@
 //@{
 
 //! Updates the status of the push notification server.
-- (void)updatePushTimer;
+- (void)scheduleNotification;
 
 //@}
 
@@ -46,7 +46,7 @@
 
 - (void)setButtonState:(BOOL)isStartButton {
 	[super setButtonState:isStartButton];
-	[self updatePushTimer];
+	[self scheduleNotification];
 }
 
 - (void)updateWithDateComponents:(NSDateComponents *)components {
@@ -75,18 +75,42 @@
 #pragma mark -
 #pragma mark Updating the Push Provider
 
-- (void)updatePushTimer {
-#ifndef SKIP_PUSH
-	TOAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	NSString *token = delegate.deviceToken;
-	
-	TOLogEntry *entry = [self.logController runningEntryForLog:self.log];
-	
-	if (token) {
+- (void)scheduleNotification {
+	Class localNotification = NSClassFromString(@"UILocalNotification");
+	if (localNotification) {
+		[[UIApplication sharedApplication] cancelAllLocalNotifications];
+		
+		TOLogEntry *entry = [self.logController runningEntryForLog:self.log];
 		if ([entry isRunning]) {
-			[TOTimer createTimerForLog:self.log deviceToken:delegate.deviceToken];
-		} else {
-			[TOTimer deleteTimerForDeviceToken:delegate.deviceToken];
+			NSDate *departure = [self.log estimatedDepartureFromDate:[NSDate date]];
+			
+			UILocalNotification *notification = [[localNotification alloc] init];
+			if (!notification)
+				return;
+			
+			notification.fireDate = departure;
+			notification.timeZone = [NSTimeZone defaultTimeZone];
+			notification.alertBody = @"Time to leave!";
+			notification.alertAction = @"Stop Timer";
+			notification.soundName = UILocalNotificationDefaultSoundName;
+			
+			[[UIApplication sharedApplication] scheduleLocalNotification:notification];
+			[notification release];
+		}
+	}
+#ifndef SKIP_PUSH
+	else {
+		TOAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+		NSString *token = delegate.deviceToken;
+		
+		TOLogEntry *entry = [self.logController runningEntryForLog:self.log];
+		
+		if (token) {
+			if ([entry isRunning]) {
+				[TOTimer createTimerForLog:self.log deviceToken:delegate.deviceToken];
+			} else {
+				[TOTimer deleteTimerForDeviceToken:delegate.deviceToken];
+			}
 		}
 	}
 #endif
@@ -101,7 +125,7 @@
 	[[NSUserDefaults standardUserDefaults] setObject:self.log.goal forKey:@"TOLastGoal"];
     [self.logController save];
 	
-	[self updatePushTimer];
+	[self scheduleNotification];
 }
 
 #pragma mark -

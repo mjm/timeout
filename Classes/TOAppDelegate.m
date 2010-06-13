@@ -16,6 +16,12 @@
 #import "Models/TODevice.h"
 #endif
 
+@interface TOAppDelegate ()
+
+- (void)stopTimer;
+
+@end
+
 @implementation TOAppDelegate
 
 @synthesize deviceToken;
@@ -24,7 +30,12 @@
 #pragma mark -
 #pragma mark Application Lifecycle
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)options {
+	id notification = [options objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+	if (notification) {
+		[self stopTimer];
+	}
+	
 	[[UIApplication sharedApplication] registerForRemoteNotificationTypes:UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound];
 	
 	TOMainViewController *aController = [[TOMainViewController alloc] initWithLogController:self.logController];
@@ -36,6 +47,8 @@
     [window makeKeyAndVisible];
 	
 	[aController presentMainController];
+	
+	return YES;
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
@@ -47,6 +60,12 @@
             abort();
         }
     }
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+	if (notification.fireDate) {
+		[self stopTimer];
+	}
 }
 
 #pragma mark -
@@ -83,7 +102,7 @@
 }
 
 #pragma mark -
-#pragma mark Application Controllers
+#pragma mark Application Logic
 
 - (TOLogController *)logController {
     if (logController != nil) {
@@ -92,6 +111,14 @@
     
     logController = [[TOLogController alloc] initWithManagedObjectContext:self.managedObjectContext];
     return logController;
+}
+
+- (void)stopTimer {
+	TOWorkLog *log = [self.logController currentLog];
+	TOLogEntry *entry = [self.logController runningEntryForLog:log];
+	if ([entry isRunning]) {
+		[entry stopTimer];
+	}
 }
 
 #pragma mark -
